@@ -1,7 +1,13 @@
 @media (max-width: 1700px) {
+  .layer-counter {
+    height: 272px;
+  }
 }
 
 @media (max-width: 1600px) {
+  .layer-counter {
+    height: 338px;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -14,6 +20,9 @@
 }
 
 @media (max-width: 1300px) {
+  .layer-counter {
+    height: 325px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -32,6 +41,12 @@
 }
 
 @media (max-width: 576px) {
+  .layer-counter {
+    height: 130px;
+  }
+  .our-pillars {
+    padding: 40px 20px;
+  }
 }
 
 @media (max-width: 480px) {
