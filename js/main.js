@@ -1,6 +1,10 @@
 $(document).ready(function () {
+  // preloader
+  setTimeout(function () {
+    $("#loader-container").fadeOut();
+  }, 1500);
   // pillars carousel
-  $('.pillars-carousel').slick({
+  $(".pillars-carousel").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -8,16 +12,19 @@ $(document).ready(function () {
     arrows: false,
     dots: false,
     pauseOnHover: false,
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 1500,
         settings: {
-            slidesToShow: 2
-        }
-    }, {
+          slidesToShow: 2,
+        },
+      },
+      {
         breakpoint: 650,
         settings: {
-            slidesToShow:1
-        }
-    }]
-});
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
 });

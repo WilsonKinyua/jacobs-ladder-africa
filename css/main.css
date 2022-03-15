@@ -6,6 +6,21 @@ body {
   background-color: #fff;
 }
 
+.btn-readmore,
+.btn-readmore:hover {
+  -webkit-box-shadow: 0px 7px 13px 0px rgb(0 0 0 / 10%);
+  -moz-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 7px 13px 0px rgb(0 0 0 / 10%);
+  background: linear-gradient(
+    165deg,
+    rgba(254, 250, 177, 1) 0%,
+    rgba(240, 218, 91, 1) 40%
+  );
+  padding: 15px;
+  border-radius: 10px;
+  color: rgb(24, 24, 24);
+}
+
 :root {
   --color-primary: #f4bf03;
   --color-secondary: #258d22;
@@ -111,6 +126,59 @@ a:hover {
   background: url("../img/stripe.png");
   z-index: 9999999;
   width: 100%;
+}
+
+/*====================================================
+    4. PRELOADER 
+  ====================================================*/
+#loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1031;
+  background-color: #f2f2f2;
+}
+
+#loader {
+  animation: animate 1.5s linear infinite;
+  clip: rect(0, 80px, 80px, 40px);
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  left: calc(50% - 40px);
+  top: calc(50% - 40px);
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(220deg);
+  }
+}
+#loader:after {
+  animation: animate2 1.5s ease-in-out infinite;
+  clip: rect(0, 80px, 80px, 40px);
+  content: "";
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  position: absolute;
+}
+@keyframes animate2 {
+  0% {
+    box-shadow: inset #f4bf03 0 0 0 17px;
+    transform: rotate(-140deg);
+  }
+  50% {
+    box-shadow: inset #258d22 0 0 0 2px;
+  }
+  100% {
+    box-shadow: inset #f4bf03 0 0 0 17px;
+    transform: rotate(140deg);
+  }
 }
 
 /* slider */
@@ -299,5 +367,31 @@ a:hover {
 
 .our-pillars h2 {
   font-size: 2rem !important;
-  font-family: "Poppins", sans-serif;
+}
+
+/* about us */
+
+.about-us-content p {
+  font-size: 15px;
+  color: #838391;
+  font-weight: 400;
+  line-height: 2;
+  margin-bottom: 15px;
+}
+
+.about-us-content h2 {
+  font-size: 2.5rem;
+  color: #000000;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.about-us-img img {
+  width: 370px;
+  height: 370px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
 }
