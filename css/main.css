@@ -3,6 +3,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  background-color: #fff;
 }
 
 :root {
@@ -49,7 +50,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: 1.424rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #262626;
 }
@@ -106,7 +107,7 @@ a:hover {
 
 /* global */
 .banner-pattern {
-  height: 6px;
+  height: 10px;
   background: url("../img/stripe.png");
   z-index: 9999999;
   width: 100%;
@@ -118,7 +119,7 @@ a:hover {
 }
 
 .carousel-item {
-  height: 98vh;
+  height: 100vh;
   min-height: 300px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -208,4 +209,95 @@ a:hover {
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
+}
+
+/* ===============  our pillars carousel =================== */
+
+.our-pillars-grid-carousel-container {
+  overflow: hidden;
+}
+
+.our-pillars-grid-carousel-container .banner-pattern {
+  margin-top: -17px;
+}
+
+.our-pillars-grid-layer {
+  position: relative;
+  cursor: pointer;
+}
+
+.gl-thumbnail img {
+  width: 100%;
+}
+
+.gl-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  transition: 0.5s ease;
+  background-color: #258d22;
+  z-index: 1;
+}
+
+.our-pillars-grid-layer:hover .gl-overlay {
+  opacity: 0.4;
+  background-color: #f4bf03;
+}
+
+.gl-overlay-alt {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+  transition: 0.5s ease;
+  background-color: rgb(0, 0, 0);
+  z-index: 1;
+}
+
+.our-pillars-grid-layer:hover .gl-overlay-alt {
+  opacity: 0.7;
+  background-color: #000;
+}
+
+.our-pillars-grid-layer .gl-caption {
+  position: absolute;
+  bottom: 0;
+  padding: 30px;
+  z-index: 2;
+  text-align: left;
+}
+
+.our-pillars-grid-layer .gl-caption h2 {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+
+.our-pillars-grid-layer .gl-caption p {
+  color: rgb(255, 255, 255);
+}
+
+.layer-counter {
+  position: relative;
+  background-color: var(--color-secondary);
+  height: 339px;
+}
+
+.our-pillars {
+  position: absolute;
+  text-align: center;
+  padding: 130px 10px;
+}
+
+.our-pillars h2 {
+  font-size: 2rem !important;
+  font-family: "Poppins", sans-serif;
 }
