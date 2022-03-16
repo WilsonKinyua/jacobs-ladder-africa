@@ -124,6 +124,13 @@ a:hover {
   border-right: 1px solid rgb(218, 218, 218);
 }
 
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 0px;
+}
+
 /* global */
 .banner-pattern {
   height: 10px;
@@ -133,7 +140,7 @@ a:hover {
 }
 
 /*====================================================
-    4. PRELOADER 
+    PRELOADER 
   ====================================================*/
 #loader-container {
   position: fixed;
@@ -411,7 +418,6 @@ a:hover {
 
 .mission-vision {
   padding: 40px;
-  /* background-image: url('https://velikorodnov.com/wordpress/ewent/wp-content/uploads/revslider/slider-1/bg-vector1.png'); */
 }
 
 .mission-vision p {
@@ -428,6 +434,7 @@ a:hover {
   margin-bottom: 20px;
   border: 0.1px solid #e9e9e9;
 }
+
 
 .mission-vision-icon i:hover {
   background-color: var(--color-primary);
@@ -452,9 +459,60 @@ a:hover {
   margin-bottom: -220px;
   transform: rotate(180deg);
 }
+/* our values  */
+.our-values-box{
+  padding: 30px 25px 35px;
+  transition: 0.3s;
+  cursor: pointer;
+  height: 330px;
+} 
+  
+.our-values-box h4{
+  margin: 20px 0px 10px;
+  transition: 0.3s;
+  font-weight: 600;
+}  
+     
+.our-values-box p{
+  font-size: 14px;
+  line-height: 1.8;
+  transition: 0.3s;
+}  
+  
+.our-values-box:hover{
+  background-color: #258d22;
+}    
+  
+.our-values-box:hover .values-icon{
+  display: none;
+}   
+  
+.our-values-box:hover .our-values-icon-hover{
+  display: inherit;
+}  
+  
+.our-values-box:hover h4{
+  color: #FFF;
+}    
+  
+.our-values-box:hover p{
+  color: #FFF;
+}
+
+
+.our-values-icon i {
+  padding: 15px;
+  border-radius: 50%;
+  color: var(--color-secondary);
+  font-size: 2.8em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border: 0.1px solid #e9e9e9;
+}
 
 /*====================================================
-    7. FOOTER.
+footer
   ====================================================*/
 footer {
   padding: 3rem 0rem;
