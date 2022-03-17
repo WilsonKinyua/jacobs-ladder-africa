@@ -30,6 +30,9 @@
     <!-- owl carousel -->
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- google captcha -->
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 </head>
 
 <body>
@@ -117,18 +120,18 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <form class="contact-us-form shadow p-4 border-radius">
+                    <form class="contact-us-form shadow p-4 border-radius" id="contact-form">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control"
-                                        placeholder="Name *" required="required">
+                                    <input type="text" name="name" class="form-control" placeholder="Name *"
+                                        required="required">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control"
-                                        placeholder="Email address *" required="required">
+                                    <input type="email" name="email" class="form-control" placeholder="Email address *"
+                                        required="required">
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -139,14 +142,21 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <textarea name="message" class="form-control"
-                                        placeholder="Your message *" rows="5" required="required"></textarea>
+                                    <textarea name="message" class="form-control" placeholder="Your message *" rows="5"
+                                        required="required"></textarea>
                                 </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="6LfiSuoeAAAAABqCJ76UO-ZGITmqD6cqRYnhIJdD">
+                                    </div>
+                                </div>
+                                <p class="text-danger display-none" id="errorMessage"><small>Please check the recaptcha *</small></p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 mt-2">
-                                <button type="submit" class="btn btn-readmore">Send Message</button>
+                                <button type="submit" data-sitekey="reCAPTCHA_site_key" class="btn btn-readmore">Send Message</button>
                             </div>
                         </div>
                     </form>

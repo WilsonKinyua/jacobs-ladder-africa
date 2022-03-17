@@ -27,4 +27,13 @@ $(document).ready(function () {
       },
     ],
   });
+
+  // contact us form
+  $("#contact-form").submit(function (e) {
+    var recaptcha = $("#g-recaptcha-response").val();
+    if (recaptcha === "") {
+      event.preventDefault();
+      $("#errorMessage").show();
+    }
+  });
 });
