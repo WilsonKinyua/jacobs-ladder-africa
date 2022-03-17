@@ -47,6 +47,18 @@
   .our-pillars {
     padding: 40px 20px;
   }
+
+  .about-us-img img{
+    width: 100%;
+  }
+  .about-us-content .headings {
+    text-align: center;
+    font-size: 2em;
+  }
+  .mission-border-right {
+    border-right: 1px solid #e6e6e6;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 480px) {
