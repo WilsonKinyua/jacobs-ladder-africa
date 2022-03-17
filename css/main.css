@@ -117,7 +117,7 @@ a {
 
 a:hover {
   color: #eec344;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .border-right {
@@ -136,6 +136,10 @@ a:hover {
   background: url("../img/stripe.png");
   z-index: 9999999;
   width: 100%;
+}
+
+.decoration-none {
+  text-decoration: none;
 }
 
 .active {
@@ -602,7 +606,8 @@ footer hr.divider {
   position: relative;
   margin: 0px 10px;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
   border-radius: 20px;
 }
 
@@ -683,18 +688,95 @@ footer hr.divider {
   opacity: 1;
 }
 
-.hover-effects .tp-headshot img {
+.hover-effects-zoom-in .tp-headshot img {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
-.hover-effects .tp-headshot:hover img {
+.hover-effects-zoom-in .tp-headshot:hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
 .tp-desktop-view {
   margin-top: 2rem;
+}
+
+/* our pillars page */
+
+.pillars-box {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+.pillars-thumbnail img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.pillars-short-desc {
+  background-color: rgb(255, 255, 255);
+  padding: 1.1rem 1.1rem 1.5rem;
+}
+
+.pillars-short-desc h3 {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.pillars-short-desc p {
+  line-height: 1.8;
+}
+
+
+.pillars-short-desc a {
+  text-decoration: none;
+  color: #258d22;
+  transition: 0.3s;
+}
+
+.pillars-short-desc a:hover {
+  color: #f4bf03;
+}
+
+.pillars-short-desc a:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  border-width: 0 0 2px;
+  border-style: solid;
+}
+
+.image-hover .pillars-thumbnail {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.image-hover .pillars-thumbnail:hover + span {
+  bottom: -36px;
+  opacity: 1;
+}
+
+.hover-effects-zoom-in .pillars-thumbnail img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hover-effects-zoom-in .pillars-thumbnail:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
