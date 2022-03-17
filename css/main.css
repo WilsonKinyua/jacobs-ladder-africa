@@ -191,6 +191,21 @@ a:hover {
   margin: 0px auto;
 }
 
+.card-title {
+  font-size: 2em;
+}
+
+.main-color {
+  color: var(--color-secondary);
+}
+
+.img-fluid {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 /*====================================================
     PRELOADER 
   ====================================================*/
@@ -600,7 +615,7 @@ footer hr.divider {
 }
 
 /*====================================================
-    15. TEAM.
+    TEAM.
   ====================================================*/
 .team-portrait {
   position: relative;
@@ -734,7 +749,6 @@ footer hr.divider {
 .pillars-short-desc p {
   line-height: 1.8;
 }
-
 
 .pillars-short-desc a {
   text-decoration: none;
