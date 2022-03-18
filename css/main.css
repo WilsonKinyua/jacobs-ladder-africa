@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,500,400,600,700,800");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap");
 body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   background-color: #fff;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6f7380;
+  overflow-x: hidden;
 }
 
 .btn-readmore,
@@ -54,7 +62,7 @@ h5,
 h6 {
   margin-bottom: 0.5rem;
   line-height: 1.1;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
 }
 
 h1,
@@ -102,7 +110,7 @@ h6,
 
 p {
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Archivo", sans-serif;
   color: #8c8c9e;
   font-weight: 400;
   line-height: 2;
