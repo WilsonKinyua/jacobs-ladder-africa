@@ -30,9 +30,6 @@
     <!-- owl carousel -->
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-
-    <!-- google captcha -->
-    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 </head>
 
 <body>
@@ -45,6 +42,25 @@
 
     <!-- navbar start -->
     <header>
+        <!-- top header -->
+        <div class="top-header">
+            <div class="container">
+                <div class="header-left">
+                    <p><strong>Phone:</strong> + 254 717 255 460</p>
+                </div>
+                <div class="header-right">
+                    <div class="ht-right-social">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
+                    <div class="ht-right-social">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <div class="ht-right-social">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="main-nav" id="navbar">
             <div class="container">
                 <nav id="navbarmain" class="navigation">
@@ -63,7 +79,7 @@
                                     <li><a href="./about-us.html#mission-vision">Our Vision</a></li>
                                     <li><a href="./about-us.html#mission-vision">Our Mission</a></li>
                                     <li><a href="./about-us.html#our-values">Our Values</a></li>
-                                    <li><a href="./about-us.html">About Us</a></li>
+                                    <li><a href="./about-us.html">About us</a></li>
                                     <li><a href="./team.html">Our team</a></li>
                                 </ul>
                             </li>
@@ -83,10 +99,11 @@
                 </nav>
             </div>
         </div>
+
     </header>
     <!-- navbar end -->
-
-    <div class="sections">
+    <div class="sections"
+        style="background-image: url('https://images.unsplash.com/photo-1593896385987-16bcbf9451e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1597&q=80');">
         <div class="container">
             <div class="pages-title">
                 <h1><span>Contact Us</span></h1>
@@ -151,12 +168,14 @@
                                     <div class="g-recaptcha" data-sitekey="6LfiSuoeAAAAABqCJ76UO-ZGITmqD6cqRYnhIJdD">
                                     </div>
                                 </div>
-                                <p class="text-danger display-none" id="errorMessage"><small>Please check the recaptcha *</small></p>
+                                <p class="text-danger display-none" id="errorMessage"><small>Please check the recaptcha
+                                        *</small></p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 mt-2">
-                                <button type="submit" data-sitekey="reCAPTCHA_site_key" class="btn btn-readmore">Send Message</button>
+                                <button type="submit" data-sitekey="reCAPTCHA_site_key" class="btn btn-readmore">Send
+                                    Message</button>
                             </div>
                         </div>
                     </form>
