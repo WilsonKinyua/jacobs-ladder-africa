@@ -594,7 +594,7 @@ header .container {
   color: #626262;
 }
 
-/* .mission-vision-icon img {
+.mission-vision-icon img {
   width: 150px;
   height: 150px;
   object-fit: contain;
@@ -603,9 +603,9 @@ header .container {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   margin-bottom: 20px;
   border: 0.1px solid #e9e9e9;
-} */
+}
 
-.mission-vision-icon i {
+/* .mission-vision-icon i {
   border-radius: 50%;
   color: var(--color-secondary);
   font-size: 3em;
@@ -619,7 +619,7 @@ header .container {
 .mission-vision-icon i:hover {
   background-color: var(--color-primary);
   color: #fff;
-}
+} */
 
 .replaced-svg-bottom {
   width: 100%;
