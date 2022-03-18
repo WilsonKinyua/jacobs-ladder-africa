@@ -132,10 +132,13 @@ a:hover {
 }
 
 .banner-pattern {
-  height: 10px;
-  background: url("../img/stripe.png");
+  height: 8px;
+  background: url("../img/pattern.svg");
   z-index: 9999999;
   width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .decoration-none {
