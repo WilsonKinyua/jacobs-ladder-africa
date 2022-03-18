@@ -216,6 +216,38 @@ a:hover {
 .display-none {
   display: none;
 }
+
+.bottom-line {
+  background: -webkit-linear-gradient(
+    left,
+    rgba(54, 242, 227, 1) 0%,
+    rgba(249, 249, 249, 0) 100%
+  );
+}
+h2.headings-bottom-line {
+  position: relative;
+  z-index: 1;
+}
+
+h2.headings-bottom-line::before {
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 70%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 98%;
+  border-radius: 30px;
+  height: 10px;
+  z-index: -1;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(37, 141, 34, 0.7) 0%,
+    rgba(255, 166, 0, 0) 100%
+  );
+}
+
 /* preloader */
 #loader-container {
   position: fixed;
@@ -538,24 +570,13 @@ header .container {
 }
 
 .about-us-img img {
-  width: 370px;
-  height: 370px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  object-fit: cover;
+  width: 420px;
+  height: 420px;
+  object-fit: contain;
   object-position: center;
-  border: 5px dotted #f4bf03;
-}
-
-.about-us-img img:hover {
-  /* border: 5px solid #f4bf03; */
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  transition: all 0.3s ease 0s;
 }
 
 /* mission and vision */
-
 .mission-vision {
   padding: 40px;
 }
@@ -585,8 +606,8 @@ header .container {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  opacity: 0.02;
-  margin-top: -200px;
+  opacity: 0.08;
+  margin-top: -227px;
 }
 
 .replaced-svg-top {
@@ -594,7 +615,7 @@ header .container {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  opacity: 0.01;
+  opacity: 0.08;
   margin-bottom: -220px;
   transform: rotate(180deg);
 }
