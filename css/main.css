@@ -267,15 +267,76 @@ a:hover {
   }
 }
 
+/* top header */
+.top-header {
+  background-color: #258d22;
+  height: 53px;
+  width: 100%;
+  clear: both;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.ht-right-social i {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 20%;
+  color: #258d22;
+}
+
+.top-header .container {
+  padding: 0px;
+}
+
+.top-header p {
+  color: #fff;
+}
+
+.header-left {
+  float: left;
+  margin-bottom: 5px;
+  background-color: #f4bf03;
+  width: 680px;
+  margin-left: -450px;
+  text-align: right;
+  padding: 11px 20px 12px 0px;
+}
+
+.header-left strong {
+  font-weight: 600;
+}
+
+.header-right {
+  float: right;
+  padding: 5px 0px;
+}
+
+.ht-right-social {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+header {
+  position: relative;
+  height: 100%;
+  z-index: 100;
+}
+
+header .container {
+  margin: auto;
+}
+
 /* slider */
 .home-slider {
   width: 100%;
+  padding-top: 120px;
 }
 
 .carousel-item {
-  height: 100vh;
+  height: 95vh;
   min-height: 300px;
-  background: no-repeat center center scroll;
+  /* background: no-repeat center center scroll; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -299,8 +360,11 @@ a:hover {
 
 .slider-caption {
   position: absolute;
-  top: 40%;
+  top: 35%;
   text-align: left;
+  background-color: rgba(54, 54, 54, 0.637);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .slider-caption h2 {
@@ -865,9 +929,13 @@ textarea {
 .contact-us-form .form-group input:focus,
 .contact-us-form .form-group textarea:focus,
 .contact-us-form .form-group input:hover,
-.contact-us-form .form-group textarea:hover
-.contact-us-form .form-group input:active,
-.contact-us-form .form-group textarea:active{
+.contact-us-form
+  .form-group
+  textarea:hover
+  .contact-us-form
+  .form-group
+  input:active,
+.contact-us-form .form-group textarea:active {
   border: 1px solid var(--color-secondary);
   outline: none;
   box-shadow: none;
