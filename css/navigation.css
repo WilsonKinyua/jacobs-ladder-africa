@@ -288,7 +288,7 @@
 .nav-menu > li:hover > a,
 .nav-menu > li.active > a,
 .nav-menu > li.focus > a {
-  color: #333;
+  color: var(--color-primary);
 }
 
 .nav-menu > li > a > i,
@@ -595,7 +595,6 @@
   margin-top: 15px;
 }
 
-/* DROPDOWN EXTENSION */
 .nav-dropdown {
   min-width: 180px;
   margin: 0;
@@ -646,7 +645,7 @@
 
 .nav-dropdown > li:hover > a,
 .nav-dropdown > li.focus > a {
-  color: #002642;
+  color: var(--color-primary);
 }
 
 .nav-dropdown.nav-dropdown-left {
