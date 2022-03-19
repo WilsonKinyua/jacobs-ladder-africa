@@ -177,10 +177,13 @@ a:hover {
 .pages-title p {
   color: #fff;
 }
+.push-top-header {
+  padding-top: 140px;
+}
 
 .sections {
+  height: 500px;
   /* background-image: url("../img/header.jpeg"); */
-  height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
