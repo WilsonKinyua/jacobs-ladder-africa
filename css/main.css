@@ -34,6 +34,10 @@ body {
   --color-secondary: #258d22;
 }
 
+.badge.bg-info {
+  background-color: #17a2b8 !important;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #05338b;
@@ -309,6 +313,12 @@ h2.headings-bottom-line::before {
     transform: rotate(140deg);
   }
 }
+.headings-under-line {
+  background-image: url("../img/heading-underline.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 10px;
+}
 
 /* top header */
 .top-header {
@@ -549,7 +559,7 @@ header .container {
 .layer-counter {
   position: relative;
   background-color: var(--color-secondary);
-  height: 339px;
+  /* height: 339px; */
 }
 
 .our-pillars {
@@ -909,4 +919,28 @@ textarea {
   border: 1px solid var(--color-secondary);
   outline: none;
   box-shadow: none;
+}
+
+/* news section */
+
+.news-container .our-pillars-grid-layer:hover .gl-overlay {
+  opacity: 0.4;
+  background-color: rgb(34, 34, 34) !important;
+}
+.date-time {
+  margin-left: 10px;
+}
+
+.left-news-section .our-pillars-grid-layer img {
+  height: 580px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.right-news-section .our-pillars-grid-layer img {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
