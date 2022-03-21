@@ -320,6 +320,11 @@ h2.headings-bottom-line::before {
   height: 10px;
 }
 
+.btn-dark {
+  background-color: #258d22;
+  color: #fff;
+  transition: 0.3s;
+}
 /* top header */
 .top-header {
   background-color: #258d22;
@@ -709,7 +714,31 @@ footer
 footer {
   padding: 3rem 0rem;
   margin-top: -7px;
+  /* background-color: #002642; */
 }
+
+footer h3 {
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 25px;
+}
+.twitter-feed {
+  height: 310px;
+  overflow-y: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer-logo img {
+  margin-bottom: 30px;
+  width: 150px;
+}
+
+.geo {
+  width: 100%;
+  height: auto;
+}
+
 footer hr.divider {
   margin: 30px auto 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -731,11 +760,11 @@ footer hr.divider {
   margin-right: 20px;
 }
 
-.span-fb-social i {
+/* .span-fb-social i {
   background-color: #258d22;
   padding: 10px;
   border-radius: 20%;
-}
+} */
 
 .fb-copyright p {
   color: #fff;
