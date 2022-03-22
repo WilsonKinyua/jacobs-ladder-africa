@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,500,400,600,700,800");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:300,500,400,600,700,800"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   background-color: #fff;
-  font-family: "Archivo", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 15px;
@@ -30,8 +31,8 @@ body {
 }
 
 :root {
-  --color-primary: #f4bf03;
-  --color-secondary: #258d22;
+  --color-primary: #FFC201;
+  --color-secondary: #228C22;
 }
 
 .badge.bg-info {
@@ -66,7 +67,7 @@ h5,
 h6 {
   margin-bottom: 0.5rem;
   line-height: 1.1;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1,
@@ -99,7 +100,7 @@ h4,
 h5,
 .h5 {
   font-size: 0.7rem;
-  color: #ffa600;
+  color: #FFC201;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -114,7 +115,7 @@ h6,
 
 p {
   font-size: 15px;
-  font-family: "Archivo", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #8c8c9e;
   font-weight: 400;
   line-height: 2;
@@ -128,7 +129,7 @@ a {
 }
 
 a:hover {
-  color: #eec344;
+  color: #FFC201;
   text-decoration: none !important;
 }
 
@@ -158,7 +159,7 @@ a:hover {
 }
 
 .active {
-  color: #eec344;
+  color: #FFC201;
 }
 .pages-title {
   position: absolute;
@@ -201,7 +202,7 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to bottom right, #258d22, #eec344);
+  background-image: linear-gradient(to bottom right, #228C22, #FFC201);
   opacity: 0.5;
 }
 
@@ -235,7 +236,7 @@ a:hover {
 .bottom-line {
   background: -webkit-linear-gradient(
     left,
-    rgba(54, 242, 227, 1) 0%,
+    rgba(34, 140, 34, 1) 0%,
     rgba(249, 249, 249, 0) 100%
   );
 }
@@ -258,7 +259,7 @@ h2.headings-bottom-line::before {
   z-index: -1;
   background: -webkit-linear-gradient(
     left,
-    rgba(37, 141, 34, 0.7) 0%,
+    rgba(34, 140, 34, 0.7) 0%,
     rgba(255, 166, 0, 0) 100%
   );
 }
@@ -302,14 +303,14 @@ h2.headings-bottom-line::before {
 }
 @keyframes animate2 {
   0% {
-    box-shadow: inset #f4bf03 0 0 0 17px;
+    box-shadow: inset #FFC201 0 0 0 17px;
     transform: rotate(-140deg);
   }
   50% {
-    box-shadow: inset #258d22 0 0 0 2px;
+    box-shadow: inset #228C22 0 0 0 2px;
   }
   100% {
-    box-shadow: inset #f4bf03 0 0 0 17px;
+    box-shadow: inset #FFC201 0 0 0 17px;
     transform: rotate(140deg);
   }
 }
@@ -321,13 +322,13 @@ h2.headings-bottom-line::before {
 }
 
 .btn-dark {
-  background-color: #258d22;
+  background-color: #228C22;
   color: #fff;
   transition: 0.3s;
 }
 /* top header */
 .top-header {
-  background-color: #258d22;
+  background-color: #228C22;
   height: 53px;
   width: 100%;
   clear: both;
@@ -340,7 +341,7 @@ h2.headings-bottom-line::before {
   background-color: #ffffff;
   padding: 10px;
   border-radius: 20%;
-  color: #258d22;
+  color: #228C22;
 }
 
 .top-header .container {
@@ -354,7 +355,7 @@ h2.headings-bottom-line::before {
 .header-left {
   float: left;
   margin-bottom: 5px;
-  background-color: #f4bf03;
+  background-color: #FFC201;
   width: 680px;
   margin-left: -450px;
   text-align: right;
@@ -516,13 +517,13 @@ header .container {
   width: 100%;
   opacity: 0.3;
   transition: 0.5s ease;
-  background-color: #258d22;
+  background-color: #228C22;
   z-index: 1;
 }
 
 .our-pillars-grid-layer:hover .gl-overlay {
   opacity: 0.4;
-  background-color: #f4bf03;
+  background-color: #FFC201;
 }
 
 .gl-overlay-alt {
@@ -678,7 +679,7 @@ header .container {
 }
 
 .our-values-box:hover {
-  background-color: #258d22;
+  background-color: #228C22;
 }
 
 .our-values-box:hover .values-icon {
@@ -697,7 +698,7 @@ header .container {
   color: #fff;
 }
 
-.our-values-icon i {
+/* .our-values-icon i {
   padding: 15px;
   border-radius: 50%;
   color: var(--color-secondary);
@@ -706,7 +707,20 @@ header .container {
   background-color: #fff;
   margin-bottom: 10px;
   border: 0.1px solid #e9e9e9;
+} */
+
+.our-values-icon img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  margin-bottom: 4px;
+  border: 0.1px solid #e9e9e9;
+  padding: 10px;
 }
+
 
 /*====================================================
 footer
@@ -761,7 +775,7 @@ footer hr.divider {
 }
 
 /* .span-fb-social i {
-  background-color: #258d22;
+  background-color: #228C22;
   padding: 10px;
   border-radius: 20%;
 } */
@@ -795,7 +809,7 @@ footer hr.divider {
   color: #fff;
   font-size: 1.2em;
   margin-right: 10px;
-  background-color: #f4bf03;
+  background-color: #FFC201;
   padding: 10px;
   border-radius: 20px;
   margin-bottom: 20px;
@@ -834,12 +848,12 @@ footer hr.divider {
 
 .pillars-short-desc a {
   text-decoration: none;
-  color: #258d22;
+  color: #228C22;
   transition: 0.3s;
 }
 
 .pillars-short-desc a:hover {
-  color: #f4bf03;
+  color: #FFC201;
 }
 
 .pillars-short-desc a:after {
