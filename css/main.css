@@ -31,7 +31,7 @@ body {
 }
 
 :root {
-  --color-primary: #FFC201;
+  --color-primary: #FFD700;
   --color-secondary: #228C22;
 }
 
@@ -100,7 +100,7 @@ h4,
 h5,
 .h5 {
   font-size: 0.7rem;
-  color: #FFC201;
+  color: #FFD700;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -129,7 +129,7 @@ a {
 }
 
 a:hover {
-  color: #FFC201;
+  color: #FFD700;
   text-decoration: none !important;
 }
 
@@ -159,7 +159,7 @@ a:hover {
 }
 
 .active {
-  color: #FFC201;
+  color: #FFD700;
 }
 .pages-title {
   position: absolute;
@@ -202,7 +202,7 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to bottom right, #228C22, #FFC201);
+  background-image: linear-gradient(to bottom right, #228C22, #FFD700);
   opacity: 0.5;
 }
 
@@ -303,14 +303,14 @@ h2.headings-bottom-line::before {
 }
 @keyframes animate2 {
   0% {
-    box-shadow: inset #FFC201 0 0 0 17px;
+    box-shadow: inset #FFD700 0 0 0 17px;
     transform: rotate(-140deg);
   }
   50% {
     box-shadow: inset #228C22 0 0 0 2px;
   }
   100% {
-    box-shadow: inset #FFC201 0 0 0 17px;
+    box-shadow: inset #FFD700 0 0 0 17px;
     transform: rotate(140deg);
   }
 }
@@ -355,7 +355,7 @@ h2.headings-bottom-line::before {
 .header-left {
   float: left;
   margin-bottom: 5px;
-  background-color: #FFC201;
+  background-color: #FFD700;
   width: 680px;
   margin-left: -450px;
   text-align: right;
@@ -523,7 +523,7 @@ header .container {
 
 .our-pillars-grid-layer:hover .gl-overlay {
   opacity: 0.4;
-  background-color: #FFC201;
+  background-color: #FFD700;
 }
 
 .gl-overlay-alt {
@@ -809,7 +809,7 @@ footer hr.divider {
   color: #fff;
   font-size: 1.2em;
   margin-right: 10px;
-  background-color: #FFC201;
+  background-color: #FFD700;
   padding: 10px;
   border-radius: 20px;
   margin-bottom: 20px;
@@ -853,7 +853,7 @@ footer hr.divider {
 }
 
 .pillars-short-desc a:hover {
-  color: #FFC201;
+  color: #FFD700;
 }
 
 .pillars-short-desc a:after {
