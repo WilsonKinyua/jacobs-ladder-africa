@@ -614,15 +614,17 @@ header .container {
 }
 
 .mission-vision-icon img {
-  width: 150px;
-  height: 150px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
-  object-position: center;
-  border-radius: 50%;
+  object-position: center center;
+  padding: 10px;
+  border-radius: 20%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   margin-bottom: 20px;
   border: 0.1px solid #e9e9e9;
 }
+
 
 /* .mission-vision-icon i {
   border-radius: 50%;
