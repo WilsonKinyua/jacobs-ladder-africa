@@ -1,6 +1,21 @@
+@media screen and (min-width: 3840px) {
+}
+@media screen and (min-width: 1920px) {
+  .bg-image {
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 1701px) and (max-device-width: 1919px) and (orientation:portrait) {
+  .bg-image {
+    width: 100%;
+  }
+}
 @media (max-width: 1700px) {
   .layer-counter {
     height: 272px;
+  }
+  .bg-image {
+    width: 100%;
   }
 }
 
@@ -48,7 +63,7 @@
     padding: 40px 20px;
   }
 
-  .about-us-img img{
+  .about-us-img img {
     width: 100%;
   }
   .about-us-content .headings {
@@ -59,9 +74,13 @@
     border-right: 1px solid #e6e6e6;
     margin-top: 20px;
   }
-  .top-header .container {
-    display:none;
+  .top-header .header-left {
+    display: none;
+    /* width: 100%; */
   }
+  /* .bg-image {
+    display: none;
+  } */
 }
 
 @media (max-width: 480px) {

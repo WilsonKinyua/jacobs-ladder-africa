@@ -328,8 +328,7 @@ h2.headings-bottom-line::before {
 }
 /* top header */
 .top-header {
-  background-color: #228C22;
-  height: 53px;
+  /* background-color: #228C22; */
   width: 100%;
   clear: both;
   position: fixed;
@@ -339,7 +338,7 @@ h2.headings-bottom-line::before {
 
 .ht-right-social i {
   background-color: #ffffff;
-  padding: 10px;
+  padding: 7px;
   border-radius: 20%;
   color: #228C22;
 }
@@ -354,26 +353,36 @@ h2.headings-bottom-line::before {
 
 .header-left {
   float: left;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   background-color: #D4AF37;
-  width: 680px;
+  width: 803px;
   margin-left: -450px;
   text-align: right;
-  padding: 11px 20px 12px 0px;
+  padding: 5px 20px 5px 0px;
+  height: 70px;
+}
+
+.bg-image {
+  background: url('../img/top-banner1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70px;
 }
 
 .header-left strong {
   font-weight: 600;
 }
 
-.header-right {
-  float: right;
+.header-right .ht-right-social {
+  /* float: right; */
   padding: 5px 0px;
 }
 
 .ht-right-social {
   display: inline-block;
-  margin-right: 15px;
+  margin-left: 15px;
 }
 
 header {
