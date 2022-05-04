@@ -272,6 +272,10 @@ h2.headings-bottom-line::before {
   );
 }
 
+.text-bold {
+  font-weight: bold;
+}
+
 /* preloader */
 #loader-container {
   position: fixed;
@@ -584,18 +588,21 @@ header .container {
 
 .layer-counter {
   position: relative;
-  background-color: var(--color-secondary);
+  /* background-color: var(--color-secondary); */
   /* height: 339px; */
 }
 
 .our-pillars {
   position: absolute;
   text-align: center;
-  padding: 130px 10px;
+  padding: 90px 10px;
 }
 
 .our-pillars h2 {
-  font-size: 2rem !important;
+  background-color: var(--color-secondary);
+  font-size: 1.8rem !important;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 /* about us */
