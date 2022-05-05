@@ -375,7 +375,7 @@ h2.headings-bottom-line::before {
 }
 
 .bg-image {
-  background: url("../img/top-banner1.png");
+  background: url("../img/banner.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
