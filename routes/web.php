@@ -4,16 +4,15 @@
 // public routes
 Route::get('/', 'PublicController@index')->name('index.home');
 Route::get('about-us', 'PublicController@aboutUs')->name('about.us');
-Route::get('climate-change', 'PublicController@climateChange')->name('climate.change');
+Route::get('our-pillars/climate-change', 'PublicController@climateChange')->name('climate.change');
 Route::get('contact-us', 'PublicController@contactUs')->name('contact.us');
-Route::get('economic-empowerment', 'PublicController@economicEmpowerment')->name('economic.empowerment');
-Route::get('education', 'PublicController@education')->name('education');
-Route::get('innovation-technology', 'PublicController@innovationTechnology')->name('innovation.technology');
-Route::get('leadership-governance', 'PublicController@leadershipGovernance')->name('leadership.governance');
+Route::get('our-pillars/economic-empowerment', 'PublicController@economicEmpowerment')->name('economic.empowerment');
+Route::get('our-pillars/education', 'PublicController@education')->name('education');
+Route::get('our-pillars/innovation-technology', 'PublicController@innovationTechnology')->name('innovation.technology');
+Route::get('our-pillars/leadership-governance', 'PublicController@leadershipGovernance')->name('leadership.governance');
 Route::get('our-pillars', 'PublicController@ourPillars')->name('our.pillars');
 Route::get('team', 'PublicController@team')->name('team');
 
-// Route::redirect('/', '/login');
 Route::get('/home', function () {
     if (session('status')) {
         return redirect()->route('admin.home')->with('status', session('status'));
