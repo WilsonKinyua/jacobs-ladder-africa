@@ -13,6 +13,8 @@ Route::get('our-pillars/innovation-technology', 'PublicController@innovationTech
 Route::get('our-pillars/leadership-governance', 'PublicController@leadershipGovernance')->name('leadership.governance');
 Route::get('our-pillars', 'PublicController@ourPillars')->name('our.pillars');
 Route::get('team', 'PublicController@team')->name('team');
+Route::get('register-now', 'PublicController@registerNow')->name('register.now');
+Route::post('register-now/create', 'PublicController@registerNowCreate')->name('register.create');
 
 Route::get('/home', function () {
     if (session('status')) {

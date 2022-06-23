@@ -62,6 +62,9 @@
                          </li>
                          <li><a href="{{ route('contact.us') }}">CONTACT us</a>
                          </li>
+                         <li>
+                            <a href="{{ route('register.now') }}" class="btn-register-now">Register Now</a>
+                         </li>
                      </ul>
                  </div>
              </nav>

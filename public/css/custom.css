@@ -130,3 +130,38 @@ table.dataTable thead .sorting_desc {
 .custom-select.form-control-sm {
     padding: 0.25rem 1.5rem;
 }
+
+
+
+.card {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+        rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    border-radius: 10px;
+}
+.btn.btn-success {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    color: #fff;
+}
+
+.text-primary {
+    color: #D4AF37 !important;
+}
+
+.c-sidebar .c-sidebar-brand,
+.c-sidebar .c-sidebar-header {
+    background-color: #438E23;
+}
+
+.c-sidebar {
+    background-color: #438E23;
+}
+
+.bg-success {
+    background-color: #D4AF37 !important;
+}
+
+.c-sidebar .c-active.c-sidebar-nav-dropdown-toggle,
+.c-sidebar .c-sidebar-nav-link.c-active {
+    background-color: #D4AF37;
+}

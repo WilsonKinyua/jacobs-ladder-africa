@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 @section('content')
-@can('registered_user_create')
+{{-- @can('registered_user_create')
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route('admin.registered-users.create') }}">
@@ -8,7 +8,7 @@
             </a>
         </div>
     </div>
-@endcan
+@endcan --}}
 <div class="card">
     <div class="card-header">
         {{ trans('cruds.registeredUser.title_singular') }} {{ trans('global.list') }}
@@ -58,7 +58,7 @@
                                 {{ $registeredUser->created_at ?? '' }}
                             </td>
                             <td>
-                                @can('registered_user_show')
+                                {{-- @can('registered_user_show')
                                     <a class="btn btn-xs btn-primary" href="{{ route('admin.registered-users.show', $registeredUser->id) }}">
                                         {{ trans('global.view') }}
                                     </a>
@@ -68,7 +68,7 @@
                                     <a class="btn btn-xs btn-info" href="{{ route('admin.registered-users.edit', $registeredUser->id) }}">
                                         {{ trans('global.edit') }}
                                     </a>
-                                @endcan
+                                @endcan --}}
 
                                 @can('registered_user_delete')
                                     <form action="{{ route('admin.registered-users.destroy', $registeredUser->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
@@ -136,7 +136,7 @@
       $($.fn.dataTable.tables(true)).DataTable()
           .columns.adjust();
   });
-  
+
 })
 
 </script>

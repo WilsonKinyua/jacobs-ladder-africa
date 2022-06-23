@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ContactUs;
+use App\Models\RegisteredUser;
 use Illuminate\Http\Request;
 
 class PublicController extends Controller
@@ -76,5 +77,27 @@ class PublicController extends Controller
     public function team()
     {
         return view('public.team');
+    }
+
+    public function registerNow()
+    {
+        return view('public.register-now');
+    }
+
+    public function registerNowCreate(Request $request) {
+        $validate = $request->validate([
+            'full_name' => 'required',
+            'email' => 'required|email',
+        ]);
+
+        if (!$validate) {
+            return redirect()->back()->withErrors($validate)->withInput();
+        }
+        $network = RegisteredUser::create($request->all());
+        if (!$network) {
+            return response()->json(['status' => 'error']);
+        } else {
+            return response()->json(['status' => 'success']);
+        }
     }
 }
