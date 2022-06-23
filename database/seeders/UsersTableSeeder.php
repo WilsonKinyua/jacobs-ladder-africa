@@ -12,9 +12,9 @@ class UsersTableSeeder extends Seeder
         $users = [
             [
                 'id'                 => 1,
-                'name'               => 'Admin',
-                'email'              => 'admin@admin.com',
-                'password'           => bcrypt('password'),
+                'name'               => 'Super Admin',
+                'email'              => 'admin@jacobsladder.africa',
+                'password'           => bcrypt('5l9x+c7s'),
                 'remember_token'     => null,
                 'approved'           => 1,
                 'verified'           => 1,
