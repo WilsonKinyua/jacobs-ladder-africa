@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 @section('content')
-@can('contact_us_create')
+{{-- @can('contact_us_create')
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route('admin.contactuses.create') }}">
@@ -8,7 +8,7 @@
             </a>
         </div>
     </div>
-@endcan
+@endcan --}}
 <div class="card">
     <div class="card-header">
         {{ trans('cruds.contactUs.title_singular') }} {{ trans('global.list') }}
@@ -64,7 +64,7 @@
                                 {{ $contactUs->created_at ?? '' }}
                             </td>
                             <td>
-                                @can('contact_us_show')
+                                {{-- @can('contact_us_show')
                                     <a class="btn btn-xs btn-primary" href="{{ route('admin.contactuses.show', $contactUs->id) }}">
                                         {{ trans('global.view') }}
                                     </a>
@@ -74,7 +74,7 @@
                                     <a class="btn btn-xs btn-info" href="{{ route('admin.contactuses.edit', $contactUs->id) }}">
                                         {{ trans('global.edit') }}
                                     </a>
-                                @endcan
+                                @endcan --}}
 
                                 @can('contact_us_delete')
                                     <form action="{{ route('admin.contactuses.destroy', $contactUs->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
@@ -142,7 +142,7 @@
       $($.fn.dataTable.tables(true)).DataTable()
           .columns.adjust();
   });
-  
+
 })
 
 </script>

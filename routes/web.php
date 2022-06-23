@@ -6,6 +6,7 @@ Route::get('/', 'PublicController@index')->name('index.home');
 Route::get('about-us', 'PublicController@aboutUs')->name('about.us');
 Route::get('our-pillars/climate-change', 'PublicController@climateChange')->name('climate.change');
 Route::get('contact-us', 'PublicController@contactUs')->name('contact.us');
+Route::post('contact-us/create', 'PublicController@contactUsCreate')->name('contact.create');
 Route::get('our-pillars/economic-empowerment', 'PublicController@economicEmpowerment')->name('economic.empowerment');
 Route::get('our-pillars/education', 'PublicController@education')->name('education');
 Route::get('our-pillars/innovation-technology', 'PublicController@innovationTechnology')->name('innovation.technology');

@@ -12,7 +12,7 @@ class CreateContactusesTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('email');
-            $table->integer('phone')->nullable();
+            $table->string('phone')->nullable();
             $table->longText('message');
             $table->timestamps();
             $table->softDeletes();

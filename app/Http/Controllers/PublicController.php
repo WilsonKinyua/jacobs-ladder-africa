@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ContactUs;
 use Illuminate\Http\Request;
 
 class PublicController extends Controller
@@ -25,6 +26,26 @@ class PublicController extends Controller
     public function contactUs()
     {
         return view('public.contact-us');
+    }
+
+    public function contactUsCreate(Request $request)
+    {
+        $validate = $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required',
+            'message' => 'required',
+        ]);
+
+        if (!$validate) {
+            return redirect()->back()->withErrors($validate)->withInput();
+        }
+        $network = ContactUs::create($request->all());
+        if (!$network) {
+            return response()->json(['status' => 'error']);
+        } else {
+            return response()->json(['status' => 'success']);
+        }
     }
 
     public function economicEmpowerment()

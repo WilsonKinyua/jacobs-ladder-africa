@@ -38,18 +38,44 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <form class="contact-us-form shadow p-4 border-radius" id="contact-form">
+                    <form class="contact-us-form shadow p-4 border-radius" id="contact_form">
+                        @csrf
+                        <div class="row">
+                            <div class="col-md-12">
+                                @if ($errors->count() > 0)
+                                    <div class="alert alert-danger">
+                                        <ul class="list-unstyled">
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
+                            </div>
+                            <div class="col-md-12">
+                                <style>
+                                    .d-none {
+                                        display: none;
+                                    }
+                                </style>
+                                <div class="alert alert-success d-none" role="alert">
+                                    <small>Message has been received successfully.</small>
+                                </div>
+                                <div class="alert alert-danger d-none" role="alert">
+                                    <small>Something went wrong! Please try again by reloading the page.</small>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Name *"
-                                        required="required">
+                                    <input type="text" name="name" class="form-control" placeholder="Name *" required>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <input type="email" name="email" class="form-control" placeholder="Email address *"
-                                        required="required">
+                                        required>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -60,24 +86,13 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <textarea name="message" class="form-control" placeholder="Your message *" rows="5" required="required"></textarea>
+                                    <textarea name="message" class="form-control" placeholder="Your message *" rows="5" required></textarea>
                                 </div>
                             </div>
-                            <!-- <div class="col-md-12">
-                                <div class="form-group">
-                                    <div class="g-recaptcha" data-sitekey="6LfiSuoeAAAAABqCJ76UO-ZGITmqD6cqRYnhIJdD">
-                                    </div>
-                                </div>
-                                <p class="text-danger display-none" id="errorMessage">
-                                    <small>
-                                        Please check the recaptcha *
-                                    </small>
-                                </p>
-                            </div> -->
                         </div>
                         <div class="row">
                             <div class="col-md-12 mt-2">
-                                <button type="submit" data-sitekey="reCAPTCHA_site_key" class="btn btn-readmore">Send
+                                <button type="submit" class="btn btn-readmore">Send
                                     Message</button>
                             </div>
                         </div>
@@ -86,4 +101,26 @@
             </div>
         </div>
     </section>
+@endsection
+@section('scripts')
+    <script>
+        $('#contact_form').submit(function(e) {
+            e.preventDefault();
+            var form = $(this);
+            $.ajax({
+                type: "POST",
+                url: '{{ route('contact.create') }}',
+                data: form.serialize(),
+                success: function(data) {
+                    $('#contact_form').find('.alert-success').removeClass('d-none');
+                    $('#contact_form').find('.alert-danger').addClass('d-none');
+                    $('#contact_form')[0].reset();
+                },
+                error: function(data) {
+                    $('#contact_form').find('.alert-success').addClass('d-none');
+                    $('#contact_form').find('.alert-danger').removeClass('d-none');
+                },
+            });
+        });
+    </script>
 @endsection
