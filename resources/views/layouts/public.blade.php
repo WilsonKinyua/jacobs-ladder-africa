@@ -8,13 +8,11 @@
     <meta name="author" content="Jacob’s Ladder Africa" />
     <title>
         @hasSection('title')
-        Jacob’s Ladder Africa @yield('title')
+            Jacob’s Ladder Africa @yield('title')
         @else
             Jacob's Ladder Africa
         @endif
     </title>
-
-    <!-- META TAGS -->
     <meta name="description"
         content="Jacob’s Ladder Africa is a sustainable development hub that advances the agenda of youth in Africa towards self-reliance and productivity. We seek to alleviate the current state of insufficiency among the youth and empower them as the continent’s future leaders, to enable them to forge a new pathway for themselves and others.">
     <meta name="keywords"
@@ -40,19 +38,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('img/site.webmanifest') }}">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
-    <!-- font awesome -->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- main style -->
-    <link rel="stylesheet" href="{{ asset('css/navigation.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/slick.min.css') }}">
-    <!-- owl carousel -->
-    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.min.css') }}">
 </head>
 
 <body>

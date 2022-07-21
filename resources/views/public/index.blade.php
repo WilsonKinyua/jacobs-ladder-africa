@@ -13,19 +13,24 @@
                 <div class="carousel-item active" style="background-image: url('{{ asset('img/slider-3.jpg') }}')">
                     <div class="container">
                         <div class="slider-caption">
-                            <h2 class="display-4 animated fadeInRight">The Power <span>For The Future</span>
+                            <h2 class="display-4 animated fadeInRight">
+                                {{-- The Power <span>For The Future</span> --}}
+                               <span class="text-capitalize"> Activating 32million Jobs In The <br> African Green Economy By 2032</span>
                             </h2>
-                            <p class="lead animated fadeInRight">Industry has met the demands of a growing world for
-                                development and implementation.</p>
+                            {{-- <p class="lead animated fadeInRight">Industry has met the demands of a growing world for
+                                development and implementation.</p> --}}
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('{{ asset('img/slider-2.jpeg') }}')">
+                <div class="carousel-item" style="background-image: url('{{ asset('img/youth-hall.jpeg') }}')">
                     <div class="container">
                         <div class="slider-caption">
-                            <h2 class="display-4 animated fadeInRight">Building <span>Your Dreams</span></h2>
-                            <p class="lead animated fadeInRight">Industry has met the demands of a growing world for
-                                development and implementation.</p>
+                            <h2 class="display-4 animated fadeInRight">
+                                {{-- Building <span>Your Dreams</span> --}}
+                                <span class="text-capitalize">#GreenTeamAfrica</span>
+                            </h2>
+                            {{-- <p class="lead animated fadeInRight">Industry has met the demands of a growing world for
+                                development and implementation.</p> --}}
                         </div>
                     </div>
                 </div>
@@ -207,7 +212,7 @@
                         </a>
                     </div>
                     <div class="slide">
-                        <a href="education">
+                        <a href="{{ route('education')}}">
                             <div class="our-pillars-grid-layer">
                                 <figure class="gl-thumbnail">
                                     <img src="{{ asset('img/education.jpeg') }}" alt="Education">
@@ -221,7 +226,7 @@
                         </a>
                     </div>
                     <div class="slide">
-                        <a href="economic-empowerment">
+                        <a href="{{ route('economic.empowerment')}}">
                             <div class="our-pillars-grid-layer">
                                 <figure class="gl-thumbnail">
                                     <img src="{{ asset('img/economic.jpg') }}" alt="Economic">
@@ -235,7 +240,7 @@
                         </a>
                     </div>
                     <div class="slide">
-                        <a href="innovation-technology">
+                        <a href="{{ route('innovation.technology')}}">
                             <div class="our-pillars-grid-layer">
                                 <figure class="gl-thumbnail">
                                     <img src="{{ asset('img/tech.jpeg') }}" alt="Technology">
