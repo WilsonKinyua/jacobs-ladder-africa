@@ -27,22 +27,16 @@
                     <div class="about-us-content">
                         <h2 class="headings-bottom-line">About Jacob’s Ladder Africa </h2>
                         <p>
-                            Jacob’s Ladder Africa is a sustainable development hub that advances the agenda of youth in
-                            Africa
-                            towards self-reliance and productivity. We seek to alleviate the current state of
-                            insufficiency among
-                            the youth and empower them as the continent’s future leaders, to enable them to forge a
-                            new
+                            Jacob’s Ladder Africa seeks to activate 32 Million jobs in the African Green Economy by 2032. It
+                            is a sustainable development hub that advances the agenda of youth in Africa towards
+                            self-reliance and productivity. We seek to alleviate the current state of insufficiency among
+                            the youth and empower them as the continent’s future leaders, to enable them to forge a new
                             pathway for themselves and others.
                         </p>
                         <p>
-                            Jacob’s Ladder Africa seeks to do this through five pillars which we have identified as
-                            critical to the
-                            future of Africa: Climate Change, Education, Leadership &amp; Governance, Economic
-                            Empowerment,
-                            Innovation &amp; Technology.
+                            Jacob’s Ladder Africa seeks to do this through two main pillars critical to the future of
+                            Africa: Climate Change and Leadership & Governance.
                         </p>
-                        {{-- <a href="{{ route('about.us')}}" class="btn-readmore mt-4">Read Our Story</a> --}}
                     </div>
                 </div>
 

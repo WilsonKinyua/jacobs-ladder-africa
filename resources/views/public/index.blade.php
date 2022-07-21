@@ -15,7 +15,8 @@
                         <div class="slider-caption">
                             <h2 class="display-4 animated fadeInRight">
                                 {{-- The Power <span>For The Future</span> --}}
-                               <span class="text-capitalize"> Activating 32million Jobs In The <br> African Green Economy By 2032</span>
+                                <span class="text-capitalize"> Activating 32million Jobs In The <br> African Green Economy
+                                    By 2032</span>
                             </h2>
                             {{-- <p class="lead animated fadeInRight">Industry has met the demands of a growing world for
                                 development and implementation.</p> --}}
@@ -51,20 +52,15 @@
                     <div class="about-us-content">
                         <h2 class="headings-bottom-line">About Jacob’s Ladder Africa</h2>
                         <p>
-                            Jacob’s Ladder Africa is a sustainable development hub that advances the agenda of youth in
-                            Africa
-                            towards self-reliance and productivity. We seek to alleviate the current state of
-                            insufficiency among
-                            the youth and empower them as the continent’s future leaders, to enable them to forge a
-                            new
+                            Jacob’s Ladder Africa seeks to activate 32 Million jobs in the African Green Economy by 2032. It
+                            is a sustainable development hub that advances the agenda of youth in Africa towards
+                            self-reliance and productivity. We seek to alleviate the current state of insufficiency among
+                            the youth and empower them as the continent’s future leaders, to enable them to forge a new
                             pathway for themselves and others.
                         </p>
                         <p>
-                            Jacob’s Ladder Africa seeks to do this through five pillars which we have identified as
-                            critical to the
-                            future of Africa: Climate Change, Education, Leadership &amp; Governance, Economic
-                            Empowerment,
-                            Innovation &amp; Technology.
+                            Jacob’s Ladder Africa seeks to do this through two main pillars critical to the future of
+                            Africa: Climate Change and Leadership & Governance.
                         </p>
                         <a href="{{ route('about.us') }}" class="btn-readmore mt-4">Read Our Story</a>
                     </div>
@@ -212,7 +208,7 @@
                         </a>
                     </div>
                     <div class="slide">
-                        <a href="{{ route('education')}}">
+                        <a href="{{ route('education') }}">
                             <div class="our-pillars-grid-layer">
                                 <figure class="gl-thumbnail">
                                     <img src="{{ asset('img/education.jpeg') }}" alt="Education">
@@ -226,7 +222,7 @@
                         </a>
                     </div>
                     <div class="slide">
-                        <a href="{{ route('economic.empowerment')}}">
+                        <a href="{{ route('economic.empowerment') }}">
                             <div class="our-pillars-grid-layer">
                                 <figure class="gl-thumbnail">
                                     <img src="{{ asset('img/economic.jpg') }}" alt="Economic">
@@ -240,7 +236,7 @@
                         </a>
                     </div>
                     <div class="slide">
-                        <a href="{{ route('innovation.technology')}}">
+                        <a href="{{ route('innovation.technology') }}">
                             <div class="our-pillars-grid-layer">
                                 <figure class="gl-thumbnail">
                                     <img src="{{ asset('img/tech.jpeg') }}" alt="Technology">
