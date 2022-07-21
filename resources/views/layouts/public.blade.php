@@ -32,12 +32,12 @@
     <meta property="twitter:description"
         content="Jacob’s Ladder Africa is a sustainable development hub that advances the agenda of youth in Africa towards self-reliance and productivity. We seek to alleviate the current state of insufficiency among the youth and empower them as the continent’s future leaders, to enable them to forge a new pathway for themselves and others.">
     <meta property="twitter:image" content="{{ asset('img/logo.png') }}">
-
-    <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('img/site.webmanifest') }}">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/main.min.css') }}">
 </head>
 

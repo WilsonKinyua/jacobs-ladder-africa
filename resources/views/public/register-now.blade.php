@@ -7,7 +7,7 @@
         <div class="sections" style="background-image: url({{ asset('img/flowers.jpeg') }});">
             <div class="container">
                 <div class="pages-title">
-                    <h1><span>Register Now</span></h1>
+                    <h1><span>Join the movement and be a member</span></h1>
                     <p><a href="{{ route('index.home') }}">Home</a> &nbsp; > &nbsp;<a class="active"
                             href="{{ route('register.now') }}">Register Now</a>
                     </p>
@@ -33,7 +33,7 @@
                     <div class="col-md-6 form-right">
                         <form id="register_form">
                             @csrf
-                            <h3>Register Now</h3>
+                            <h3>Join the movement and be a member</h3>
                             <div class="row">
                                 <div class="col-md-12">
                                     @if ($errors->count() > 0)
@@ -62,11 +62,11 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Full Name</label>
+                                <label for="exampleInputPassword1" class="form-label required">Full Name</label>
                                 <input type="text" class="form-control" id="" name="full_name" required>
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <label for="exampleInputEmail1" class="form-label required">Email address</label>
                                 <input type="email" class="form-control" name="email" id="exampleInputEmail1"
                                     aria-describedby="emailHelp" required>
                                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>

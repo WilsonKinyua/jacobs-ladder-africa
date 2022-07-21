@@ -262,7 +262,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center p-4">
-                    <h2>Latest News & Projects</h2>
+                    <h2>Latest News & Development</h2>
                     <div class="headings-under-line"></div>
                 </div>
                 <div class="col-lg-7 left-news-section">
@@ -270,13 +270,16 @@
                         <a href="#">
                             <div class="our-pillars-grid-layer">
                                 <figure class="gl-thumbnail">
-                                    <img src="{{ asset('img/news-1.jpg') }}" alt="News">
+                                    <img src="{{ asset('img/grassroots.jpg') }}" alt="News">
                                 </figure>
                                 <div class="gl-caption">
-                                    <p><span class="badge bg-info">News & Blogs </span><span class="date-time"><i
-                                                class="fa fa-clock-o"></i> Sep 28, 2021</span></p>
-                                    <h2>Capacity building of communities/Curriculum Development for Climate Change
-                                        Empowerment.</h2>
+                                    <p><span class="badge bg-info">Kenya Grassroots conversation</span><span
+                                            class="date-time"><i class="fa fa-clock-o"></i> 15th & 16th July, 2022</span>
+                                    </p>
+                                    <h2>
+                                        120 young people passionate about climate change. An exciting and engaging 2 day
+                                        event of peer learning and identifying opportunities in the African Green Economy.
+                                    </h2>
                                 </div>
                                 <div class="gl-overlay"></div>
                             </div>
@@ -290,14 +293,17 @@
                                 <a href="#">
                                     <div class="our-pillars-grid-layer">
                                         <figure class="gl-thumbnail">
-                                            <img src="{{ asset('img/news-1.jpg') }}" alt="News">
+                                            <img src="{{ asset('img/national-youth.jpeg') }}" alt="News">
                                         </figure>
                                         <div class="gl-caption">
-                                            <p><span class="badge bg-info">News & Blogs </span><span class="date-time"><i
-                                                        class="fa fa-clock-o"></i> Sep 28, 2021</span>
+                                            <p><span class="badge bg-info">Kenya's first National Youth Dialogue on the
+                                                    Elections</span><span class="date-time"><i class="fa fa-clock-o"></i>
+                                                    June 30th 2022</span>
                                             </p>
-                                            <h2>Capacity building of communities/Curriculum Development for Climate Change
-                                                Empowerment.</h2>
+                                            <h2>
+                                                1500 youth from various parts of the country. Formation of the Kenya youth
+                                                Charter 2022
+                                            </h2>
                                         </div>
                                         <div class="gl-overlay"></div>
                                     </div>
@@ -309,14 +315,69 @@
                                 <a href="#">
                                     <div class="our-pillars-grid-layer">
                                         <figure class="gl-thumbnail">
-                                            <img src="{{ asset('img/news-1.jpg') }}" alt="News">
+                                            <img src="{{ asset('img/green.jpg') }}" alt="News">
                                         </figure>
                                         <div class="gl-caption">
-                                            <p><span class="badge bg-info">News & Blogs </span><span class="date-time"><i
-                                                        class="fa fa-clock-o"></i> Sep 28, 2021</span>
+                                            <p><span class="badge bg-info">First ever baseline survey on youth attitudes on
+                                                    climate change in Kenya </span><span class="date-time"><i
+                                                        class="fa fa-clock-o"></i> July 2022</span>
                                             </p>
-                                            <h2>Capacity building of communities/Curriculum Development for Climate Change
-                                                Empowerment.</h2>
+                                            <h2>7 more countries to be surveyed by the end of 2022</h2>
+                                        </div>
+                                        <div class="gl-overlay"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 left-news-section">
+                    <div class="slide">
+                        <a href="#">
+                            <div class="our-pillars-grid-layer">
+                                <figure class="gl-thumbnail">
+                                    <img src="{{ asset('img/bilha.jpg') }}" alt="News">
+                                </figure>
+                                <div class="gl-caption">
+                                    <p><span class="badge bg-info">Bilha Ndirangu speaks at the London Climate Week.</span>
+                                    </p>
+                                    <h2>
+                                        She represented the initial findings of the survey and her ambitious plans to
+                                        activate 30 Million jobs in the African Green Economy in Kenya.
+                                    </h2>
+                                </div>
+                                <div class="gl-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 right-news-section">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="slide">
+                                <a href="#">
+                                    <div class="our-pillars-grid-layer">
+                                        <figure class="gl-thumbnail">
+                                            <img src="{{ asset('img/bilha-2.jpg') }}" alt="News">
+                                        </figure>
+                                        <div class="gl-caption">
+                                            <p><span class="badge bg-info">Bilha Ndirangu</span></p>
+                                            <h2>Jacobs Ladder co-founder selected as part of the 2022 Tutu Fellows Cohort.</h2>
+                                        </div>
+                                        <div class="gl-overlay"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="slide">
+                                <a href="#">
+                                    <div class="our-pillars-grid-layer">
+                                        <figure class="gl-thumbnail">
+                                            <img src="{{ asset('img/bilha-share.jpeg') }}" alt="News">
+                                        </figure>
+                                        <div class="gl-caption">
+                                            <h2>Bilha Ndirangu shares the Jabobs Ladder 30M Green Jobs by 2032 with CNBC </h2>
                                         </div>
                                         <div class="gl-overlay"></div>
                                     </div>
