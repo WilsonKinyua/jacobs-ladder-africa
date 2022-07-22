@@ -86,12 +86,12 @@
                     </div>
                     <div class="col-lg-1"></div>
                     <div class="col-lg-5">
-                        <h3 class="text-white"><i class="fa fa-home"></i> Our address</h3>
+                        {{-- <h3 class="text-white"><i class="fa fa-home"></i> Our address</h3>
                         <p>
                             Consumate Court, Ole Odume Road,
                             P O Box. 22429 - 00100,
                             Nairobi, Kenya
-                        </p>
+                        </p> --}}
                         <h3 class="text-white"><i class="fa fa-envelope"></i> Have any questions?</h3>
                         <p><a class="main-color" href="mailto:info@jacobsladder.africa">info@jacobsladder.africa</a></p>
                         <h3 class="text-white"><i class="fa fa-phone"></i> Call us</h3>

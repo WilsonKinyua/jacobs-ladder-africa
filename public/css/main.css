@@ -1073,7 +1073,7 @@ textarea {
 /* register form */
 
 .register-img-wrapper {
-    background-image: url("https://images.unsplash.com/photo-1626695436783-d942d5928174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-image: url("../img/speaker.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1084,7 +1084,7 @@ textarea {
 }
 
 .bg-light-dark {
-    background-color: rgba(212, 175, 55, 0.13);
+    background-color: rgba(17, 16, 13, 0.575);
 }
 
 .register-content h2 {
