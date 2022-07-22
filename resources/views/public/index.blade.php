@@ -14,7 +14,10 @@
                     <div class="container">
                         <div class="slider-caption">
                             <h2 class="display-4 animated fadeInRight">
-                                <span class="text-capitalize">#GreenTeamAfrica</span>
+                                <span class="text-capitalize">
+                                    Activating 32million Jobs In The <br> African Green Economy
+                                    By 2032
+                                </span>
                             </h2>
                         </div>
                     </div>
@@ -23,8 +26,7 @@
                     <div class="container">
                         <div class="slider-caption">
                             <h2 class="display-4 animated fadeInRight">
-                                <span class="text-capitalize"> Activating 32million Jobs In The <br> African Green Economy
-                                    By 2032</span>
+                                <span class="text-capitalize">#GreenTeamAfrica</span>
                             </h2>
                         </div>
                     </div>
