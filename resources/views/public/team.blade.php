@@ -26,7 +26,7 @@
                         <div class="tp-caption">
                             <div class="inner-tp-caption">
                                 <div class="team-intro">
-                                    <h3>Sellah Bogonko, HSC (Phd)</h3>
+                                    <h3>Sellah Bogonko, HSC</h3>
                                     <p>
                                         CEO & Co-founder Jacob’s Ladder Africa
                                     </p>
@@ -102,6 +102,43 @@
                                     <div class="social-icon">
                                         <p><a target="_blank" href="https://www.linkedin.com/in/bilha-ndirangu/"><i
                                                     class="fa fa-linkedin"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{-- Marceline --}}
+                <div class="col-md-6 col-lg-6 mb-5">
+                    <div class="team-portrait" data-bs-toggle="modal" data-bs-target="#Marceline">
+                        <figure class="tp-headshot">
+                            <img src="{{ asset('img/avatar.png') }}" alt="Marceline">
+                        </figure>
+                        <div class="tp-caption">
+                            <div class="inner-tp-caption">
+                                <div class="team-intro">
+                                    <h3>Marceline Obuya</h3>
+                                    <p><small>Co-founder Jacob’s Ladder Africa</small></p>
+                                </div>
+                                <hr>
+                                <div class="team-intro-caption">
+                                    <p>
+                                        Marceline is a rebuilder of businesses. Marceline’s work experience in Africa over
+                                        the
+                                        past 25 years within the financial sector embodies the proclamation of financial
+                                        liberation and ushering of opportunity within Microfinance, SACCO/Cooperatives,
+                                        Agriculture, Health, Business Development, and most recently in the FinTech space.
+                                        <br> <a class="main-color">Read more <i class="fa fa-arrow-right"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="tp-social d-flex justify-content-center">
+                                    <div class="social-icon">
+                                        <p><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></p>
+                                    </div>
+                                    <div class="social-icon">
+                                        <p><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></p>
                                     </div>
                                 </div>
                             </div>
@@ -260,6 +297,87 @@
                                         Governance from the International Leadership University, following a Msc in
                                         Public Governance from the same institution. Prior to this, she obtained a
                                         Bachelor of Arts Degree in Business & Sociology from Kenyatta University.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- Marceline modal --}}
+    <div class="modal fade" id="Marceline" tabindex="-1" aria-labelledby="MarcelineLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-bold" id="MarcelineLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="{{ asset('img/avatar.png') }}" class="team-modal-img rounded-start"
+                                    alt="Marceline Obuya">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Marceline Obuya</h5>
+                                    <p class="team-desc">
+                                        Marceline is a rebuilder of businesses. Marceline’s work experience in Africa over
+                                        the
+                                        past 25 years within the financial sector embodies the proclamation of financial
+                                        liberation and ushering of opportunity within Microfinance, SACCO/Cooperatives,
+                                        Agriculture, Health, Business Development, and most recently in the FinTech space.
+                                    </p>
+                                    <p class="team-desc">
+                                        Marceline’s mastery of midwifing SMEs to become viable businesses is a showcase of
+                                        honor demonstrated by diligence in management, operations, research, training, and
+                                        mentoring, which is predicated on her approach to a field that stems from a strong
+                                        belief that beauty can raise from ashes which reflect itself in her mentoring
+                                        patterns
+                                        focusing on, upskilling people in spite of all challenges SMEs face.
+                                    </p>
+                                    <p class="team-desc">
+                                        Marceline’s incubating spirit is clearly manifested in her track record through her
+                                        ability
+                                        to nurture, restore and prosper both start start-ups and established enterprises.
+                                        Under
+                                        her stewardship, the viability of the business is brought about by the fact that she
+                                        lays
+                                        the right foundation. Her craftsmanship is robust and her execution is equal to that
+                                        of a
+                                        warrior in the identification of the specific need, especially in the various
+                                        sectors of
+                                        development of adaptive strategies for channeling finance to priority sectors,
+                                        working
+                                        with multi- laterals, private sector, and financial institutions.
+                                    </p>
+                                    <p class="team-desc">
+                                        Passionate about Africa and SMEs, Marceline’s eagle eye is focused on business
+                                        levers like strategic planning, human resource management, operational, technical,
+                                        and financial support. As an experienced consultant and advisor in wealth creation
+                                        and
+                                        agrarian finance, Marceline is the architect and founder of the SME Business Clinic
+                                        Ltd, a role that allows her to oversee the company and intimately engage with her
+                                        clients, whilst rendering herself the role of a roving CEO for a number of
+                                        businesses
+                                        within the Clinic.
+                                    </p>
+                                    <p class="team-desc">
+                                        Marceline is a holder of a Master’s degree in Business Administration from
+                                        Strathmore
+                                        University Business School and a Certificate recipient from IESE Business School in
+                                        Spain. She is currently, undertaking a Social Impact course at the University of
+                                        Cape
+                                        Town. She has managed the Medical Credit Fund in East Africa, a Dutch organization,
+                                        where she, later on, went on to take charge of the Kenya country operations and co-
+                                        Country Director with PharmAccess Foundation.
+                                    </p>
+                                    <p class="team-desc">
+                                        She has undertaken a number of World Bank/IFC, SIDA, IFAD, FAO, and USAID-
+                                        funded consultancy assignments in Kenya, other African countries, and the USA.
                                     </p>
                                 </div>
                             </div>
