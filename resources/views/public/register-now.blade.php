@@ -4,7 +4,7 @@
 @endsection
 @section('content')
     <div class="push-top-header">
-        <div class="sections" style="background-image: url({{ asset('img/flowers.jpeg') }});">
+        <div class="sections" style="background-image: url(https://images.pexels.com/photos/1191503/pexels-photo-1191503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);">
             <div class="container">
                 <div class="pages-title">
                     <h1><span>Join the movement and be a member</span></h1>
