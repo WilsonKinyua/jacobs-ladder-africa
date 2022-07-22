@@ -8,6 +8,10 @@
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active" style="background-image: url('{{ asset('img/slider-3.jpg') }}')">
@@ -32,6 +36,25 @@
                             </h2>
                             {{-- <p class="lead animated fadeInRight">Industry has met the demands of a growing world for
                                 development and implementation.</p> --}}
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('{{ asset('img/grassroots-2.jpeg') }}')">
+                    <div class="container">
+                        <div class="slider-caption">
+                            <h2 class="display-4 animated fadeInRight">
+                                <span class="text-capitalize">Africa Youth Climate Initiative</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('{{ asset('img/grassroots-3.jpeg') }}')">
+                    <div class="container">
+                        <div class="slider-caption">
+                            <h2 class="display-4 animated fadeInRight">
+                                <span class="text-capitalize">Activating 32million Jobs In The <br> African Green Economy
+                                    By 2032</span>
+                            </h2>
                         </div>
                     </div>
                 </div>
@@ -362,7 +385,8 @@
                                         </figure>
                                         <div class="gl-caption">
                                             <p><span class="badge bg-info">Bilha Ndirangu</span></p>
-                                            <h2>Jacobs Ladder co-founder selected as part of the 2022 Tutu Fellows Cohort.</h2>
+                                            <h2>Jacobs Ladder co-founder selected as part of the 2022 Tutu Fellows Cohort.
+                                            </h2>
                                         </div>
                                         <div class="gl-overlay"></div>
                                     </div>
@@ -377,7 +401,8 @@
                                             <img src="{{ asset('img/bilha-share.jpeg') }}" alt="News">
                                         </figure>
                                         <div class="gl-caption">
-                                            <h2>Bilha Ndirangu shares the Jabobs Ladder 30M Green Jobs by 2032 with CNBC </h2>
+                                            <h2>Bilha Ndirangu shares the Jabobs Ladder 30M Green Jobs by 2032 with CNBC
+                                            </h2>
                                         </div>
                                         <div class="gl-overlay"></div>
                                     </div>
