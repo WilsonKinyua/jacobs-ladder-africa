@@ -22,7 +22,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('{{ asset('img/mic.jpg') }}')">
+                <div class="carousel-item" style="background-image: url('{{ asset('img/hands.jpeg') }}')">
                     <div class="container">
                         <div class="slider-caption">
                             <h2 class="display-4 animated fadeInRight">

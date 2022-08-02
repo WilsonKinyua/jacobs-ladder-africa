@@ -63,7 +63,7 @@
                          <li><a href="{{ route('contact.us') }}">CONTACT us</a>
                          </li>
                          <li>
-                            <a href="{{ route('register.now') }}" class="btn-register-now">join the movement</a>
+                             <a href="{{ route('register.now') }}" class="btn-register-now">join the movement</a>
                          </li>
                      </ul>
                  </div>
