@@ -12,7 +12,9 @@ class PublicController extends Controller
 
     public function index()
     {
-        return view('public.index');
+        $whatWeDo = WhatWeDo::all();
+
+        return view('public.index', compact('whatWeDo'));
     }
 
     public function aboutUs()

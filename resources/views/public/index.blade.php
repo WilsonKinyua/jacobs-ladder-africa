@@ -168,12 +168,12 @@
         <div class="row g-0 bg-pillars">
             <div class="col-md-3 col-lg-3 layer-counter text-center">
                 <div class="our-pillars">
-                    <h2 class="text-white text-bold">Pillars of Jacob’s Ladder Africa</h2>
+                    <h2 class="text-white text-bold">What We Do</h2>
                 </div>
             </div>
             <div class="col-md-9 col-lg-9 carousel-layer">
                 <div class="pillars-carousel slider">
-                    <div class="slide">
+                    {{-- <div class="slide">
                         <a href="{{ route('climate.change') }}">
                             <div class="our-pillars-grid-layer">
                                 <figure class="gl-thumbnail">
@@ -242,7 +242,26 @@
                                 <div class="gl-overlay"></div>
                             </div>
                         </a>
-                    </div>
+                    </div> --}}
+                    @foreach ($whatWeDo as $whatWeDo)
+                        <div class="slide">
+                            <a href="{{ route('we.do.sector', $whatWeDo->slug) }}">
+                                <div class="our-pillars-grid-layer">
+                                    <figure class="gl-thumbnail">
+                                        @if ($whatWeDo->content_photo)
+                                            <img src="{{ $whatWeDo->content_photo->getUrl() }}"
+                                                alt="{{ $whatWeDo->title ?? '' }}">
+                                        @endif
+                                    </figure>
+                                    <div class="gl-caption">
+                                        <h2>{{ $whatWeDo->title ?? '' }}</h2>
+                                        <p>{!! Str::limit($whatWeDo->description, 50) !!}</p>
+                                    </div>
+                                    <div class="gl-overlay"></div>
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
 
                 </div>
             </div>
@@ -385,4 +404,5 @@
             </div>
         </div>
     </section>
+    <div class="banner-pattern"></div>
 @endsection
