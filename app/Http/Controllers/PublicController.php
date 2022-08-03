@@ -79,7 +79,8 @@ class PublicController extends Controller
 
     public function whatWeDo()
     {
-        return view('public.what-we-do');
+        $whatWeDo = WhatWeDo::all();
+        return view('public.what-we-do', compact('whatWeDo'));
     }
 
     public function whatWeDoSector($slug)
