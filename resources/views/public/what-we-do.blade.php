@@ -4,10 +4,9 @@
 @endsection
 @section('content')
     <div class="push-top-header">
-        <div class="sections" style="background-image: url('{{ asset('img/mission-vision.jpeg') }}');height: 750px;">
+        <div class="sections" style="background-image: url('{{ asset('img/grassroots.jpg') }}');height: 550px;">
             <div class="container">
                 <div class="pages-title">
-                    <h1>Jacob's Ladder Africa <br> <span>What we do</span></h1>
                     <p><a href="{{ route('index.home') }}">Home</a> &nbsp; > &nbsp; <a class="active"
                             href="{{ route('we.do') }}">What we do</a>
                     </p>
