@@ -5,6 +5,10 @@
              <div class="header-left bg-gold-color">
                  <p><strong>Phone:</strong> +254 730 116 325</p>
                  <div class="ht-right-social">
+                     <a href="https://www.facebook.com/JacobsLadderAfrica/" target="_blank"><i
+                             class="fa fa-facebook"></i></a>
+                 </div>
+                 <div class="ht-right-social">
                      <a href="#"><i class="fa fa-twitter"></i></a>
                  </div>
                  <div class="ht-right-social">

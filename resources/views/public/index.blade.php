@@ -15,8 +15,7 @@
                         <div class="slider-caption">
                             <h2 class="display-4 animated fadeInRight">
                                 <span class="text-capitalize">
-                                    Activating 32million Jobs In The <br> African Green Economy
-                                    By 2032
+                                   Activating 30 Million Jobs in the <br> African Green Economy by 2032
                                 </span>
                             </h2>
                         </div>

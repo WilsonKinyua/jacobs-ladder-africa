@@ -105,6 +105,7 @@
                     <p>© 2022 Jacob’s Ladder Africa | All Rights Reserved</p>
                 </div>
                 <div class="fb-social">
+                    <div class="span-fb-social"><a href="https://www.facebook.com/JacobsLadderAfrica/"><i class="fa fa-facebook"></i></a></div>
                     <div class="span-fb-social"><a href="#"><i class="fa fa-twitter"></i></a></div>
                     <div class="span-fb-social"><a href="#"><i class="fa fa-linkedin"></i></a></div>
                     <div class="span-fb-social last-box"><a href="#"><i class="fa fa-instagram"></i></a></div>
