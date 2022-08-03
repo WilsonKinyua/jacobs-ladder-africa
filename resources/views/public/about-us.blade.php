@@ -69,9 +69,8 @@
                         </div>
                         <h2 class="headings">Our Mission</h2>
                         <p>
-                            To repair the breach of the African identity through demonstrable thought leadership, and
-                            socio-
-                            economic empowerment of her youth.
+                            Activating 30 million jobs in the African Green Economy by 2032 by catalysing an alternative
+                            economic culture
                         </p>
                     </div>
                 </div>

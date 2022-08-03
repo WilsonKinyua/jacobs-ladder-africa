@@ -1,16 +1,15 @@
 @extends('layouts.public')
 @section('title')
-    - Our Pillars | Leadership &amp; Governance
+    - What we do | Leadership &amp; Governance
 @endsection
 @section('content')
     <div class="push-top-header">
         <div class="sections" style="background-image: url('{{ asset('img/header.jpeg') }}');">
             <div class="container">
                 <div class="pages-title">
-                    <h1>Jacob's Ladder Africa <br> <span>Our Pillars - Leadership &amp; Governance</span></h1>
-                    <p><a href="{{ route('index.home') }}">Home</a> &nbsp; > &nbsp; <a
-                            href="{{ route('our.pillars') }}">Our
-                            Pillars</a>
+                    <h1>Jacob's Ladder Africa <br> <span>What we do - Leadership &amp; Governance</span></h1>
+                    <p><a href="{{ route('index.home') }}">Home</a> &nbsp; > &nbsp; <a href="{{ route('our.pillars') }}">What
+                            we do</a>
                         &nbsp; > &nbsp; <a class="active" href="{{ route('leadership.governance') }}">Leadership &amp;
                             Governance</a>
                     </p>

@@ -4,7 +4,7 @@
 @endsection
 @section('content')
     <div class="push-top-header">
-        <div class="sections" style="background-image: url({{ asset('img/team.jpg') }});">
+        <div class="sections" style="background-image: url({{ asset('img/red.jpg') }});">
             <div class="container">
                 <div class="pages-title">
                     <h1>Jacob's Ladder Africa <br> <span>The Leadership team</span></h1>

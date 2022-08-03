@@ -1,16 +1,15 @@
 @extends('layouts.public')
 @section('title')
-    - Our Pillars | Education
+    - What we do | Education
 @endsection
 @section('content')
     <div class="push-top-header">
         <div class="sections" style="background-image: url('{{ asset('img/education.jpeg') }}');">
             <div class="container">
                 <div class="pages-title">
-                    <h1>Jacob's Ladder Africa <br> <span>Our Pillars - Education</span></h1>
+                    <h1>Jacob's Ladder Africa <br> <span>What we do - Education</span></h1>
                     <p><a href="{{ route('index.home') }}">Home</a> &nbsp; > &nbsp; <a
-                            href="{{ route('our.pillars') }}">Our
-                            Pillars</a>
+                            href="{{ route('our.pillars') }}">What we do</a>
                         &nbsp; > &nbsp; <a class="active" href="{{ route('education') }}">Education</a>
                     </p>
                 </div>

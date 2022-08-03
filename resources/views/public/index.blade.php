@@ -15,7 +15,7 @@
                         <div class="slider-caption">
                             <h2 class="display-4 animated fadeInRight">
                                 <span class="text-capitalize">
-                                   Activating 30 Million Jobs in the <br> African Green Economy by 2032
+                                    Activating 30 Million Jobs in the <br> African Green Economy by 2032
                                 </span>
                             </h2>
                         </div>
@@ -89,9 +89,8 @@
                         </div>
                         <h2 class="headings">Our Mission</h2>
                         <p>
-                            To repair the breach of the African identity through demonstrable thought leadership, and
-                            socio-
-                            economic empowerment of her youth.
+                            Activating 30 million jobs in the African Green Economy by 2032 by catalysing an alternative
+                            economic culture
                         </p>
                     </div>
                 </div>

@@ -49,11 +49,11 @@
                                  <li><a href="{{ route('about.us') }}#mission-vision">Our Vision</a></li>
                                  <li><a href="{{ route('about.us') }}#mission-vision">Our Mission</a></li>
                                  <li><a href="{{ route('index.home') }}#our-values">Our Values</a></li>
-                                 <li><a href="{{ route('about.us') }}">About us</a></li>
+                                 {{-- <li><a href="{{ route('about.us') }}">About us</a></li> --}}
                                  <li><a href="{{ route('team') }}">Our team</a></li>
                              </ul>
                          </li>
-                         <li><a href="{{ route('our.pillars') }}">our Pillars</a>
+                         <li><a href="{{ route('our.pillars') }}">What we do</a>
                              <ul class="nav-dropdown">
                                  <li><a href="{{ route('climate.change') }}">Climate Change</a></li>
                                  <li><a href="{{ route('leadership.governance') }}">Leadership &amp; Governance</a>

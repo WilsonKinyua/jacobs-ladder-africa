@@ -4,7 +4,7 @@
 @endsection
 @section('content')
     <div class="push-top-header">
-        <div class="sections" style="background-image: url({{ asset('img/contact-us.jpg') }});">
+        <div class="sections" style="background-image: url({{ asset('img/white.jpg') }});">
             <div class="container">
                 <div class="pages-title">
                     <h1><span>Contact Us</span></h1>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="contact-list-info">
                             <div class="contact-icon"><i class="fa fa-map"></i></div>
-                            <p class="text-dark">&nbsp;8273 NW 56th ST Tom, Nairobi, 33195 Kenya</p>
+                            <p class="text-dark">&nbsp;Consummate Court, Ole Dume Road, Nairobi, Kenya</p>
                         </div>
                     </div>
                 </div>

@@ -1,15 +1,14 @@
 @extends('layouts.public')
 @section('title')
-    - Our Pillars | Innovation & Technology
+    - What we do | Innovation & Technology
 @endsection
 @section('content')
     <div class="push-top-header">
         <div class="sections" style="background-image: url({{ asset('img/tech-pple.jpeg') }});">
             <div class="container">
                 <div class="pages-title">
-                    <h1>Jacob's Ladder Africa <br> <span>Our Pillars - Innovation &amp; Technology</span></h1>
-                    <p><a href="{{ route('index.home') }}">Home</a> &nbsp; > &nbsp; <a href="{{ route('our.pillars') }}">Our
-                            Pillars</a>
+                    <h1>Jacob's Ladder Africa <br> <span>What we do - Innovation &amp; Technology</span></h1>
+                    <p><a href="{{ route('index.home') }}">Home</a> &nbsp; > &nbsp; <a href="{{ route('our.pillars') }}">What we do</a>
                         &nbsp; > &nbsp; <a class="active" href="{{ asset('innovation.technology') }}">Innovation &amp;
                             Technology</a>
                     </p>

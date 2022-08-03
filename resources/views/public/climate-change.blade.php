@@ -1,15 +1,15 @@
 @extends('layouts.public')
 @section('title')
-    - Our Pillars | Climate Change
+    - What we do | Climate Change
 @endsection
 @section('content')
     <div class="push-top-header">
         <div class="sections" style="background-image: url('{{ asset('img/climate-change.jpeg') }}');">
             <div class="container">
                 <div class="pages-title">
-                    <h1>Jacob's Ladder Africa <br> <span>Our Pillars - Climate Change</span></h1>
-                    <p><a href="{{ route('index.home') }}">Home</a> &nbsp; > &nbsp; <a href="{{ route('our.pillars') }}">Our
-                            Pillars</a>
+                    <h1>Jacob's Ladder Africa <br> <span>What we do - Climate Change</span></h1>
+                    <p><a href="{{ route('index.home') }}">Home</a> &nbsp; > &nbsp; <a href="{{ route('our.pillars') }}">What
+                            we do</a>
                         &nbsp; > &nbsp; <a class="active" href="{{ route('climate.change') }}">Climate Change</a>
                     </p>
                 </div>

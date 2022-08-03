@@ -1,6 +1,6 @@
 @extends('layouts.public')
 @section('title')
-    - Our Pillars
+    - What we do
 @endsection
 @section('content')
     <div class="push-top-header">
@@ -10,9 +10,9 @@
      ">
             <div class="container">
                 <div class="pages-title">
-                    <h1>Jacob's Ladder Africa <br> <span>Our Pillars</span></h1>
+                    <h1>Jacob's Ladder Africa <br> <span>What we do</span></h1>
                     <p><a href="{{ route('index.home') }}">Home</a> &nbsp; > &nbsp; <a class="active"
-                            href="{{ route('our.pillars') }}">Our Pillars</a>
+                            href="{{ route('our.pillars') }}">What we do</a>
                     </p>
                 </div>
             </div>

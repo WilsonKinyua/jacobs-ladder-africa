@@ -1,15 +1,16 @@
 @extends('layouts.public')
 @section('title')
-    - Our Pillars | Economic Empowerment
+    - What we do | Economic Empowerment
 @endsection
 @section('content')
     <div class="push-top-header">
-        <div class="sections" style="background-image: url('{{ asset("img/education.jpeg")}}');">
+        <div class="sections" style="background-image: url('{{ asset('img/education.jpeg') }}');">
             <div class="container">
                 <div class="pages-title">
-                    <h1>Jacob's Ladder Africa <br> <span>Our Pillars - Economic Empowerment</span></h1>
-                    <p><a href="{{ route('index.home')}}">Home</a> &nbsp; > &nbsp; <a href="{{ route("our.pillars")}}">Our Pillars</a>
-                        &nbsp; > &nbsp; <a class="active" href="{{ route("economic.empowerment")}}">Economic Empowerment</a>
+                    <h1>Jacob's Ladder Africa <br> <span>What we do - Economic Empowerment</span></h1>
+                    <p><a href="{{ route('index.home') }}">Home</a> &nbsp; > &nbsp; <a href="{{ route('our.pillars') }}">What
+                            we do</a>
+                        &nbsp; > &nbsp; <a class="active" href="{{ route('economic.empowerment') }}">Economic Empowerment</a>
                     </p>
                 </div>
             </div>
@@ -19,7 +20,7 @@
         <div class="container">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="{{ asset('img/economic.jpg')}}" class="img-fluid rounded-start" alt="Leadership">
+                    <img src="{{ asset('img/economic.jpg') }}" class="img-fluid rounded-start" alt="Leadership">
                 </div>
                 <div class="col-md-8 border-right">
                     <div class="card-body">
