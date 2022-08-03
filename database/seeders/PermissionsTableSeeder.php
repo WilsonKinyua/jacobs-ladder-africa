@@ -116,6 +116,26 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'id'    => 27,
+                'title' => 'what_we_do_create',
+            ],
+            [
+                'id'    => 28,
+                'title' => 'what_we_do_edit',
+            ],
+            [
+                'id'    => 29,
+                'title' => 'what_we_do_show',
+            ],
+            [
+                'id'    => 30,
+                'title' => 'what_we_do_delete',
+            ],
+            [
+                'id'    => 31,
+                'title' => 'what_we_do_access',
+            ],
+            [
+                'id'    => 32,
                 'title' => 'profile_password_edit',
             ],
         ];

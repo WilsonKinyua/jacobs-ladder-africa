@@ -50,6 +50,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     Route::post('contactuses/media', 'ContactUsController@storeMedia')->name('contactuses.storeMedia');
     Route::post('contactuses/ckmedia', 'ContactUsController@storeCKEditorImages')->name('contactuses.storeCKEditorImages');
     Route::resource('contactuses', 'ContactUsController');
+
+    // What We Do
+    Route::delete('what-we-dos/destroy', 'WhatWeDoController@massDestroy')->name('what-we-dos.massDestroy');
+    Route::post('what-we-dos/media', 'WhatWeDoController@storeMedia')->name('what-we-dos.storeMedia');
+    Route::post('what-we-dos/ckmedia', 'WhatWeDoController@storeCKEditorImages')->name('what-we-dos.storeCKEditorImages');
+    Route::resource('what-we-dos', 'WhatWeDoController');
 });
 Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 'middleware' => ['auth']], function () {
     // Change password
