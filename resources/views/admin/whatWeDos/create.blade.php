@@ -68,7 +68,7 @@
 <script>
     Dropzone.options.topHeaderImageDropzone = {
     url: '{{ route('admin.what-we-dos.storeMedia') }}',
-    maxFilesize: 20, // MB
+    maxFilesize: 200, // MB
     acceptedFiles: '.jpeg,.jpg,.png,.gif',
     maxFiles: 1,
     addRemoveLinks: true,
@@ -76,9 +76,9 @@
       'X-CSRF-TOKEN': "{{ csrf_token() }}"
     },
     params: {
-      size: 20,
-      width: 5000,
-      height: 5000
+      // size: 20,
+      // width: 5000,
+      // height: 5000
     },
     success: function (file, response) {
       $('form').find('input[name="top_header_image"]').remove()
@@ -123,18 +123,18 @@
 <script>
     Dropzone.options.contentPhotoDropzone = {
     url: '{{ route('admin.what-we-dos.storeMedia') }}',
-    maxFilesize: 20, // MB
+    maxFilesize: 200, // MB
     acceptedFiles: '.jpeg,.jpg,.png,.gif',
     maxFiles: 1,
     addRemoveLinks: true,
     headers: {
       'X-CSRF-TOKEN': "{{ csrf_token() }}"
     },
-    params: {
-      size: 20,
-      width: 5000,
-      height: 5000
-    },
+    // params: {
+    //   size: 20,
+    //   width: 5000,
+    //   height: 5000
+    // },
     success: function (file, response) {
       $('form').find('input[name="content_photo"]').remove()
       $('form').append('<input type="hidden" name="content_photo" value="' + response.name + '">')

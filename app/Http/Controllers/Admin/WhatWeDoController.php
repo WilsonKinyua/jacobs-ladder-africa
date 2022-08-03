@@ -12,6 +12,7 @@ use Gate;
 use Illuminate\Http\Request;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Support\Str;
 
 class WhatWeDoController extends Controller
 {
@@ -35,6 +36,9 @@ class WhatWeDoController extends Controller
 
     public function store(StoreWhatWeDoRequest $request)
     {
+        $request->request->add([
+            'slug' => Str::slug($request->title,'-'),
+        ]);
         $whatWeDo = WhatWeDo::create($request->all());
 
         if ($request->input('top_header_image', false)) {
@@ -61,6 +65,9 @@ class WhatWeDoController extends Controller
 
     public function update(UpdateWhatWeDoRequest $request, WhatWeDo $whatWeDo)
     {
+        $request->request->add([
+            'slug' => Str::slug($request->title,'-'),
+        ]);
         $whatWeDo->update($request->all());
 
         if ($request->input('top_header_image', false)) {

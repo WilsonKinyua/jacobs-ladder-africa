@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\ContactUs;
 use App\Models\RegisteredUser;
+use App\Models\WhatWeDo;
 use Illuminate\Http\Request;
 
 class PublicController extends Controller
@@ -74,6 +75,20 @@ class PublicController extends Controller
         return view('public.our-pillars');
     }
 
+    public function whatWeDo()
+    {
+        return view('public.what-we-do');
+    }
+
+    public function whatWeDoSector($slug)
+    {
+        $whatWeDo = WhatWeDo::where('slug', $slug)->get()->first();
+
+        abort_if(!$whatWeDo, 404);
+
+        return view('public.single-what-we-do', compact('whatWeDo'));
+    }
+
     public function team()
     {
         return view('public.team');
@@ -84,7 +99,8 @@ class PublicController extends Controller
         return view('public.register-now');
     }
 
-    public function registerNowCreate(Request $request) {
+    public function registerNowCreate(Request $request)
+    {
         $validate = $request->validate([
             'full_name' => 'required',
             'email' => 'required|email',

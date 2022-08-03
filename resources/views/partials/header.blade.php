@@ -53,15 +53,20 @@
                                  <li><a href="{{ route('team') }}">Our team</a></li>
                              </ul>
                          </li>
-                         <li><a href="{{ route('our.pillars') }}">What we do</a>
+                         <li><a href="{{ route('we.do') }}">What we do</a>
                              <ul class="nav-dropdown">
-                                 <li><a href="{{ route('climate.change') }}">Climate Change</a></li>
+                                 @foreach (App\Models\WhatWeDo::all() as $item)
+                                     <li>
+                                         <a href="{{ route('we.do.sector', $item->slug) }}">{{ $item->title ?? '' }}</a>
+                                     </li>
+                                 @endforeach
+                                 {{-- <li><a href="{{ route('climate.change') }}">Climate Change</a></li>
                                  <li><a href="{{ route('leadership.governance') }}">Leadership &amp; Governance</a>
                                  </li>
                                  <li><a href="{{ route('education') }}">Education</a></li>
                                  <li><a href="{{ route('economic.empowerment') }}">Economic Empowerment</a></li>
                                  <li><a href="{{ route('innovation.technology') }}">Innovation &amp; Technology</a>
-                                 </li>
+                                 </li> --}}
                              </ul>
                          </li>
                          <li><a href="{{ route('contact.us') }}">CONTACT us</a>

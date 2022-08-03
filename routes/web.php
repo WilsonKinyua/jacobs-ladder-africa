@@ -11,7 +11,9 @@ Route::get('our-pillars/economic-empowerment', 'PublicController@economicEmpower
 Route::get('our-pillars/education', 'PublicController@education')->name('education');
 Route::get('our-pillars/innovation-technology', 'PublicController@innovationTechnology')->name('innovation.technology');
 Route::get('our-pillars/leadership-governance', 'PublicController@leadershipGovernance')->name('leadership.governance');
-Route::get('our-pillars', 'PublicController@ourPillars')->name('our.pillars');
+// Route::get('our-pillars', 'PublicController@ourPillars')->name('our.pillars');
+Route::get('what-we-do', 'PublicController@whatWeDo')->name('we.do');
+Route::get('what-we-do/{slug}', 'PublicController@whatWeDoSector')->name('we.do.sector');
 Route::get('team', 'PublicController@team')->name('team');
 Route::get('join-the-movement-and-be-a-member', 'PublicController@registerNow')->name('register.now');
 Route::post('register-now/create', 'PublicController@registerNowCreate')->name('register.create');
