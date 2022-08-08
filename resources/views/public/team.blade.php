@@ -75,14 +75,11 @@
                                 <div class="team-intro">
                                     <h3>Bilha Ndirangu</h3>
                                     <p><small>Co-founder Jacob’s Ladder Africa</small></p>
-                                    <p><small>Chief Executive Officer African Leadership Academy</small></p>
                                 </div>
                                 <hr>
                                 <div class="team-intro-caption">
                                     <p>
-                                        Bilha Ndirangu is the co-founder of Jacob’s Ladder Africa and the Chief
-                                        Executive
-                                        Officer of the African Leadership Academy.
+                                        Bilha Ndirangu is the co-founder of Jacob’s Ladder Africa.
                                         <br>
                                         Bilha’s achievements and leadership track record in building creative solutions
                                         to
@@ -173,14 +170,12 @@
                                     <p>
                                         <strong>
                                             <small class="main-color">
-                                                Co-founder Jacob’s Ladder Africa, Chief Executive Officer African
-                                                Leadership Academy
+                                                Co-founder Jacob’s Ladder Africa
                                             </small>
                                         </strong>
                                     </p>
                                     <p class="team-desc">
-                                        Bilha Ndirangu is the co-founder of Jacob’s Ladder Africa and the Chief
-                                        Executive Officer of the African Leadership Academy.
+                                        Bilha Ndirangu is the co-founder of Jacob’s Ladder Africa.
                                     </p>
                                     <p class="team-desc">
                                         Bilha’s achievements and leadership track record in building creative solutions
@@ -238,11 +233,11 @@
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="{{ asset('img/avatar.png') }}" class="team-modal-img rounded-start"
-                                    alt="Sellah Bogonko, HSC (Phd)">
+                                    alt="Sellah Bogonko, HSC">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Sellah Bogonko, HSC (Phd)</h5>
+                                    <h5 class="card-title">Sellah Bogonko, HSC</h5>
                                     <p class="team-desc">
                                         There are two approaches to life: one in which one lives addressing and
                                         confronting situations as they happen, and the other is to approach life with an
