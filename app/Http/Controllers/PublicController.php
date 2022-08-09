@@ -29,8 +29,8 @@ class PublicController extends Controller
 
     public function contactUs()
     {
-        // return view('public.contact-us');
-        return view('public.team');
+        return view('public.contact-us');
+        // return view('public.team');
     }
 
     public function contactUsCreate(Request $request)

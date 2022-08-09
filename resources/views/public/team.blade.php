@@ -21,7 +21,7 @@
                 <div class="col-md-6 col-lg-6 mb-5">
                     <div class="team-portrait" data-bs-toggle="modal" data-bs-target="#SellahBogonko">
                         <figure class="tp-headshot">
-                            <img src="{{ asset('img/avatar.png') }}" alt="Sellah">
+                            <img src="{{ asset('img/Sellah.png') }}" alt="Sellah">
                         </figure>
                         <div class="tp-caption">
                             <div class="inner-tp-caption">
@@ -68,7 +68,7 @@
                 <div class="col-md-6 col-lg-6 mb-5">
                     <div class="team-portrait" data-bs-toggle="modal" data-bs-target="#BilhaNdiranguModal">
                         <figure class="tp-headshot">
-                            <img src="{{ asset('img/avatar.png') }}" alt="Bilha Ndirangu">
+                            <img src="{{ asset('img/Bilha.png') }}" alt="Bilha Ndirangu">
                         </figure>
                         <div class="tp-caption">
                             <div class="inner-tp-caption">
@@ -109,7 +109,7 @@
                 <div class="col-md-6 col-lg-6 mb-5">
                     <div class="team-portrait" data-bs-toggle="modal" data-bs-target="#Marceline">
                         <figure class="tp-headshot">
-                            <img src="{{ asset('img/avatar.png') }}" alt="Marceline">
+                            <img src="{{ asset('img/Marceline.png') }}" alt="Marceline">
                         </figure>
                         <div class="tp-caption">
                             <div class="inner-tp-caption">
@@ -161,7 +161,7 @@
                     <div class="card">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="{{ asset('img/avatar.png') }}" class="team-modal-img rounded-start"
+                                <img src="{{ asset('img/Bilha.png') }}" class="team-modal-img rounded-start"
                                     alt="Bilha Ndirangu">
                             </div>
                             <div class="col-md-8">
@@ -232,7 +232,7 @@
                     <div class="card">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="{{ asset('img/avatar.png') }}" class="team-modal-img rounded-start"
+                                <img src="{{ asset('img/Sellah.png') }}" class="team-modal-img rounded-start"
                                     alt="Sellah Bogonko, HSC">
                             </div>
                             <div class="col-md-8">
@@ -313,7 +313,7 @@
                     <div class="card">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="{{ asset('img/avatar.png') }}" class="team-modal-img rounded-start"
+                                <img src="{{ asset('img/Marceline.png') }}" class="team-modal-img rounded-start"
                                     alt="Marceline Obuya">
                             </div>
                             <div class="col-md-8">
