@@ -4,14 +4,14 @@
 @endsection
 @section('content')
     <div class="push-top-header">
-        <div class="sections" style="background-image: url({{ asset('img/red.jpg') }});">
+        <div>
             <div class="container">
-                <div class="pages-title">
+                {{-- <div class="pages-title">
                     <h1>Jacob's Ladder Africa <br> <span>The Leadership team</span></h1>
                     <p><a href="{{ route('index.home') }}">Home</a> &nbsp; > &nbsp; <a class="active"
                             href="{{ route('team') }}">The Leadership team</a>
                     </p>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
