@@ -142,6 +142,82 @@
                         </div>
                     </div>
                 </div>
+                {{-- Karen Chelangat --}}
+                <div class="col-md-6 col-lg-6 mb-5">
+                    <div class="team-portrait" data-bs-toggle="modal" data-bs-target="#KarenChelangat">
+                        <figure class="tp-headshot">
+                            <img src="{{ asset('img/Karen Chelangat.png') }}" alt="Karen Chelangat">
+                        </figure>
+                        <div class="tp-caption">
+                            <div class="inner-tp-caption">
+                                <div class="team-intro">
+                                    <h3>Karen Chelangat</h3>
+                                    <p><small>Lead - JLA Incubator Programme</small></p>
+                                </div>
+                                <hr>
+                                <div class="team-intro-caption">
+                                    <p>
+                                        Karen Chelang’at’s life and career journey reveals her reality as a life-giver, one
+                                        that activates
+                                        dormant potential in people, communities, organizations and systems within Africa.
+                                        She is driven to
+                                        see the realization of Africa’s emancipation through the transformation of its
+                                        people as a function of
+                                        their mind shifts.
+                                        <br> <a class="main-color">Read more <i class="fa fa-arrow-right"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="tp-social d-flex justify-content-center">
+                                    <div class="social-icon">
+                                        <p><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></p>
+                                    </div>
+                                    <div class="social-icon">
+                                        <p><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{-- Samuel Kuria --}}
+                <div class="col-md-6 col-lg-6 mb-5">
+                    <div class="team-portrait" data-bs-toggle="modal" data-bs-target="#SamuelKuria">
+                        <figure class="tp-headshot">
+                            <img src="{{ asset('img/Samuel Kuria.png') }}" alt="Samuel Kuria">
+                        </figure>
+                        <div class="tp-caption">
+                            <div class="inner-tp-caption">
+                                <div class="team-intro">
+                                    <h3>Samuel Kuria</h3>
+                                    <p><small>Finance</small></p>
+                                </div>
+                                <hr>
+                                <div class="team-intro-caption">
+                                    <p>
+                                        Samuel is an experienced and knowledgeable financial and accounting professional, a
+                                        holder of a
+                                        Bachelor’s degree in Education from Kenyatta University, Nairobi and also a
+                                        Certified Public
+                                        Accountant of Kenya.
+                                        <br> <a class="main-color">Read more <i class="fa fa-arrow-right"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="tp-social d-flex justify-content-center">
+                                    <div class="social-icon">
+                                        <p><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></p>
+                                    </div>
+                                    <div class="social-icon">
+                                        <p><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- TEAM START -->
@@ -238,6 +314,13 @@
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Sellah Bogonko, HSC</h5>
+                                    <p>
+                                        <strong>
+                                            <small class="main-color">
+                                                CEO & Co-founder Jacob’s Ladder Africa
+                                            </small>
+                                        </strong>
+                                    </p>
                                     <p class="team-desc">
                                         There are two approaches to life: one in which one lives addressing and
                                         confronting situations as they happen, and the other is to approach life with an
@@ -319,6 +402,13 @@
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Marceline Obuya</h5>
+                                    <p>
+                                        <strong>
+                                            <small class="main-color">
+                                                Co-founder Jacob’s Ladder Africa
+                                            </small>
+                                        </strong>
+                                    </p>
                                     <p class="team-desc">
                                         Marceline is a rebuilder of businesses. Marceline’s work experience in Africa over
                                         the
@@ -373,6 +463,155 @@
                                     <p class="team-desc">
                                         She has undertaken a number of World Bank/IFC, SIDA, IFAD, FAO, and USAID-
                                         funded consultancy assignments in Kenya, other African countries, and the USA.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- Karen Chelangat --}}
+    <div class="modal fade" id="KarenChelangat" tabindex="-1" aria-labelledby="KarenChelangatLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-bold" id="KarenChelangatLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="{{ asset('img/Karen Chelangat.png') }}" class="team-modal-img rounded-start"
+                                    alt="Karen Chelangat">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Karen Chelangat</h5>
+                                    <p>
+                                        <strong>
+                                            <small class="main-color">
+                                                Lead - JLA Incubator Programme
+                                            </small>
+                                        </strong>
+                                    </p>
+                                    <p class="team-desc">
+                                        Karen Chelang’at’s life and career journey reveals her reality as a life-giver, one
+                                        that activates
+                                        dormant potential in people, communities, organizations and systems within Africa.
+                                        She is driven to
+                                        see the realization of Africa’s emancipation through the transformation of its
+                                        people as a function of
+                                        their mind shifts.
+                                    </p>
+                                    <p class="team-desc">
+                                        Karen is passionate about challenging conventional patterns of thinking particularly
+                                        among young
+                                        people and creating room for them to explore previously unknown possibilities and
+                                        craft a new
+                                        future for themselves at the micro level, and for the continent as an aggregate. At
+                                        Jacob’s Ladder
+                                        Africa, Karen is involved in youth empowerment, namely, developing the strategy and
+                                        design of
+                                        entrepreneurship and funding programs aimed at transforming the youth and giving
+                                        them agency to
+                                        achieve economic and social change.
+                                    </p>
+                                    <p class="team-desc">
+                                        In recognition of the role that the socio-economic and financial wellbeing of
+                                        society plays in
+                                        meaningful living for people, Karen is driven to work with existing and potential
+                                        leaders and
+                                        entrepreneurs who will develop thriving home-grown solutions, platforms,
+                                        organizations and
+                                        policies. These frameworks can then lift the proverbial lid, and create
+                                        opportunities for multifarious
+                                        growth for many in the continent, ultimately contributing to Africa’s arising to her
+                                        place in the
+                                        commonwealth of the nations.
+                                    </p>
+                                    <p class="team-desc">
+                                        Karen has also held roles at AG Group International, where she has been involved in
+                                        edutech and low-income housing projects, as well as financial
+                                        access initiatives at Old Mutual Kenya, among others. Throughout her career, Karen
+                                        has been intentional about getting involved in developing
+                                        solutions and driving projects that disrupt convention and create meaningful
+                                        opportunities for previously underserved populations.
+                                    </p>
+                                    <p class="team-desc">
+                                        Karen holds an MBA from the Jack Welch Management Institute, and a BSc. in Actuarial
+                                        Science from the University of Nairobi.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- Samuel --}}
+    <div class="modal fade" id="SamuelKuria" tabindex="-1" aria-labelledby="SamuelKuriaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-bold" id="SamuelKuriaLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="{{ asset('img/Samuel Kuria.png') }}" class="team-modal-img rounded-start"
+                                    alt="Samuel Kuria">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Samuel Kuria</h5>
+                                    <p>
+                                        <strong>
+                                            <small class="main-color">
+                                                Finance
+                                            </small>
+                                        </strong>
+                                    </p>
+                                    <p class="team-desc">
+                                        Samuel is an experienced and knowledgeable financial and accounting professional, a
+                                        holder of a
+                                        Bachelor’s degree in Education from Kenyatta University, Nairobi and also a
+                                        Certified Public
+                                        Accountant of Kenya.
+                                    </p>
+                                    <p class="team-desc">
+                                        With over 15 years’ experience working with both commercial and Not for Profit
+                                        organisations in
+                                        various roles in finance and accounting. Over the past 9 years, he has worked with
+                                        more than 20
+                                        clients offering various consultancy services ranging from business start-ups,
+                                        business
+                                        restructuring, strategic management, financial modeling and planning among others.
+                                    </p>
+                                    <p class="team-desc">
+                                        Samuel possess vast experience in implementing finance and accounting systems with
+                                        strong
+                                        internal controls that enabling organisations achieve great accountability,
+                                        efficiency in assets
+                                        utilization with improved return on assets and high level of financial integrity.
+                                    </p>
+                                    <p class="team-desc">
+                                        As a financial planner, he has helped various organisations make well-informed
+                                        decisions on the
+                                        right types of investments and review them in a timely manner in line with changing
+                                        financial and
+                                        business environment.
+                                    </p>
+                                    <p class="team-desc">
+                                        Samuel is a holder of a bachelors degree in Business studies & Economics from the
+                                        University of
+                                        Nairobi and is a certified public accountant (K)
                                     </p>
                                 </div>
                             </div>
