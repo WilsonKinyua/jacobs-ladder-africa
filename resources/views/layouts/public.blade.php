@@ -39,6 +39,18 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/main.min.css') }}">
+    <!-- Google tag (gtag.js) -->
+    {{-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQGSC2FKD3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQGSC2FKD3');
+    </script> --}}
 </head>
 
 <body>

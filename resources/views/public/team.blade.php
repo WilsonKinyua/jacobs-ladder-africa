@@ -130,14 +130,14 @@
                                     </p>
                                 </div>
                                 <hr>
-                                <div class="tp-social d-flex justify-content-center">
+                                {{-- <div class="tp-social d-flex justify-content-center">
                                     <div class="social-icon">
                                         <p><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></p>
                                     </div>
                                     <div class="social-icon">
                                         <p><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></p>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -169,14 +169,14 @@
                                     </p>
                                 </div>
                                 <hr>
-                                <div class="tp-social d-flex justify-content-center">
+                                {{-- <div class="tp-social d-flex justify-content-center">
                                     <div class="social-icon">
                                         <p><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></p>
                                     </div>
                                     <div class="social-icon">
                                         <p><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></p>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -206,14 +206,14 @@
                                     </p>
                                 </div>
                                 <hr>
-                                <div class="tp-social d-flex justify-content-center">
+                                {{-- <div class="tp-social d-flex justify-content-center">
                                     <div class="social-icon">
                                         <p><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></p>
                                     </div>
                                     <div class="social-icon">
                                         <p><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></p>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
