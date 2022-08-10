@@ -3,7 +3,7 @@
      <div class="top-header">
          <div class="d-flex justify-content-between">
              <div class="header-left bg-gold-color">
-                 <p><strong>Phone:</strong> +254 730 116 325</p>
+                 <p><strong>Phone:</strong> +254 757 917 741</p>
                  <div class="ht-right-social">
                      <a href="https://www.facebook.com/JacobsLadderAfrica/" target="_blank"><i
                              class="fa fa-facebook"></i></a>
@@ -46,8 +46,8 @@
                          </li>
                          <li><a href="#">Who we are</a>
                              <ul class="nav-dropdown">
-                                 <li><a href="{{ route('about.us') }}#mission-vision">Our Vision</a></li>
-                                 <li><a href="{{ route('about.us') }}#mission-vision">Our Mission</a></li>
+                                 <li><a href="{{ route('index.home') }}#mission-vision">Our Vision</a></li>
+                                 <li><a href="{{ route('index.home') }}#mission-vision">Our Mission</a></li>
                                  <li><a href="{{ route('index.home') }}#our-values">Our Values</a></li>
                                  {{-- <li><a href="{{ route('about.us') }}">About us</a></li> --}}
                                  <li><a href="{{ route('team') }}">Our team</a></li>

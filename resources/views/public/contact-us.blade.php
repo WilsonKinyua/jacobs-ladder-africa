@@ -4,7 +4,7 @@
 @endsection
 @section('content')
     <div class="push-top-header">
-        <div class="sections" style="background-image: url({{ asset('img/white.jpg') }});">
+        <div>
             <div class="container">
                 <div class="pages-title">
                     <h1><span>Contact Us</span></h1>
@@ -23,8 +23,7 @@
                         <h2>Talk to us</h2>
                         <div class="contact-list-info">
                             <div class="contact-icon"><i class="fa fa-phone"></i></div>
-                            <p>&nbsp;<a class="text-dark" href="tel:+254 730 116 325">+254 730 116 606 | +254 730 116
-                                    325</a></p>
+                            <p>&nbsp;<a class="text-dark" href="tel:+254 757 917 741">+254 757 917 741</a></p>
                         </div>
                         <div class="contact-list-info">
                             <div class="contact-icon"><i class="fa fa-envelope"></i></div>

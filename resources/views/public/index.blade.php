@@ -35,7 +35,7 @@
     </div>
     <div class="banner-pattern"></div>
     <!-- about us -->
-    <section class="about-us mb-5 mt-5">
+    <section class="about-us mb-5 mt-5" id="mission-vision">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
@@ -47,17 +47,17 @@
                     <div class="about-us-content">
                         <h2 class="headings-bottom-line">About Jacob’s Ladder Africa</h2>
                         <p>
-                            Jacob’s Ladder Africa seeks to activate 32 Million jobs in the African Green Economy by 2032. It
+                            Jacob’s Ladder Africa seeks to activate 30 Million jobs in the African Green Economy by 2032. It
                             is a sustainable development hub that advances the agenda of youth in Africa towards
                             self-reliance and productivity. We seek to alleviate the current state of insufficiency among
                             the youth and empower them as the continent’s future leaders, to enable them to forge a new
                             pathway for themselves and others.
                         </p>
-                        <p>
+                        {{-- <p>
                             Jacob’s Ladder Africa seeks to do this through two main pillars critical to the future of
                             Africa: Climate Change and Leadership & Governance.
                         </p>
-                        <a href="{{ route('about.us') }}" class="btn-readmore mt-4">Read Our Story</a>
+                        <a href="{{ route('about.us') }}" class="btn-readmore mt-4">Read Our Story</a> --}}
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@
         </div>
     </section>
     <!-- vision and mission -->
-    <section id="mission-vision" class="mission-vision">
+    <section id="our-values" class="mission-vision">
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-6 border-right">
@@ -99,7 +99,7 @@
     </section>
     <!--  -->
     <!-- our values -->
-    <div class="" id="our-values">
+    <div>
         <div class="row text-center">
             <div class="col-lg-12 text-center">
                 <div class="section-title mt-5">

@@ -12721,7 +12721,7 @@ a:hover {
         rgba(249, 249, 249, 0) 100%
     );
 }
-h2.headings-bottom-line {
+/* h2.headings-bottom-line {
     position: relative;
     z-index: 1;
 }
@@ -12743,7 +12743,7 @@ h2.headings-bottom-line::before {
         rgba(34, 140, 34, 0.7) 0%,
         rgba(255, 166, 0, 0) 100%
     );
-}
+} */
 
 .text-bold {
     font-weight: bold;
@@ -13098,8 +13098,8 @@ header .container {
 }
 
 .about-us-img img {
-    width: 420px;
-    height: 420px;
+    width: 380px;
+    height: 380px;
     object-fit: contain;
     object-position: center;
 }

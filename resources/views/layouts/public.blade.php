@@ -95,7 +95,7 @@
                         <h3 class="text-white"><i class="fa fa-envelope"></i> Have any questions?</h3>
                         <p><a class="main-color" href="mailto:info@jacobsladder.africa">info@jacobsladder.africa</a></p>
                         <h3 class="text-white"><i class="fa fa-phone"></i> Call us</h3>
-                        <p><a class="main-color">+254 730 116 606 | +254 730 116 325</a></p>
+                        <p><a class="main-color">+254 757 917 741</a></p>
                     </div>
                 </div>
             </div>
