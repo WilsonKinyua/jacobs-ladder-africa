@@ -401,6 +401,26 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-7 left-news-section pb-3">
+                    <div class="slide">
+                        <a href="#">
+                            <div class="our-pillars-grid-layer">
+                                <figure class="gl-thumbnail">
+                                    <img src="{{ asset('img/new-news.png') }}" alt="News">
+                                </figure>
+                                {{-- <div class="gl-caption">
+                                    <p><span class="badge bg-info">Bilha Ndirangu speaks at the London Climate Week.</span>
+                                    </p>
+                                    <h2>
+                                        She represented the initial findings of the survey and her ambitious plans to
+                                        activate 30 Million jobs in the African Green Economy in Kenya.
+                                    </h2>
+                                </div>
+                                <div class="gl-overlay"></div> --}}
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
