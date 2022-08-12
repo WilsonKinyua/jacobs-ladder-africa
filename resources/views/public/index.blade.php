@@ -371,7 +371,7 @@
                                 <a href="#">
                                     <div class="our-pillars-grid-layer">
                                         <figure class="gl-thumbnail">
-                                            <img src="{{ asset('img/bilha-2.jpg') }}" alt="News">
+                                            <img src="{{ asset('img/class.png') }}" alt="News">
                                         </figure>
                                         <div class="gl-caption">
                                             <p><span class="badge bg-info">Bilha Ndirangu</span></p>
