@@ -69,9 +69,9 @@
                                  </li> --}}
                              </ul>
                          </li>
-                         <li>
+                         {{-- <li>
                             <a href="{{ route('videos') }}">Videos</a>
-                         </li>
+                         </li> --}}
                          <li><a href="{{ route('contact.us') }}">CONTACT us</a>
                          </li>
                          <li>

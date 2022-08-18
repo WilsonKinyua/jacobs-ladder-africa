@@ -401,7 +401,9 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="col-lg-12 text-center p-4">
+                    <a href="{{ route('videos')}}" class="btn-readmore">More Videos <i class="fa fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
     </section>
