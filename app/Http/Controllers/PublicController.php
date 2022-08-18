@@ -22,6 +22,11 @@ class PublicController extends Controller
         return view('public.about-us');
     }
 
+    public function videos()
+    {
+        return view('public.videos');
+    }
+
     public function climateChange()
     {
         return view('public.climate-change');

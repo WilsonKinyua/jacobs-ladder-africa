@@ -4,6 +4,7 @@
 // public routes
 Route::get('/', 'PublicController@index')->name('index.home');
 Route::get('about-us', 'PublicController@aboutUs')->name('about.us');
+Route::get('videos', 'PublicController@videos')->name('videos');
 Route::get('our-pillars/climate-change', 'PublicController@climateChange')->name('climate.change');
 Route::get('contact-us', 'PublicController@contactUs')->name('contact.us');
 Route::post('contact-us/create', 'PublicController@contactUsCreate')->name('contact.create');
