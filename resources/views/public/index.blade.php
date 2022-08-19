@@ -275,7 +275,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center p-4">
-                    <h2>Latest News & Development</h2>
+                    <h2>Latest News & Development | <a class="main-color" href="{{ route('videos')}}">Videos</a></h2>
                     <div class="headings-under-line"></div>
                 </div>
                 <div class="col-lg-7 left-news-section">
@@ -400,9 +400,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-12 text-center p-4">
-                    <a href="{{ route('videos')}}" class="btn-readmore">More Videos <i class="fa fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
