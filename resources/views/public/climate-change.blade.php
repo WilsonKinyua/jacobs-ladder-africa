@@ -66,9 +66,6 @@
                                 Youth Climate
                                 Summit</strong>.
                         </p>
-                        {{-- <p>
-                        For more information, <a href="" class="main-color">click here</a>.
-                    </p> --}}
                     </div>
                 </div>
             </div>

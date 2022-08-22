@@ -1,6 +1,5 @@
 @extends('layouts.public')
 @section('content')
-    <!-- slider -->
     <div class="home-slider">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -34,7 +33,6 @@
         </div>
     </div>
     <div class="banner-pattern"></div>
-    <!-- about us -->
     <section class="about-us mb-5 mt-5" id="mission-vision">
         <div class="container">
             <div class="row">
@@ -53,25 +51,18 @@
                             the youth and empower them as the continent’s future leaders, to enable them to forge a new
                             pathway for themselves and others.
                         </p>
-                        {{-- <p>
-                            Jacob’s Ladder Africa seeks to do this through two main pillars critical to the future of
-                            Africa: Climate Change and Leadership & Governance.
-                        </p>
-                        <a href="{{ route('about.us') }}" class="btn-readmore mt-4">Read Our Story</a> --}}
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
-    <!-- vision and mission -->
     <section id="our-values" class="mission-vision">
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-6 border-right">
                     <div class="vision-content">
                         <div class="mission-vision-icon">
-                            <!-- <i class="fa fa-star-o"></i> -->
                             <img src="{{ asset('img/vision.png') }}" alt="Vision">
                         </div>
                         <h2 class="headings">Our Vision</h2>
@@ -84,7 +75,6 @@
                 <div class="col-md-6 mission-border-right">
                     <div class="vision-content">
                         <div class="mission-vision-icon">
-                            <!-- <i class="fa fa-cog"></i> -->
                             <img src="{{ asset('img/mission.png') }}" alt="Mission">
                         </div>
                         <h2 class="headings">Our Mission</h2>
@@ -97,8 +87,6 @@
             </div>
         </div>
     </section>
-    <!--  -->
-    <!-- our values -->
     <div>
         <div class="row text-center">
             <div class="col-lg-12 text-center">
@@ -161,9 +149,7 @@
             </div>
         </div>
     </div>
-    <!-- vision and mission end -->
     <div class="banner-pattern"></div>
-    <!-- our pillars carousel start-->
     <div class="our-pillars-grid-carousel-container">
         <div class="row g-0 bg-pillars">
             <div class="col-md-3 col-lg-3 layer-counter text-center">
@@ -173,76 +159,6 @@
             </div>
             <div class="col-md-9 col-lg-9 carousel-layer">
                 <div class="pillars-carousel slider">
-                    {{-- <div class="slide">
-                        <a href="{{ route('climate.change') }}">
-                            <div class="our-pillars-grid-layer">
-                                <figure class="gl-thumbnail">
-                                    <img src="{{ asset('img/climate-change.jpeg') }}" alt="Climate Change">
-                                </figure>
-                                <div class="gl-caption">
-                                    <h2>Climate Change</h2>
-                                    <p>Climate change is a major challenge for the African...</p>
-                                </div>
-                                <div class="gl-overlay"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="{{ route('leadership.governance') }}">
-                            <div class="our-pillars-grid-layer">
-                                <figure class="gl-thumbnail">
-                                    <img src="{{ asset('img/leadership.jpeg') }}" alt="Leadership">
-                                </figure>
-                                <div class="gl-caption">
-                                    <h2>Leadership &amp; Governance</h2>
-                                    <p>Leadership and governance are critical components...</p>
-                                </div>
-                                <div class="gl-overlay"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="{{ route('education') }}">
-                            <div class="our-pillars-grid-layer">
-                                <figure class="gl-thumbnail">
-                                    <img src="{{ asset('img/education.jpeg') }}" alt="Education">
-                                </figure>
-                                <div class="gl-caption">
-                                    <h2>Education</h2>
-                                    <p>One can see the patterns that govern the...</p>
-                                </div>
-                                <div class="gl-overlay"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="{{ route('economic.empowerment') }}">
-                            <div class="our-pillars-grid-layer">
-                                <figure class="gl-thumbnail">
-                                    <img src="{{ asset('img/economic.jpg') }}" alt="Economic">
-                                </figure>
-                                <div class="gl-caption">
-                                    <h2>Economic Empowerment</h2>
-                                    <p>We empower the youth with the mindset, skills...</p>
-                                </div>
-                                <div class="gl-overlay"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="{{ route('innovation.technology') }}">
-                            <div class="our-pillars-grid-layer">
-                                <figure class="gl-thumbnail">
-                                    <img src="{{ asset('img/tech.jpeg') }}" alt="Technology">
-                                </figure>
-                                <div class="gl-caption">
-                                    <h2>Innovation &amp; Technology</h2>
-                                    <p>In Africa, technology presents an opportunity to...</p>
-                                </div>
-                                <div class="gl-overlay"></div>
-                            </div>
-                        </a>
-                    </div> --}}
                     @foreach ($whatWeDo as $whatWeDo)
                         <div class="slide">
                             <a href="{{ route('we.do.sector', $whatWeDo->slug) }}">
@@ -265,12 +181,8 @@
 
                 </div>
             </div>
-            <!-- <div class="banner-pattern"></div> -->
         </div>
     </div>
-    <!--our pillars carousel end-->
-
-    <!-- news section -->
     <section class="news-container">
         <div class="container">
             <div class="row">

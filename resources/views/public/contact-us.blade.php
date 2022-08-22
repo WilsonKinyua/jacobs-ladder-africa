@@ -1,17 +1,11 @@
 @extends('layouts.public')
 @section('title')
-    - Contact Us
+ - Contact Us
 @endsection
 @section('content')
     <div class="push-top-header">
         <div>
             <div class="container">
-                {{-- <div class="pages-title">
-                    <h1><span>Contact Us</span></h1>
-                    <p><a href="{{ route('index.home') }}">Home</a> &nbsp; > &nbsp;<a class="active"
-                            href="{{ route('contact.us') }}">Contact Us</a>
-                    </p>
-                </div> --}}
             </div>
         </div>
     </div>

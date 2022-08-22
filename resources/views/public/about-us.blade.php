@@ -43,15 +43,12 @@
             </div>
         </div>
     </section>
-
-    <!-- vision and mission start -->
     <section id="mission-vision" class="mission-vision">
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-6 border-right">
                     <div class="vision-content">
                         <div class="mission-vision-icon">
-                            <!-- <i class="fa fa-star-o"></i> -->
                             <img src="{{ asset('img/vision.png') }}" alt="Vision">
                         </div>
                         <h2 class="headings">Our Vision</h2>
@@ -64,7 +61,6 @@
                 <div class="col-md-6 mission-border-right">
                     <div class="vision-content">
                         <div class="mission-vision-icon">
-                            <!-- <i class="fa fa-cog"></i> -->
                             <img src="{{ asset('img/mission.png') }}" alt="Mission">
                         </div>
                         <h2 class="headings">Our Mission</h2>
@@ -77,5 +73,4 @@
             </div>
         </div>
     </section>
-    <!-- vision and mission end -->
 @endsection

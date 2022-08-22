@@ -2,16 +2,14 @@
 @section('title')
     - Our Team
 @endsection
+@section('description')
+    Our team. From our headquarters in Nairobi, Kenya, Jacob’s Ladder Africa team comprises of experts with a desire and
+    passion for youth empowerment and climate change
+@endsection
 @section('content')
     <div class="push-top-header">
         <div>
             <div class="container">
-                {{-- <div class="pages-title">
-                    <h1>Jacob's Ladder Africa <br> <span>The Leadership team</span></h1>
-                    <p><a href="{{ route('index.home') }}">Home</a> &nbsp; > &nbsp; <a class="active"
-                            href="{{ route('team') }}">The Leadership team</a>
-                    </p>
-                </div> --}}
             </div>
         </div>
     </div>
@@ -130,14 +128,6 @@
                                     </p>
                                 </div>
                                 <hr>
-                                {{-- <div class="tp-social d-flex justify-content-center">
-                                    <div class="social-icon">
-                                        <p><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></p>
-                                    </div>
-                                    <div class="social-icon">
-                                        <p><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></p>
-                                    </div>
-                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -206,14 +196,6 @@
                                     </p>
                                 </div>
                                 <hr>
-                                {{-- <div class="tp-social d-flex justify-content-center">
-                                    <div class="social-icon">
-                                        <p><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></p>
-                                    </div>
-                                    <div class="social-icon">
-                                        <p><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></p>
-                                    </div>
-                                </div> --}}
                             </div>
                         </div>
                     </div>

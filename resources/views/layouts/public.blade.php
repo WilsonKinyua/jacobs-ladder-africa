@@ -7,35 +7,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Jacob’s Ladder Africa" />
     <title>
-        @hasSection('title')
-            Jacob’s Ladder Africa @yield('title')
+        @if (View::hasSection('title'))
+            {{ trans('panel.site_title') }}@yield('title')
         @else
-            Jacob's Ladder Africa
+            Jacob’s Ladder Africa
         @endif
     </title>
+    <meta name="keywords" content="@if (View::hasSection('keywords')) @yield('keywords')@else keywords here 😄 @endif" />
+    <meta name="title"
+        content="@if (View::hasSection('title')) {{ trans('panel.site_title') }}@yield('title')@else Jacob’s Ladder Africa @endif">
     <meta name="description"
-        content="Jacob’s Ladder Africa is a sustainable development hub that advances the agenda of youth in Africa towards self-reliance and productivity. We seek to alleviate the current state of insufficiency among the youth and empower them as the continent’s future leaders, to enable them to forge a new pathway for themselves and others.">
-    <meta name="keywords"
-        content="Jacob’s Ladder Africa, Africa, youth in Africa, Climate Change, Education, Leadership & Governance, Economic Empowerment, Innovation & Technology">
-    <meta name="title" content="Jacob’s Ladder Africa">
+        content="@if (View::hasSection('description')) @yield('description')@else Jacob’s Ladder Africa is a sustainable development hub that advances the agenda of youth in Africa towards self-reliance and productivity. @endif">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ Request::url() }}">
-    <meta property="og:title" content="Jacob’s Ladder Africa">
+    <meta property="og:title"
+        content="@if (View::hasSection('title')) {{ trans('panel.site_title') }}@yield('title')@else Jacob’s Ladder Africa @endif">
     <meta property="og:description"
-        content="Jacob’s Ladder Africa is a sustainable development hub that advances the agenda of youth in Africa towards self-reliance and productivity. We seek to alleviate the current state of insufficiency among the youth and empower them as the continent’s future leaders, to enable them to forge a new pathway for themselves and others.">
-    <meta property="og:image" content="{{ asset('img/logo.png') }}">
+        content="@if (View::hasSection('description')) @yield('description')@else Jacob’s Ladder Africa is a sustainable development hub that advances the agenda of youth in Africa towards self-reliance and productivity. @endif">
+    <meta property="og:image"
+        content="@if (View::hasSection('image')) @yield('image')@else {{ asset('img/logo.png') }} @endif">
 
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ Request::url() }}">
-    <meta property="twitter:title" content="Jacob’s Ladder Africa">
+    <meta property="twitter:title"
+        content="@if (View::hasSection('title')) {{ trans('panel.site_title') }}@yield('title')@else Jacob’s Ladder Africa @endif">
     <meta property="twitter:description"
-        content="Jacob’s Ladder Africa is a sustainable development hub that advances the agenda of youth in Africa towards self-reliance and productivity. We seek to alleviate the current state of insufficiency among the youth and empower them as the continent’s future leaders, to enable them to forge a new pathway for themselves and others.">
-    <meta property="twitter:image" content="{{ asset('img/logo.png') }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon-16x16.png') }}">
-    <link rel="manifest" href="{{ asset('img/site.webmanifest') }}">
+        content="@if (View::hasSection('description')) @yield('description')@else Jacob’s Ladder Africa is a sustainable development hub that advances the agenda of youth in Africa towards self-reliance and productivity. @endif">
+    <meta property="twitter:image"
+        content="@if (View::hasSection('image')) @yield('image')@else {{ asset('img/logo.png') }} @endif">
+
+    <link rel="icon" type="image/png" href="{{ asset('img/favicon.ico') }}" />
+
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/main.min.css') }}">
@@ -105,7 +108,8 @@
                             Nairobi, Kenya
                         </p> --}}
                         <h3 class="text-white"><i class="fa fa-envelope"></i> Have any questions?</h3>
-                        <p><a class="main-color" href="mailto:info@jacobsladder.africa">info@jacobsladder.africa</a></p>
+                        <p><a class="main-color" href="mailto:info@jacobsladder.africa">info@jacobsladder.africa</a>
+                        </p>
                         <h3 class="text-white"><i class="fa fa-phone"></i> Call us</h3>
                         <p><a class="main-color">+254 757 917 741</a></p>
                     </div>
