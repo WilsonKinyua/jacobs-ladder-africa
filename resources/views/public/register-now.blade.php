@@ -2,9 +2,12 @@
 @section('title')
     - Register Now
 @endsection
+@section('description')
+    Join the movement and be a member
+@endsection
 @section('content')
     <div class="push-top-header">
-        <div class="sections" style="background-image: url({{ asset('img/back.jpg')}});">
+        <div class="sections" style="background-image: url({{ asset('img/back.jpg') }});">
             <div class="container">
                 <div class="pages-title">
                     <h1><span>Join the movement and be a member</span></h1>

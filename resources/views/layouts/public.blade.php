@@ -25,8 +25,7 @@
         content="@if (View::hasSection('title')) {{ trans('panel.site_title') }}@yield('title')@else Jacob’s Ladder Africa @endif">
     <meta property="og:description"
         content="@if (View::hasSection('description')) @yield('description')@else Jacob’s Ladder Africa is a sustainable development hub that advances the agenda of youth in Africa towards self-reliance and productivity. @endif">
-    <meta property="og:image"
-        content="@if (View::hasSection('image')) @yield('image')@else {{ asset('img/logo.png') }} @endif">
+    <meta property="og:image" content="{{ asset('img/logo.png') }}">
 
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ Request::url() }}">
@@ -34,8 +33,7 @@
         content="@if (View::hasSection('title')) {{ trans('panel.site_title') }}@yield('title')@else Jacob’s Ladder Africa @endif">
     <meta property="twitter:description"
         content="@if (View::hasSection('description')) @yield('description')@else Jacob’s Ladder Africa is a sustainable development hub that advances the agenda of youth in Africa towards self-reliance and productivity. @endif">
-    <meta property="twitter:image"
-        content="@if (View::hasSection('image')) @yield('image')@else {{ asset('img/logo.png') }} @endif">
+    <meta property="twitter:image" content="{{ asset('img/logo.png') }}">
 
     <link rel="icon" type="image/png" href="{{ asset('img/favicon.ico') }}" />
 

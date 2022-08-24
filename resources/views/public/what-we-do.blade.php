@@ -2,6 +2,12 @@
 @section('title')
     - What we do
 @endsection
+@section('description')
+    Jacob’s Ladder Africa is a sustainable development hub that advances the agenda of youth in Africa
+    towards self-reliance and productivity. We seek to alleviate the current state of insufficiency among
+    the youth and empower them as the continent’s future leaders,  to  enable them to forge a new
+    pathway for themselves and others.
+@endsection
 @section('content')
     <div class="push-top-header">
         <div class="sections" style="background-image: url('{{ asset('img/grassroots.jpg') }}');height: 550px;">

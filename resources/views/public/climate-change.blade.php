@@ -2,6 +2,9 @@
 @section('title')
     - What we do | Climate Change
 @endsection
+@section('description')
+    
+@endsection
 @section('content')
     <div class="push-top-header">
         <div class="sections" style="background-image: url('{{ asset('img/climate-change.jpeg') }}');">

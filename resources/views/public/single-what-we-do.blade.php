@@ -2,6 +2,9 @@
 @section('title')
     - What we do | {{ $whatWeDo->title ?? '' }}
 @endsection
+@section('description')
+    
+@endsection
 @section('content')
     <section class="mb-5">
         <div class="container" style="padding-top: 200px">

@@ -1,6 +1,9 @@
 @extends('layouts.public')
 @section('title')
- - Contact Us
+    - Contact Us
+@endsection
+@section('description')
+    If you have any questions, concerns or issues, we're here to help.
 @endsection
 @section('content')
     <div class="push-top-header">
