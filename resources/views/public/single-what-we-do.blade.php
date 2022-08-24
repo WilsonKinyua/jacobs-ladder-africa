@@ -1,6 +1,6 @@
 @extends('layouts.public')
 @section('title')
-    - What we do | {{ $whatWeDo->title ?? '' }}
+    - {{ $whatWeDo->title ?? '' }}
 @endsection
 @section('description')
     {{ $whatWeDo->meta_descriptions ?? '' }}
