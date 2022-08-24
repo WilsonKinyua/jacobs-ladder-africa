@@ -4,60 +4,69 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-    <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-    <url>
-    <loc>https://jacobsladder.africa/</loc>
-    <lastmod>2022-08-24T13:37:15+00:00</lastmod>
-    <priority>1.00</priority>
-    </url>
-    <url>
-    <loc>https://jacobsladder.africa/team</loc>
-    <lastmod>2022-08-24T13:37:15+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://jacobsladder.africa/what-we-do</loc>
-    <lastmod>2022-08-24T13:37:15+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://jacobsladder.africa/what-we-do/baseline-survey</loc>
-    <lastmod>2022-08-24T13:37:15+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://jacobsladder.africa/what-we-do/grassroot-conversations</loc>
-    <lastmod>2022-08-24T13:37:15+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://jacobsladder.africa/what-we-do/curriculum</loc>
-    <lastmod>2022-08-24T13:37:15+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://jacobsladder.africa/what-we-do/summit</loc>
-    <lastmod>2022-08-24T13:37:15+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://jacobsladder.africa/what-we-do/youth-climate-action-fund</loc>
-    <lastmod>2022-08-24T13:37:15+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://jacobsladder.africa/contact-us</loc>
-    <lastmod>2022-08-24T13:37:15+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://jacobsladder.africa/join-the-movement-and-be-a-member</loc>
-    <lastmod>2022-08-24T13:37:15+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
-    <url>
-    <loc>https://jacobsladder.africa/about-us</loc>
-    <lastmod>2022-08-24T13:37:15+00:00</lastmod>
-    <priority>0.80</priority>
-    </url>
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://jacobsladder.africa/</loc>
+  <lastmod>2022-08-24T15:31:31+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://jacobsladder.africa/team</loc>
+  <lastmod>2022-08-24T15:31:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jacobsladder.africa/what-we-do</loc>
+  <lastmod>2022-08-24T15:31:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jacobsladder.africa/what-we-do/baseline-survey</loc>
+  <lastmod>2022-08-24T15:31:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jacobsladder.africa/what-we-do/grassroot-conversations</loc>
+  <lastmod>2022-08-24T15:31:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jacobsladder.africa/what-we-do/curriculum</loc>
+  <lastmod>2022-08-24T15:31:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jacobsladder.africa/what-we-do/summit</loc>
+  <lastmod>2022-08-24T15:31:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jacobsladder.africa/what-we-do/youth-climate-action-fund</loc>
+  <lastmod>2022-08-24T15:31:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jacobsladder.africa/contact-us</loc>
+  <lastmod>2022-08-24T15:31:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jacobsladder.africa/join-the-movement-and-be-a-member</loc>
+  <lastmod>2022-08-24T15:31:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jacobsladder.africa/videos</loc>
+  <lastmod>2022-08-24T15:31:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jacobsladder.africa/about-us</loc>
+  <lastmod>2022-08-24T15:31:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>

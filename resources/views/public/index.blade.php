@@ -43,7 +43,7 @@
                 </div>
                 <div class="col-md-7">
                     <div class="about-us-content">
-                        <h1 class="headings-bottom-line">About Jacob’s Ladder Africa</h1>
+                        <h1 class="headings-bottom-line">Jacob’s Ladder Africa</h1>
                         <p>
                             Jacob’s Ladder Africa seeks to activate 30 Million jobs in the African Green Economy by 2032. It
                             is a sustainable development hub that advances the agenda of youth in Africa towards
