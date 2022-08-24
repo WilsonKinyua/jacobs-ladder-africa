@@ -3,7 +3,7 @@
     - What we do | {{ $whatWeDo->title ?? '' }}
 @endsection
 @section('description')
-    
+    {{ $whatWeDo->meta_descriptions ?? '' }}
 @endsection
 @section('content')
     <section class="mb-5">

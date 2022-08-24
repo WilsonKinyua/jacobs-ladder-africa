@@ -33,6 +33,7 @@ class WhatWeDo extends Model implements HasMedia
         'title',
         'description',
         'slug',
+        'meta_descriptions',
         'created_at',
         'updated_at',
         'deleted_at',

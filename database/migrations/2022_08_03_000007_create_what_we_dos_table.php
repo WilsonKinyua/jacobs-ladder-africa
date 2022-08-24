@@ -13,6 +13,7 @@ class CreateWhatWeDosTable extends Migration
             $table->string('title')->unique();
             $table->longText('description');
             $table->longText('slug')->nullable();
+            $table->longText('meta_descriptions')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
