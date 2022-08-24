@@ -13,7 +13,8 @@
             Jacob’s Ladder Africa
         @endif
     </title>
-    <meta name="keywords" content="@if (View::hasSection('keywords')) @yield('keywords')@else keywords here 😄 @endif" />
+    <meta name="keywords"
+        content="@if (View::hasSection('keywords')) @yield('keywords')@else Growth, Youth, Africa, Evolution, Development, Minority, Teens, Young, Productivity, Self-reliance @endif" />
     <meta name="title"
         content="@if (View::hasSection('title')) {{ trans('panel.site_title') }}@yield('title')@else Jacob’s Ladder Africa @endif">
     <meta name="description"
@@ -41,7 +42,7 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/main.min.css') }}">
     <!-- Google tag (gtag.js) -->
-    {{-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQGSC2FKD3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQGSC2FKD3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -51,7 +52,7 @@
         gtag('js', new Date());
 
         gtag('config', 'G-PQGSC2FKD3');
-    </script> --}}
+    </script>
 </head>
 
 <body>

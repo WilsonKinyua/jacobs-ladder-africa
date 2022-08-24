@@ -16,10 +16,13 @@
     <section class="mt-5">
         <div class="container">
             <div class="row g-0 text-center">
+                <div class="col-md-12 p-4">
+                    <h1 class="text-uppercase text-decoration-underline">Meet our Team</h1>
+                </div>
                 <div class="col-md-6 col-lg-6 mb-5">
                     <div class="team-portrait" data-bs-toggle="modal" data-bs-target="#SellahBogonko">
                         <figure class="tp-headshot">
-                            <img src="{{ asset('img/Sellah.png') }}" alt="Sellah">
+                            <img src="{{ asset('img/Sellah.png') }}" alt="Sellah Bogonko">
                         </figure>
                         <div class="tp-caption">
                             <div class="inner-tp-caption">
@@ -107,7 +110,7 @@
                 <div class="col-md-6 col-lg-6 mb-5">
                     <div class="team-portrait" data-bs-toggle="modal" data-bs-target="#Marceline">
                         <figure class="tp-headshot">
-                            <img src="{{ asset('img/Marceline.jpeg') }}" alt="Marceline">
+                            <img src="{{ asset('img/Marceline.jpeg') }}" alt="Marceline Obuya">
                         </figure>
                         <div class="tp-caption">
                             <div class="inner-tp-caption">

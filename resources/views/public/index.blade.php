@@ -38,12 +38,12 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="about-us-img">
-                        <img src="{{ asset('img/about-us.png') }}" alt="About us">
+                        <img src="{{ asset('img/about-us.png') }}" alt="About Jacob’s Ladder Africa">
                     </div>
                 </div>
                 <div class="col-md-7">
                     <div class="about-us-content">
-                        <h2 class="headings-bottom-line">About Jacob’s Ladder Africa</h2>
+                        <h1 class="headings-bottom-line">About Jacob’s Ladder Africa</h1>
                         <p>
                             Jacob’s Ladder Africa seeks to activate 30 Million jobs in the African Green Economy by 2032. It
                             is a sustainable development hub that advances the agenda of youth in Africa towards
@@ -63,7 +63,7 @@
                 <div class="col-md-6 border-right">
                     <div class="vision-content">
                         <div class="mission-vision-icon">
-                            <img src="{{ asset('img/vision.png') }}" alt="Vision">
+                            <img src="{{ asset('img/vision.png') }}" alt="Our Vision">
                         </div>
                         <h2 class="headings">Our Vision</h2>
                         <p>
@@ -75,7 +75,7 @@
                 <div class="col-md-6 mission-border-right">
                     <div class="vision-content">
                         <div class="mission-vision-icon">
-                            <img src="{{ asset('img/mission.png') }}" alt="Mission">
+                            <img src="{{ asset('img/mission.png') }}" alt="Our Mission">
                         </div>
                         <h2 class="headings">Our Mission</h2>
                         <p>
@@ -138,7 +138,7 @@
             <div class="col-md-6 col-lg-3 ">
                 <div class="our-values-box">
                     <div class="our-values-icon">
-                        <img src="{{ asset('img/together.png') }}" alt="Together">
+                        <img src="{{ asset('img/together.png') }}" alt="Umoja">
                     </div>
                     <h4>Umoja</h4>
                     <p>
@@ -195,7 +195,7 @@
                         <a href="#">
                             <div class="our-pillars-grid-layer">
                                 <figure class="gl-thumbnail">
-                                    <img src="{{ asset('img/grassroots.jpg') }}" alt="News">
+                                    <img src="{{ asset('img/grassroots.jpg') }}" alt="Kenya Grassroots conversation">
                                 </figure>
                                 <div class="gl-caption">
                                     <p><span class="badge bg-info">Kenya Grassroots conversation</span><span
@@ -218,7 +218,7 @@
                                 <a href="#">
                                     <div class="our-pillars-grid-layer">
                                         <figure class="gl-thumbnail">
-                                            <img src="{{ asset('img/national-youth.jpeg') }}" alt="News">
+                                            <img src="{{ asset('img/national-youth.jpeg') }}" alt="Kenya's first National Youth Dialogue on the Elections">
                                         </figure>
                                         <div class="gl-caption">
                                             <p><span class="badge bg-info">Kenya's first National Youth Dialogue on the
@@ -240,7 +240,7 @@
                                 <a href="#">
                                     <div class="our-pillars-grid-layer">
                                         <figure class="gl-thumbnail">
-                                            <img src="{{ asset('img/green.jpg') }}" alt="News">
+                                            <img src="{{ asset('img/green.jpg') }}" alt="First ever baseline survey on youth attitudes on climate change in Kenya">
                                         </figure>
                                         <div class="gl-caption">
                                             <p><span class="badge bg-info">First ever baseline survey on youth attitudes on
@@ -261,7 +261,7 @@
                         <a href="#">
                             <div class="our-pillars-grid-layer">
                                 <figure class="gl-thumbnail">
-                                    <img src="{{ asset('img/bilha.jpg') }}" alt="News">
+                                    <img src="{{ asset('img/bilha.jpg') }}" alt="Bilha Ndirangu speaks at the London Climate Week.">
                                 </figure>
                                 <div class="gl-caption">
                                     <p><span class="badge bg-info">Bilha Ndirangu speaks at the London Climate Week.</span>
@@ -283,7 +283,7 @@
                                 <a href="#">
                                     <div class="our-pillars-grid-layer">
                                         <figure class="gl-thumbnail">
-                                            <img src="{{ asset('img/class.png') }}" alt="News">
+                                            <img src="{{ asset('img/class.png') }}" alt="Jacobs Ladder co-founder selected as part of the 2022 Tutu Fellows Cohort.">
                                         </figure>
                                         <div class="gl-caption">
                                             <p><span class="badge bg-info">Bilha Ndirangu</span></p>
@@ -300,7 +300,7 @@
                                 <a href="#">
                                     <div class="our-pillars-grid-layer">
                                         <figure class="gl-thumbnail">
-                                            <img src="{{ asset('img/new-news.png') }}" alt="News">
+                                            <img src="{{ asset('img/new-news.png') }}" alt="Bilha Ndirangu shares the Jabobs Ladder 30M Green Jobs by 2032 with CNBC">
                                         </figure>
                                         <div class="gl-caption">
                                             <h2>Bilha Ndirangu shares the Jabobs Ladder 30M Green Jobs by 2032 with CNBC

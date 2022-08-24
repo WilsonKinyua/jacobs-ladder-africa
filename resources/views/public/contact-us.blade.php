@@ -17,7 +17,7 @@
             <div class="row g-0">
                 <div class="col-lg-6">
                     <div class="contact-info">
-                        <h2>Talk to us</h2>
+                        <h1>Talk to us</h1>
                         <div class="contact-list-info">
                             <div class="contact-icon"><i class="fa fa-phone"></i></div>
                             <p>&nbsp;<a class="text-dark" href="tel:+254 757 917 741">+254 757 917 741</a></p>

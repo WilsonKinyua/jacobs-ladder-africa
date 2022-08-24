@@ -17,7 +17,7 @@
                 </div>
                 <div class="col-md-8 border-right">
                     <div class="card-body">
-                        <h3 class="card-title text-capitalize">{{ $whatWeDo->title ?? '' }}</h3>
+                        <h1 class="card-title text-capitalize">{{ $whatWeDo->title ?? '' }}</h1>
                         <p>
                             {!! $whatWeDo->description ?? '' !!}
                         </p>
