@@ -43,7 +43,7 @@
                                         circumstances
                                         and situations that one encounters. The latter describes the approach that
                                         Sellah
-                                        Bogonko lives by- as she is one given to changing the status quo wherever she
+                                        Bogonko lives by - as she is one given to changing the status quo wherever she
                                         finds
                                         herself.
                                         <br> <a class="main-color">Read more <i class="fa fa-arrow-right"></i>
@@ -311,7 +311,7 @@
                                         confronting situations as they happen, and the other is to approach life with an
                                         understanding of one’s identity and where this fits in relation to the
                                         developments, circumstances and situations that one encounters. The latter
-                                        describes the approach that Sellah Bogonko lives by- as she is one given to
+                                        describes the approach that Sellah Bogonko lives by - as she is one given to
                                         changing the status quo wherever she finds herself.
                                     </p>
                                     <p class="team-desc">
@@ -356,8 +356,8 @@
                                     </p>
                                     <p class="team-desc">
                                         Sellah is currently pursuing a Executive Education Course at the Harvard Kennedy
-                                        School of Government and is undertaking a Phd in Leadership and Public
-                                        Governance from the International Leadership University, following a Msc in
+                                        School of Government and is undertaking a PhD in Leadership and Public
+                                        Governance from the International Leadership University, following a MSc in
                                         Public Governance from the same institution. Prior to this, she obtained a
                                         Bachelor of Arts Degree in Business & Sociology from Kenyatta University.
                                     </p>
@@ -412,7 +412,7 @@
                                     <p class="team-desc">
                                         Marceline’s incubating spirit is clearly manifested in her track record through her
                                         ability
-                                        to nurture, restore and prosper both start start-ups and established enterprises.
+                                        to nurture, restore and prosper both start-ups and established enterprises.
                                         Under
                                         her stewardship, the viability of the business is brought about by the fact that she
                                         lays
@@ -442,8 +442,8 @@
                                         Spain. She is currently, undertaking a Social Impact course at the University of
                                         Cape
                                         Town. She has managed the Medical Credit Fund in East Africa, a Dutch organization,
-                                        where she, later on, went on to take charge of the Kenya country operations and co-
-                                        Country Director with PharmAccess Foundation.
+                                        where she, later on, went on to take charge of the Kenya country operations and
+                                        Co-country Director with PharmAccess Foundation.
                                     </p>
                                     <p class="team-desc">
                                         She has undertaken a number of World Bank/IFC, SIDA, IFAD, FAO, and USAID-
@@ -592,11 +592,6 @@
                                         right types of investments and review them in a timely manner in line with changing
                                         financial and
                                         business environment.
-                                    </p>
-                                    <p class="team-desc">
-                                        Samuel is a holder of a bachelors degree in Business studies & Economics from the
-                                        University of
-                                        Nairobi and is a certified public accountant (K)
                                     </p>
                                 </div>
                             </div>
