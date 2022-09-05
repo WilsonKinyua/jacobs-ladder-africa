@@ -187,7 +187,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center p-4">
-                    <h2>Latest News & Development | <a class="main-color" href="{{ route('videos')}}">Videos</a></h2>
+                    <h2>Latest News & Development | <a class="main-color" href="{{ route('videos') }}">Videos</a></h2>
                     <div class="headings-under-line"></div>
                 </div>
                 <div class="col-lg-7 left-news-section">
@@ -218,7 +218,8 @@
                                 <a href="#">
                                     <div class="our-pillars-grid-layer">
                                         <figure class="gl-thumbnail">
-                                            <img src="{{ asset('img/national-youth.jpeg') }}" alt="Kenya's first National Youth Dialogue on the Elections">
+                                            <img src="{{ asset('img/national-youth.jpeg') }}"
+                                                alt="Kenya's first National Youth Dialogue on the Elections">
                                         </figure>
                                         <div class="gl-caption">
                                             <p><span class="badge bg-info">Kenya's first National Youth Dialogue on the
@@ -240,7 +241,8 @@
                                 <a href="#">
                                     <div class="our-pillars-grid-layer">
                                         <figure class="gl-thumbnail">
-                                            <img src="{{ asset('img/green.jpg') }}" alt="First ever baseline survey on youth attitudes on climate change in Kenya">
+                                            <img src="{{ asset('img/green.jpg') }}"
+                                                alt="First ever baseline survey on youth attitudes on climate change in Kenya">
                                         </figure>
                                         <div class="gl-caption">
                                             <p><span class="badge bg-info">First ever baseline survey on youth attitudes on
@@ -261,10 +263,11 @@
                         <a href="#">
                             <div class="our-pillars-grid-layer">
                                 <figure class="gl-thumbnail">
-                                    <img src="{{ asset('img/bilha.jpg') }}" alt="Bilha Ndirangu speaks at the London Climate Week.">
+                                    <img src="{{ asset('img/bilha.jpg') }}"
+                                        alt="Bilha Ndirangu speaks at the London Climate Week.">
                                 </figure>
                                 <div class="gl-caption">
-                                    <p><span class="badge bg-info">Bilha Ndirangu speaks at the London Climate Week.</span>
+                                    {{-- <p><span class="badge bg-info">Bilha Ndirangu speaks at the London Climate Week.</span> --}}
                                     </p>
                                     <h2>
                                         She represented the initial findings of the survey and her ambitious plans to
@@ -283,11 +286,12 @@
                                 <a href="#">
                                     <div class="our-pillars-grid-layer">
                                         <figure class="gl-thumbnail">
-                                            <img src="{{ asset('img/class.png') }}" alt="Jacobs Ladder co-founder selected as part of the 2022 Tutu Fellows Cohort.">
+                                            <img src="{{ asset('img/class.png') }}"
+                                                alt="Jacobs Ladder co-founder selected as part of the 2022 Tutu Fellows Cohort.">
                                         </figure>
                                         <div class="gl-caption">
                                             <p><span class="badge bg-info">Bilha Ndirangu</span></p>
-                                            <h2>Jacobs Ladder co-founder selected as part of the 2022 Tutu Fellows Cohort.
+                                            <h2>Jacob's Ladder co-founder selected as part of the 2022 Tutu Fellows Cohort.
                                             </h2>
                                         </div>
                                         <div class="gl-overlay"></div>
@@ -300,10 +304,12 @@
                                 <a href="#">
                                     <div class="our-pillars-grid-layer">
                                         <figure class="gl-thumbnail">
-                                            <img src="{{ asset('img/new-news.png') }}" alt="Bilha Ndirangu shares the Jabobs Ladder 30M Green Jobs by 2032 with CNBC">
+                                            <img src="{{ asset('img/new-news.png') }}"
+                                                alt="Bilha Ndirangu shares the Jabobs Ladder 30M Green Jobs by 2032 with CNBC">
                                         </figure>
                                         <div class="gl-caption">
-                                            <h2>Bilha Ndirangu shares the Jabobs Ladder 30M Green Jobs by 2032 with CNBC
+                                            <h2>Bilha Ndirangu shares the Jacob’s Ladder’s objective of 30m Green Jobs by
+                                                2032 with CNBC
                                             </h2>
                                         </div>
                                         <div class="gl-overlay"></div>
