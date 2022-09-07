@@ -81,7 +81,7 @@
                                 of insufficiency among the youth and empower them as the continent’s future leaders, to
                                 enable them to forge a new pathway for themselves and others.
                             </p>
-                            <a href="{{ route('about.us') }}" class="text-white">Read more <i
+                            <a href="{{ route('we.do') }}" class="text-white">Read more <i
                                     class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
