@@ -14,7 +14,7 @@
                         <div class="slider-caption">
                             <h2 class="display-4 animated fadeInRight">
                                 <span class="text-capitalize">
-                                    Activating 30 Million Jobs in the <br> African Green Economy by 2032
+                                    Activating 30 Million Jobs in the <br> African Green Economy by 2033
                                 </span>
                             </h2>
                         </div>
@@ -45,7 +45,7 @@
                     <div class="about-us-content">
                         <h1 class="headings-bottom-line">Jacob’s Ladder Africa</h1>
                         <p>
-                            Jacob’s Ladder Africa seeks to activate 30 Million jobs in the African Green Economy by 2032. It
+                            Jacob’s Ladder Africa seeks to activate 30 Million jobs in the African Green Economy by 2033. It
                             is a sustainable development hub that advances the agenda of youth in Africa towards
                             self-reliance and productivity. We seek to alleviate the current state of insufficiency among
                             the youth and empower them as the continent’s future leaders, to enable them to forge a new
@@ -79,7 +79,7 @@
                         </div>
                         <h2 class="headings">Our Mission</h2>
                         <p>
-                            Activating 30 million jobs in the African Green Economy by 2032 by catalysing an alternative
+                            Activating 30 million jobs in the African Green Economy by 2033 by catalysing an alternative
                             economic culture
                         </p>
                     </div>
@@ -305,11 +305,34 @@
                                     <div class="our-pillars-grid-layer">
                                         <figure class="gl-thumbnail">
                                             <img src="{{ asset('img/new-news.png') }}"
-                                                alt="Bilha Ndirangu shares the Jabobs Ladder 30M Green Jobs by 2032 with CNBC">
+                                                alt="Bilha Ndirangu shares the Jabobs Ladder 30M Green Jobs by 2033 with CNBC">
                                         </figure>
                                         <div class="gl-caption">
                                             <h2>Bilha Ndirangu shares the Jacob’s Ladder’s objective of 30m Green Jobs by
-                                                2032 with CNBC
+                                                2033 with CNBC
+                                            </h2>
+                                        </div>
+                                        <div class="gl-overlay"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 right-news-section">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="slide">
+                                <a href="#">
+                                    <div class="our-pillars-grid-layer">
+                                        <figure class="gl-thumbnail">
+                                            <img src="{{ asset('img/Bilha photo-News.jpeg') }}"
+                                                alt="Jacobs Ladder co-founder selected as part of the 2022 Tutu Fellows Cohort.">
+                                        </figure>
+                                        <div class="gl-caption">
+                                            <p><span class="badge bg-info">Bilha Ndirangu</span></p>
+                                            <h2>
+                                                Bilha Ndirangu speaks at the London Climate week
                                             </h2>
                                         </div>
                                         <div class="gl-overlay"></div>

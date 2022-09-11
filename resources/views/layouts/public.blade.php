@@ -74,7 +74,7 @@
                                 <img src="{{ asset('img/logo.png') }}" alt="Logo">
                             </div>
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-lg-10 text-center">
                             <p>
                                 Jacob’s Ladder Africa is a sustainable development hub that advances the agenda of youth
                                 in Africa towards self-reliance and productivity. We seek to alleviate the current state

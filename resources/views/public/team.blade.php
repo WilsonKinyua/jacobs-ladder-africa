@@ -356,10 +356,9 @@
                                     </p>
                                     <p class="team-desc">
                                         Sellah is currently pursuing a Executive Education Course at the Harvard Kennedy
-                                        School of Government and is undertaking a PhD in Leadership and Public
-                                        Governance from the International Leadership University, following a MSc in
-                                        Public Governance from the same institution. Prior to this, she obtained a
-                                        Bachelor of Arts Degree in Business & Sociology from Kenyatta University.
+                                        School of Government following a MSc in Public Governance from the same institution.
+                                        Prior to this, she obtained a Bachelor of Arts Degree in Business & Sociology from
+                                        Kenyatta University
                                     </p>
                                 </div>
                             </div>

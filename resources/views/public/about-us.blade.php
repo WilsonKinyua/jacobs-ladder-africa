@@ -36,7 +36,7 @@
                     <div class="about-us-content">
                         <h2 class="headings-bottom-line">About Jacob’s Ladder Africa </h2>
                         <p>
-                            Jacob’s Ladder Africa seeks to activate 30 Million jobs in the African Green Economy by 2032. It
+                            Jacob’s Ladder Africa seeks to activate 30 Million jobs in the African Green Economy by 2033. It
                             is a sustainable development hub that advances the agenda of youth in Africa towards
                             self-reliance and productivity. We seek to alleviate the current state of insufficiency among
                             the youth and empower them as the continent’s future leaders, to enable them to forge a new
@@ -74,7 +74,7 @@
                         </div>
                         <h2 class="headings">Our Mission</h2>
                         <p>
-                            Activating 30 million jobs in the African Green Economy by 2032 by catalysing an alternative
+                            Activating 30 million jobs in the African Green Economy by 2033 by catalysing an alternative
                             economic culture
                         </p>
                     </div>
