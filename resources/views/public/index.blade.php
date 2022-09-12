@@ -93,8 +93,8 @@
                 <div class="section-title mt-5">
                     <h2 class="headings">Our Values</h2>
                     <p class="mb-3">
-                        We believe that the best way to achieve our goals is through the power of the people.
-                        Harnessing the power of the people to achieve our goals
+                        We believe that the best way to achieve our goals is through the power of the people. Harnessing the
+                        power of collaboration to achieve our goals
                     </p>
                 </div>
             </div>
