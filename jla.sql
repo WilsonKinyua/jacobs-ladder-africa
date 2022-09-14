@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 08, 2022 at 03:51 AM
--- Server version: 5.6.41-84.1
+-- Generation Time: Sep 15, 2022 at 04:40 AM
+-- Server version: 10.3.36-MariaDB-log
 -- PHP Version: 7.4.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -19,8 +19,29 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `kwizera_jla`
+-- Database: `newmar14_jla`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `careers`
+--
+
+CREATE TABLE `careers` (
+  `id` int(11) NOT NULL,
+  `name` text NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `careers`
+--
+
+INSERT INTO `careers` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(3, 'TERMS OF REFERENCE FOR GREEN  ENTREPRENEURSHIP TRAINERS (CONSULTANCY)', '2022-09-15 17:50:45', '2022-09-15 17:50:45', NULL);
 
 -- --------------------------------------------------------
 
@@ -75,7 +96,9 @@ INSERT INTO `media` (`id`, `model_type`, `model_id`, `uuid`, `collection_name`, 
 (4, 'App\\Models\\WhatWeDo', 1, 'fdfe6c12-e127-4985-a4b2-74bf2734c033', 'content_photo', '62ea8223a3d97_pexels-lukas-669622', '62ea8223a3d97_pexels-lukas-669622.jpg', 'image/jpeg', 'public', 'public', 2836920, '[]', '[]', '{\"thumb\":true,\"preview\":true}', '[]', 4, '2022-08-03 14:11:51', '2022-08-03 14:11:52'),
 (5, 'App\\Models\\WhatWeDo', 4, 'e4571079-cd17-42fe-bb50-dd0ebe3f368a', 'content_photo', '62ea828404bdb_DSC_1261', '62ea828404bdb_DSC_1261.jpg', 'image/jpeg', 'public', 'public', 5260022, '[]', '[]', '{\"thumb\":true,\"preview\":true}', '[]', 5, '2022-08-03 14:13:29', '2022-08-03 14:13:31'),
 (7, 'App\\Models\\WhatWeDo', 5, '87e52581-69ac-437d-a63b-7fa72aa345a3', 'content_photo', '62f36943ed2ae_economic', '62f36943ed2ae_economic.jpeg', 'image/jpeg', 'public', 'public', 95859, '[]', '[]', '{\"thumb\":true,\"preview\":true}', '[]', 6, '2022-08-10 08:16:07', '2022-08-10 08:16:07'),
-(8, 'App\\Models\\WhatWeDo', 2, '42f0d824-ced3-4c7e-8130-0eb7a5849517', 'content_photo', '62f38d94390b7_Grassroot coversations 2', '62f38d94390b7_Grassroot-coversations-2.jpeg', 'image/jpeg', 'public', 'public', 3998563, '[]', '[]', '{\"thumb\":true,\"preview\":true}', '[]', 7, '2022-08-10 15:52:56', '2022-08-10 15:53:00');
+(8, 'App\\Models\\WhatWeDo', 2, '42f0d824-ced3-4c7e-8130-0eb7a5849517', 'content_photo', '62f38d94390b7_Grassroot coversations 2', '62f38d94390b7_Grassroot-coversations-2.jpeg', 'image/jpeg', 'public', 'public', 3998563, '[]', '[]', '{\"thumb\":true,\"preview\":true}', '[]', 7, '2022-08-10 15:52:56', '2022-08-10 15:53:00'),
+(9, 'App\\Models\\Career', 3, 'd0666782-19ac-482d-83dc-e42d6861bbef', 'vacancy_image', '6323037d3d844_1', '6323037d3d844_1.png', 'image/png', 'public', 'public', 783930, '[]', '[]', '{\"thumb\":true,\"preview\":true}', '[]', 8, '2022-09-15 17:50:45', '2022-09-15 17:50:45'),
+(10, 'App\\Models\\Career', 3, 'b92633e9-f39b-473c-bca0-d2e723a7336d', 'vacancy_document', '63230383cf16e_ToRs - Trainers_v.final', '63230383cf16e_ToRs---Trainers_v.final.pdf', 'application/pdf', 'public', 'public', 123829, '[]', '[]', '[]', '[]', 9, '2022-09-15 17:50:45', '2022-09-15 17:50:45');
 
 -- --------------------------------------------------------
 
@@ -170,7 +193,12 @@ INSERT INTO `permissions` (`id`, `title`, `created_at`, `updated_at`, `deleted_a
 (29, 'what_we_do_show', NULL, NULL, NULL),
 (30, 'what_we_do_delete', NULL, NULL, NULL),
 (31, 'what_we_do_access', NULL, NULL, NULL),
-(32, 'profile_password_edit', NULL, NULL, NULL);
+(32, 'profile_password_edit', NULL, NULL, NULL),
+(33, 'career_create', NULL, NULL, NULL),
+(34, 'career_edit', NULL, NULL, NULL),
+(35, 'career_show', NULL, NULL, NULL),
+(36, 'career_delete', NULL, NULL, NULL),
+(37, 'career_access', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -235,7 +263,12 @@ INSERT INTO `permission_role` (`role_id`, `permission_id`) VALUES
 (2, 29),
 (2, 30),
 (2, 31),
-(2, 32);
+(2, 32),
+(1, 33),
+(1, 34),
+(1, 35),
+(1, 36),
+(1, 37);
 
 -- --------------------------------------------------------
 
@@ -249,7 +282,7 @@ CREATE TABLE `personal_access_tokens` (
   `tokenable_id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `token` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `abilities` text COLLATE utf8mb4_unicode_ci,
+  `abilities` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `last_used_at` timestamp NULL DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -283,7 +316,15 @@ INSERT INTO `registered_users` (`id`, `full_name`, `email`, `created_at`, `updat
 (6, 'Elizabeth Wangui Njeri', 'elizabethwangui254@gmail.com', '2022-09-07 18:43:17', '2022-09-07 18:43:17', NULL),
 (7, 'Elizabeth Wangui Njeri', 'elizabethwangui254@gmail.com', '2022-09-07 18:43:25', '2022-09-07 18:43:25', NULL),
 (8, 'Elizabeth Wangui Njeri', 'elizabethwangui254@gmail.com', '2022-09-07 18:43:25', '2022-09-07 18:43:25', NULL),
-(9, 'Elizabeth Wangui Njeri', 'elizabethwangui254@gmail.com', '2022-09-07 18:43:25', '2022-09-07 18:43:25', NULL);
+(9, 'Elizabeth Wangui Njeri', 'elizabethwangui254@gmail.com', '2022-09-07 18:43:25', '2022-09-07 18:43:25', NULL),
+(10, 'Natasha Shiko Mbuthia', 'natashambuthia@gmail.com', '2022-09-10 12:24:55', '2022-09-10 12:24:55', NULL),
+(11, 'JAMES WARUTERE', 'jwarutere1@gmail.com', '2022-09-11 10:09:59', '2022-09-11 10:09:59', NULL),
+(12, 'Mercy Kimani', 'kinyugo12@gmail.com', '2022-09-11 12:16:19', '2022-09-11 12:16:19', NULL),
+(13, 'Mercy Kimani', 'kinyugo12@gmail.com', '2022-09-11 12:16:36', '2022-09-11 12:16:36', NULL),
+(14, 'Leandra Stanley', 'fadid@mailinator.com', '2022-09-12 16:10:18', '2022-09-12 16:10:41', '2022-09-12 16:10:41'),
+(15, 'Kevin Okwako', 'okwako.kevin@gmail.com', '2022-09-13 15:17:19', '2022-09-13 15:17:19', NULL),
+(16, 'Anthony Ndolo', 'bondolo90@gmail.com', '2022-09-14 17:13:04', '2022-09-14 17:13:04', NULL),
+(17, 'Evelyn Njoki Gathua', 'gathuaeve@gmail.com', '2022-09-14 17:35:45', '2022-09-14 17:35:45', NULL);
 
 -- --------------------------------------------------------
 
@@ -337,10 +378,10 @@ CREATE TABLE `users` (
   `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `email_verified_at` datetime DEFAULT NULL,
   `password` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `verified` tinyint(1) DEFAULT '0',
+  `verified` tinyint(1) DEFAULT 0,
   `verified_at` datetime DEFAULT NULL,
   `verification_token` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `approved` tinyint(1) DEFAULT '0',
+  `approved` tinyint(1) DEFAULT 0,
   `remember_token` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -364,8 +405,8 @@ CREATE TABLE `what_we_dos` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `description` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
-  `slug` longtext COLLATE utf8mb4_unicode_ci,
-  `meta_descriptions` longtext COLLATE utf8mb4_unicode_ci,
+  `slug` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `meta_descriptions` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL
@@ -376,15 +417,21 @@ CREATE TABLE `what_we_dos` (
 --
 
 INSERT INTO `what_we_dos` (`id`, `title`, `description`, `slug`, `meta_descriptions`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'Baseline survey', '<p>We seek to understand the attitudes and perspectives of the youth towards climate action and inform our interventions. The surveys will conducted amongst nationally representative groups of youth in a subset of African countries. The sample of countries represents a variety of different relevant archetypes, such as drivers of climate vulnerability, current economic structure and dependency on high-emission sectors and demographic aspects that are relevant to both the risks and potential opportunities such as population density and degree of urbanisation.&nbsp; The youth sample is drawn in such a way that comparisons are not only possible by country, but also within a country by gender, socio-economic status and location (urban, peri-urban or rural) without losing statistical rigour.&nbsp;&nbsp;</p>', 'baseline-survey', NULL, '2022-08-03 14:02:26', '2022-08-03 14:02:26', NULL),
-(2, 'Grassroot conversations', '<p>We convene grassroots discussions at country and regional levels that bring young people and experts together for region-specific conversations. The discussions target “the many\'\' through a multiplier (trainer of trainer model) discussing climate actions and the opportunities therein. The sessions allow for peer learning and deliberations on new and existing ideas for climate action that the youth can engage in. To prepare for policy negotiations, the groups produce synthesis reports, which include emerging challenges and opportunities as derived from the discussions.&nbsp;</p>', 'grassroot-conversations', NULL, '2022-08-03 14:06:03', '2022-08-03 14:06:03', NULL),
-(3, 'Curriculum', '<p>&nbsp;The curriculum aims at filling the knowledge gaps evidenced in both the baseline and grassroots conversations as part of developing African youth who have the skills mix required for the green economy. Our two-prong training approach seeks to increase general awareness of climate action and increase the capacity of these youth to develop innovative, fundable, and scalable ideas aimed at addressing the climate change issues within their communities. Both are designed in a youthful and creative way that is aimed at significantly increasing the interest of the youth in climate action.&nbsp;</p>', 'curriculum', NULL, '2022-08-03 14:09:25', '2022-08-03 14:09:25', NULL),
-(4, 'Summit', '<p>We organize an annual pan-African summit that brings together climate-focused young African leaders, activists, entrepreneurs, investors, academics, and policymakers to share and discuss policy, business, advocacy, and climate-related innovations, as well as to formulate a plan of action for African youth on climate. The summit allows young people to interact with experienced professionals, policymakers, business leaders, and social influencers on important climate issues. narrative development, framing and influencing, and an opportunity to connect and influence positions.</p>', 'summit', NULL, '2022-08-03 14:13:29', '2022-08-03 14:13:29', NULL),
-(5, 'Youth Climate Action Fund', '<p>We aim to catalyze and spur the development of green ventures by African youth by identifying and resourcing promising ideas and businesses.&nbsp; The resourcing includes both capacity building and financing&nbsp; .</p>', 'youth-climate-action-fund', NULL, '2022-08-03 14:14:43', '2022-08-03 14:14:43', NULL);
+(1, 'Baseline survey', '<p>We seek to understand the attitudes and perspectives of the youth towards climate action and inform our interventions. The surveys will conducted amongst nationally representative groups of youth in a subset of African countries. The sample of countries represents a variety of different relevant archetypes, such as drivers of climate vulnerability, current economic structure and dependency on high-emission sectors and demographic aspects that are relevant to both the risks and potential opportunities such as population density and degree of urbanisation.&nbsp;The youth sample is drawn in such a way that comparisons are not only possible by country, but also within a country by gender, socio-economic status and location (urban, peri-urban or rural) without losing statistical rigour.&nbsp;&nbsp;</p>', 'baseline-survey', 'We seek to understand the attitudes and perspectives of the youth towards climate action and inform our interventions. The surveys will conducted amongst nationally representative groups of youth in a subset of African countries. The sample of countries represents a variety of different relevant archetypes, such as drivers of climate vulnerability, current economic structure and dependency on high-emission sectors and demographic aspects that are relevant to both the risks and potential opportunities such as population density and degree of urbanisation. The youth sample is drawn in such a way that comparisons are not only possible by country, but also within a country by gender, socio-economic status and location (urban, peri-urban or rural) without losing statistical rigour. ', '2022-08-03 14:02:26', '2022-09-08 13:59:37', NULL),
+(2, 'Grassroot conversations', '<p>We convene grassroots discussions at country and regional levels that bring young people and experts together for region-specific conversations. The discussions target “the many\'\' through a multiplier (trainer of trainer model) discussing climate actions and the opportunities therein. The sessions allow for peer learning and deliberations on new and existing ideas for climate action that the youth can engage in. To prepare for policy negotiations, the groups produce synthesis reports, which include emerging challenges and opportunities as derived from the discussions.&nbsp;</p>', 'grassroot-conversations', 'We convene grassroots discussions at country and regional levels that bring young people and experts together for region-specific conversations. The discussions target “the many\'\' through a multiplier (trainer of trainer model) discussing climate actions and the opportunities therein. The sessions allow for peer learning and deliberations on new and existing ideas for climate action that the youth can engage in. To prepare for policy negotiations, the groups produce synthesis reports, which include emerging challenges and opportunities as derived from the discussions.', '2022-08-03 14:06:03', '2022-09-08 14:00:12', NULL),
+(3, 'Curriculum', '<p>The curriculum aims at filling the knowledge gaps evidenced in both the baseline and grassroots conversations as part of developing African youth who have the skills mix required for the green economy. Our two-prong training approach seeks to increase general awareness of climate action and increase the capacity of these youth to develop innovative, fundable, and scalable ideas aimed at addressing the climate change issues within their communities. Both are designed in a youthful and creative way that is aimed at significantly increasing the interest of the youth in climate action.&nbsp;</p>', 'curriculum', 'The curriculum aims at filling the knowledge gaps evidenced in both the baseline and grassroots conversations as part of developing African youth who have the skills mix required for the green economy. Our two-prong training approach seeks to increase general awareness of climate action and increase the capacity of these youth to develop innovative, fundable, and scalable ideas aimed at addressing the climate change issues within their communities. Both are designed in a youthful and creative way that is aimed at significantly increasing the interest of the youth in climate action.', '2022-08-03 14:09:25', '2022-09-08 13:59:58', NULL),
+(4, 'Summit', '<p>We organize an annual pan-African summit that brings together climate-focused young African leaders, activists, entrepreneurs, investors, academics, and policymakers to share and discuss policy, business, advocacy, and climate-related innovations, as well as to formulate a plan of action for African youth on climate. The summit allows young people to interact with experienced professionals, policymakers, business leaders, and social influencers on important climate issues. narrative development, framing and influencing, and an opportunity to connect and influence positions.</p>', 'summit', 'We organize an annual pan-African summit that brings together climate-focused young African leaders, activists, entrepreneurs, investors, academics, and policymakers to share and discuss policy, business, advocacy, and climate-related innovations, as well as to formulate a plan of action for African youth on climate. The summit allows young people to interact with experienced professionals, policymakers, business leaders, and social influencers on important climate issues. narrative development, framing and influencing, and an opportunity to connect and influence positions.', '2022-08-03 14:13:29', '2022-09-08 14:00:25', NULL),
+(5, 'Youth Climate Action Fund', '<p>We aim to catalyze and spur the development of green ventures by African youth by identifying and resourcing promising ideas and businesses. The resourcing includes both capacity building and financing.</p>', 'youth-climate-action-fund', 'We aim to catalyze and spur the development of green ventures by African youth by identifying and resourcing promising ideas and businesses. The resourcing includes both capacity building and financing.', '2022-08-03 14:14:43', '2022-09-08 13:59:04', NULL);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `careers`
+--
+ALTER TABLE `careers`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `contactuses`
@@ -469,6 +516,12 @@ ALTER TABLE `what_we_dos`
 --
 
 --
+-- AUTO_INCREMENT for table `careers`
+--
+ALTER TABLE `careers`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `contactuses`
 --
 ALTER TABLE `contactuses`
@@ -478,7 +531,7 @@ ALTER TABLE `contactuses`
 -- AUTO_INCREMENT for table `media`
 --
 ALTER TABLE `media`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -490,7 +543,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `permissions`
 --
 ALTER TABLE `permissions`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
@@ -502,7 +555,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `registered_users`
 --
 ALTER TABLE `registered_users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `roles`
