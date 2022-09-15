@@ -15,6 +15,17 @@
                 {{ trans('global.dashboard') }}
             </a>
         </li>
+        @can('blog_access')
+            <li class="c-sidebar-nav-item">
+                <a href="{{ route('admin.blogs.index') }}"
+                    class="c-sidebar-nav-link {{ request()->is('admin/blogs') || request()->is('admin/blogs/*') ? 'c-active' : '' }}">
+                    <i class="fa-fw fas fa-align-right c-sidebar-nav-icon">
+
+                    </i>
+                    {{ trans('cruds.blog.title') }}
+                </a>
+            </li>
+        @endcan
         @can('career_access')
             <li class="c-sidebar-nav-item">
                 <a href="{{ route('admin.careers.index') }}"

@@ -70,6 +70,9 @@
                              </ul>
                          </li>
                          <li>
+                            <a href="{{ route('blogs') }}">Blogs</a>
+                         </li>
+                         <li>
                             <a href="{{ route('careers') }}">Careers</a>
                          </li>
                          <li><a href="{{ route('contact.us') }}">CONTACT us</a>

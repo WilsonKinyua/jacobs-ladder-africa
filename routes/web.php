@@ -5,6 +5,8 @@
 Route::get('/', 'PublicController@index')->name('index.home');
 Route::get('about-us', 'PublicController@aboutUs')->name('about.us');
 Route::get('careers', 'PublicController@careers')->name('careers');
+Route::get('blogs', 'PublicController@blogs')->name('blogs');
+Route::get('blog/{slug}', 'PublicController@blogDetails')->name('blog.detail');
 Route::get('videos', 'PublicController@videos')->name('videos');
 Route::get('our-pillars/climate-change', 'PublicController@climateChange')->name('climate.change');
 Route::get('contact-us', 'PublicController@contactUs')->name('contact.us');
@@ -66,6 +68,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     Route::post('careers/media', 'CareerController@storeMedia')->name('careers.storeMedia');
     Route::post('careers/ckmedia', 'CareerController@storeCKEditorImages')->name('careers.storeCKEditorImages');
     Route::resource('careers', 'CareerController');
+
+    // Blog
+    Route::delete('blogs/destroy', 'BlogController@massDestroy')->name('blogs.massDestroy');
+    Route::post('blogs/media', 'BlogController@storeMedia')->name('blogs.storeMedia');
+    Route::post('blogs/ckmedia', 'BlogController@storeCKEditorImages')->name('blogs.storeCKEditorImages');
+    Route::resource('blogs', 'BlogController');
 });
 Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 'middleware' => ['auth']], function () {
     // Change password

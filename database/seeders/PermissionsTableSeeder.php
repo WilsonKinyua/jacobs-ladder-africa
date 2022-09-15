@@ -156,6 +156,26 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'id'    => 37,
+                'title' => 'blog_create',
+            ],
+            [
+                'id'    => 38,
+                'title' => 'blog_edit',
+            ],
+            [
+                'id'    => 39,
+                'title' => 'blog_show',
+            ],
+            [
+                'id'    => 40,
+                'title' => 'blog_delete',
+            ],
+            [
+                'id'    => 41,
+                'title' => 'blog_access',
+            ],
+            [
+                'id'    => 42,
                 'title' => 'profile_password_edit',
             ],
         ];

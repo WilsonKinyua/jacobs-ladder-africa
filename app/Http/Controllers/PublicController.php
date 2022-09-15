@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use App\Models\Career;
 use App\Models\ContactUs;
 use App\Models\RegisteredUser;
@@ -22,10 +23,29 @@ class PublicController extends Controller
     {
         return view('public.about-us');
     }
+
     public function careers()
     {
         $careers = Career::all();
         return view('public.careers', compact('careers'));
+    }
+
+    public function blogs()
+    {
+        $blogs = Blog::with(['media'])->get();
+        return view('public.blogs', compact('blogs'));
+    }
+
+    public function blogDetails($slug)
+    {
+        if (empty($slug)) {
+            abort(404, 'No blog post found!');
+        }
+        $blog = Blog::where('slug', $slug)->first();
+        if ($blog === null) {
+            return redirect()->back();
+        }
+        return view('public.blog-details', compact('blog'));
     }
 
     public function videos()
