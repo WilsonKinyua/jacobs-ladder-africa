@@ -136,6 +136,26 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'id'    => 32,
+                'title' => 'career_create',
+            ],
+            [
+                'id'    => 33,
+                'title' => 'career_edit',
+            ],
+            [
+                'id'    => 34,
+                'title' => 'career_show',
+            ],
+            [
+                'id'    => 35,
+                'title' => 'career_delete',
+            ],
+            [
+                'id'    => 36,
+                'title' => 'career_access',
+            ],
+            [
+                'id'    => 37,
                 'title' => 'profile_password_edit',
             ],
         ];

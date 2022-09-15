@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Career;
 use App\Models\ContactUs;
 use App\Models\RegisteredUser;
 use App\Models\WhatWeDo;
@@ -20,6 +21,11 @@ class PublicController extends Controller
     public function aboutUs()
     {
         return view('public.about-us');
+    }
+    public function careers()
+    {
+        $careers = Career::all();
+        return view('public.careers', compact('careers'));
     }
 
     public function videos()

@@ -4,6 +4,7 @@
 // public routes
 Route::get('/', 'PublicController@index')->name('index.home');
 Route::get('about-us', 'PublicController@aboutUs')->name('about.us');
+Route::get('careers', 'PublicController@careers')->name('careers');
 Route::get('videos', 'PublicController@videos')->name('videos');
 Route::get('our-pillars/climate-change', 'PublicController@climateChange')->name('climate.change');
 Route::get('contact-us', 'PublicController@contactUs')->name('contact.us');
@@ -59,6 +60,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     Route::post('what-we-dos/media', 'WhatWeDoController@storeMedia')->name('what-we-dos.storeMedia');
     Route::post('what-we-dos/ckmedia', 'WhatWeDoController@storeCKEditorImages')->name('what-we-dos.storeCKEditorImages');
     Route::resource('what-we-dos', 'WhatWeDoController');
+
+    // Career
+    Route::delete('careers/destroy', 'CareerController@massDestroy')->name('careers.massDestroy');
+    Route::post('careers/media', 'CareerController@storeMedia')->name('careers.storeMedia');
+    Route::post('careers/ckmedia', 'CareerController@storeCKEditorImages')->name('careers.storeCKEditorImages');
+    Route::resource('careers', 'CareerController');
 });
 Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 'middleware' => ['auth']], function () {
     // Change password
