@@ -1,37 +1,55 @@
 @extends('layouts.public')
 @section('content')
-    <div class="home-slider">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-            </div>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active" style="background-image: url('{{ asset('img/youth-hall.jpeg') }}')">
-                    <div class="container">
-                        <div class="slider-caption">
-                            <h2 class="display-4 animated fadeInRight">
-                                <span class="text-capitalize">
-                                    Activating 30 Million Jobs in the <br> African Green Economy by 2033
-                                </span>
-                            </h2>
-                        </div>
-                    </div>
+    @if (count($sliders) > 0)
+        <div class="home-slider">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    @foreach ($sliders as $slider)
+                        @if ($loop->first)
+                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="{{ $loop->index }}" class="active" aria-current="true"
+                                aria-label="{!! $slider->title ?? '' !!}"></button>
+                        @endif
+                        @if (!$loop->first)
+                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="{{ $loop->index }}" aria-label="{!! $slider->title ?? '' !!}"></button>
+                        @endif
+                    @endforeach
                 </div>
-                <div class="carousel-item" style="background-image: url('{{ asset('img/hands.jpeg') }}')">
-                    <div class="container">
-                        <div class="slider-caption">
-                            <h2 class="display-4 animated fadeInRight">
-                                <span class="text-capitalize">#GreenTeamAfrica</span>
-                            </h2>
-                        </div>
-                    </div>
+                <div class="carousel-inner" role="listbox">
+                    @foreach ($sliders as $slider)
+                        @if ($loop->first)
+                            @if ($slider->image)
+                                <div class="carousel-item active"
+                                    style="background-image: url('{{ $slider->image->getUrl() }}')">
+                                    <div class="container">
+                                        <div class="slider-caption">
+                                            <h2 class="display-4 animated fadeInRight">
+                                                <span class="text-capitalize">
+                                                    {!! $slider->title ?? '' !!}
+                                                </span>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+                        @endif
+                        @if (!$loop->first)
+                            <div class="carousel-item" style="background-image: url('{{ $slider->image->getUrl() }}')">
+                                <div class="container">
+                                    <div class="slider-caption">
+                                        <h2 class="display-4 animated fadeInRight">
+                                            <span class="text-capitalize">{!! $slider->title ?? '' !!}</span>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
+                    @endforeach
                 </div>
             </div>
         </div>
-    </div>
+    @endif
     <div class="banner-pattern"></div>
     <section class="about-us mb-5 mt-5" id="mission-vision">
         <div class="container">

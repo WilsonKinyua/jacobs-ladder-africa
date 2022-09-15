@@ -3,44 +3,25 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.create') }} {{ trans('cruds.blog.title_singular') }}
+        {{ trans('global.edit') }} {{ trans('cruds.slider.title_singular') }}
     </div>
 
     <div class="card-body">
-        <form method="POST" action="{{ route("admin.blogs.store") }}" enctype="multipart/form-data">
+        <form method="POST" action="{{ route("admin.sliders.update", [$slider->id]) }}" enctype="multipart/form-data">
+            @method('PUT')
             @csrf
             <div class="form-group">
-                <label class="required" for="title">{{ trans('cruds.blog.fields.title') }}</label>
-                <input class="form-control {{ $errors->has('title') ? 'is-invalid' : '' }}" type="text" name="title" id="title" value="{{ old('title', '') }}" required>
+                <label for="title">{{ trans('cruds.slider.fields.title') }}</label>
+                <textarea class="form-control {{ $errors->has('title') ? 'is-invalid' : '' }}" name="title" id="title">{!! old('title', $slider->title) !!}</textarea>
                 @if($errors->has('title'))
                     <div class="invalid-feedback">
                         {{ $errors->first('title') }}
                     </div>
                 @endif
-                <span class="help-block">{{ trans('cruds.blog.fields.title_helper') }}</span>
+                <span class="help-block">{{ trans('cruds.slider.fields.title_helper') }}</span>
             </div>
             <div class="form-group">
-                <label for="description">{{ trans('cruds.blog.fields.description') }}</label>
-                <textarea class="form-control ckeditor {{ $errors->has('description') ? 'is-invalid' : '' }}" name="description" id="description">{!! old('description') !!}</textarea>
-                @if($errors->has('description'))
-                    <div class="invalid-feedback">
-                        {{ $errors->first('description') }}
-                    </div>
-                @endif
-                <span class="help-block">{{ trans('cruds.blog.fields.description_helper') }}</span>
-            </div>
-            <div class="form-group">
-                <label for="seo_keywords">{{ trans('cruds.blog.fields.seo_keywords') }}</label>
-                <textarea class="form-control {{ $errors->has('seo_keywords') ? 'is-invalid' : '' }}" name="seo_keywords" id="seo_keywords">{{ old('seo_keywords') }}</textarea>
-                @if($errors->has('seo_keywords'))
-                    <div class="invalid-feedback">
-                        {{ $errors->first('seo_keywords') }}
-                    </div>
-                @endif
-                <span class="help-block">{{ trans('cruds.blog.fields.seo_keywords_helper') }}</span>
-            </div>
-            <div class="form-group">
-                <label class="required" for="image">{{ trans('cruds.blog.fields.image') }}</label>
+                <label class="required" for="image">{{ trans('cruds.slider.fields.image') }}</label>
                 <div class="needsclick dropzone {{ $errors->has('image') ? 'is-invalid' : '' }}" id="image-dropzone">
                 </div>
                 @if($errors->has('image'))
@@ -48,17 +29,7 @@
                         {{ $errors->first('image') }}
                     </div>
                 @endif
-                <span class="help-block">{{ trans('cruds.blog.fields.image_helper') }}</span>
-            </div>
-            <div class="form-group">
-                <label class="required" for="category_name">{{ trans('cruds.blog.fields.category_name') }}</label>
-                <input class="form-control {{ $errors->has('category_name') ? 'is-invalid' : '' }}" type="text" name="category_name" id="category_name" value="{{ old('category_name', '') }}" required>
-                @if($errors->has('category_name'))
-                    <div class="invalid-feedback">
-                        {{ $errors->first('category_name') }}
-                    </div>
-                @endif
-                <span class="help-block">{{ trans('cruds.blog.fields.category_name_helper') }}</span>
+                <span class="help-block">{{ trans('cruds.slider.fields.image_helper') }}</span>
             </div>
             <div class="form-group">
                 <button class="btn btn-danger" type="submit">
@@ -85,7 +56,7 @@
               return new Promise(function(resolve, reject) {
                 // Init request
                 var xhr = new XMLHttpRequest();
-                xhr.open('POST', '{{ route('admin.blogs.storeCKEditorImages') }}', true);
+                xhr.open('POST', '{{ route('admin.sliders.storeCKEditorImages') }}', true);
                 xhr.setRequestHeader('x-csrf-token', window._token);
                 xhr.setRequestHeader('Accept', 'application/json');
                 xhr.responseType = 'json';
@@ -118,7 +89,7 @@
                 // Send request
                 var data = new FormData();
                 data.append('upload', file);
-                data.append('crud_id', '{{ $blog->id ?? 0 }}');
+                data.append('crud_id', '{{ $slider->id ?? 0 }}');
                 xhr.send(data);
               });
             })
@@ -140,8 +111,8 @@
 
 <script>
     Dropzone.options.imageDropzone = {
-    url: '{{ route('admin.blogs.storeMedia') }}',
-    maxFilesize: 50, // MB
+    url: '{{ route('admin.sliders.storeMedia') }}',
+    maxFilesize: 500, // MB
     acceptedFiles: '.jpeg,.jpg,.png,.gif',
     maxFiles: 1,
     addRemoveLinks: true,
@@ -149,7 +120,7 @@
       'X-CSRF-TOKEN': "{{ csrf_token() }}"
     },
     // params: {
-    //   size: 50,
+    //   size: 500,
     //   width: 5000,
     //   height: 5000
     // },
@@ -165,8 +136,8 @@
       }
     },
     init: function () {
-@if(isset($blog) && $blog->image)
-      var file = {!! json_encode($blog->image) !!}
+@if(isset($slider) && $slider->image)
+      var file = {!! json_encode($slider->image) !!}
           this.options.addedfile.call(this, file)
       this.options.thumbnail.call(this, file, file.preview ?? file.preview_url)
       file.previewElement.classList.add('dz-complete')

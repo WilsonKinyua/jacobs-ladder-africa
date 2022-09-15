@@ -6,6 +6,8 @@ use App\Models\Blog;
 use App\Models\Career;
 use App\Models\ContactUs;
 use App\Models\RegisteredUser;
+use App\Models\Slider;
+use App\Models\Team;
 use App\Models\WhatWeDo;
 use Illuminate\Http\Request;
 
@@ -15,8 +17,9 @@ class PublicController extends Controller
     public function index()
     {
         $whatWeDo = WhatWeDo::all();
+        $sliders = Slider::with(['media'])->get();
 
-        return view('public.index', compact('whatWeDo'));
+        return view('public.index', compact('whatWeDo', 'sliders'));
     }
 
     public function aboutUs()
@@ -61,7 +64,6 @@ class PublicController extends Controller
     public function contactUs()
     {
         return view('public.contact-us');
-        // return view('public.team');
     }
 
     public function contactUsCreate(Request $request)
@@ -126,7 +128,8 @@ class PublicController extends Controller
 
     public function team()
     {
-        return view('public.team');
+        $teams = Team::with(['media'])->get();
+        return view('public.team', compact('teams'));
     }
 
     public function registerNow()

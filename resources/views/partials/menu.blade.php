@@ -59,6 +59,28 @@
                 </a>
             </li>
         @endcan
+        @can('slider_access')
+            <li class="c-sidebar-nav-item">
+                <a href="{{ route('admin.sliders.index') }}"
+                    class="c-sidebar-nav-link {{ request()->is('admin/sliders') || request()->is('admin/sliders/*') ? 'c-active' : '' }}">
+                    <i class="fa-fw fas fa-images c-sidebar-nav-icon">
+
+                    </i>
+                    {{ trans('cruds.slider.title') }}
+                </a>
+            </li>
+        @endcan
+        @can('team_access')
+            <li class="c-sidebar-nav-item">
+                <a href="{{ route('admin.teams.index') }}"
+                    class="c-sidebar-nav-link {{ request()->is('admin/teams') || request()->is('admin/teams/*') ? 'c-active' : '' }}">
+                    <i class="fa-fw fas fa-users c-sidebar-nav-icon">
+
+                    </i>
+                    {{ trans('cruds.team.title') }}
+                </a>
+            </li>
+        @endcan
         @can('what_we_do_access')
             <li class="c-sidebar-nav-item">
                 <a href="{{ route('admin.what-we-dos.index') }}"
