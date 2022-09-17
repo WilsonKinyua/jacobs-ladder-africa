@@ -21,12 +21,24 @@ class StoreCareerRequest extends FormRequest
                 'string',
                 'required',
             ],
-            'vacancy_image' => [
-                'required',
+            'country' => [
+                'string',
+                'nullable',
+            ],
+            'town' => [
+                'string',
+                'nullable',
+            ],
+            'type' => [
+                'string',
+                'nullable',
             ],
             'vacancy_document' => [
                 'required',
             ],
+            // 'vacancy_image' => [
+            //     'required',
+            // ],
         ];
     }
 }

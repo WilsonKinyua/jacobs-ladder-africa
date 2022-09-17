@@ -19,18 +19,36 @@
             </div>
         </div>
     </div>
-    <section class="mt-5 mb-5">
+    <section class="mt-5 mb-5 careers">
         <div class="container">
-            <div class="row text-center justify-content-center">
+            <div class="row justify-content-center">
                 @forelse ($careers as $career)
                     <div class="col-md-4">
-                        @if ($career->vacancy_document)
+                        {{-- @if ($career->vacancy_document)
                             <a href="{{ $career->vacancy_document->getUrl() }}" target="_blank">
                                 <h3 class="main-color mb-4 text-uppercase">{{ $career->name ?? '' }}</h3>
                                 <div class="img-job-wrapper">
                                     @if ($career->vacancy_image)
                                         <img src="{{ $career->vacancy_image->getUrl() }}" alt="{{ $career->name ?? '' }}">
                                     @endif
+                                </div>
+                            </a>
+                        @endif --}}
+                        @if ($career->vacancy_document)
+                            <a href="{{ $career->vacancy_document->getUrl() }}" target="_blank">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3">{{ $career->name ?? '' }} <span
+                                                class="text-uppercase">{{ '- ' . $career->country ?? '' }}</span>
+                                        </h5>
+                                        <h6 class="card-subtitle mb-4"><i class="fa fa-briefcase"></i>
+                                            {{ $career->type ?? '' }}
+                                        </h6>
+                                        <h6 class="card-subtitle mb-4"><i class="fa fa-user"></i>
+                                            {{ $career->job_category ?? '' }} <i class="fa fa-location-arrow"
+                                                style="margin-left: 20px;"></i> {{ $career->town ?? '' }}</h6>
+                                        <h6 class="card-subtitle">More Details <i class="fa fa-arrow-right"></i></h6>
+                                    </div>
                                 </div>
                             </a>
                         @endif

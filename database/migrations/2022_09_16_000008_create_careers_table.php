@@ -11,6 +11,11 @@ class CreateCareersTable extends Migration
         Schema::create('careers', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('country')->nullable();
+            $table->string('town')->nullable();
+            $table->string('type')->nullable();
+            $table->string('job_category')->nullable();
+            $table->decimal('salary_range', 15, 2)->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

@@ -37,12 +37,12 @@ class CareerController extends Controller
     {
         $career = Career::create($request->all());
 
-        if ($request->input('vacancy_image', false)) {
-            $career->addMedia(storage_path('tmp/uploads/' . basename($request->input('vacancy_image'))))->toMediaCollection('vacancy_image');
-        }
-
         if ($request->input('vacancy_document', false)) {
             $career->addMedia(storage_path('tmp/uploads/' . basename($request->input('vacancy_document'))))->toMediaCollection('vacancy_document');
+        }
+
+        if ($request->input('vacancy_image', false)) {
+            $career->addMedia(storage_path('tmp/uploads/' . basename($request->input('vacancy_image'))))->toMediaCollection('vacancy_image');
         }
 
         if ($media = $request->input('ck-media', false)) {
@@ -63,17 +63,6 @@ class CareerController extends Controller
     {
         $career->update($request->all());
 
-        if ($request->input('vacancy_image', false)) {
-            if (!$career->vacancy_image || $request->input('vacancy_image') !== $career->vacancy_image->file_name) {
-                if ($career->vacancy_image) {
-                    $career->vacancy_image->delete();
-                }
-                $career->addMedia(storage_path('tmp/uploads/' . basename($request->input('vacancy_image'))))->toMediaCollection('vacancy_image');
-            }
-        } elseif ($career->vacancy_image) {
-            $career->vacancy_image->delete();
-        }
-
         if ($request->input('vacancy_document', false)) {
             if (!$career->vacancy_document || $request->input('vacancy_document') !== $career->vacancy_document->file_name) {
                 if ($career->vacancy_document) {
@@ -83,6 +72,17 @@ class CareerController extends Controller
             }
         } elseif ($career->vacancy_document) {
             $career->vacancy_document->delete();
+        }
+
+        if ($request->input('vacancy_image', false)) {
+            if (!$career->vacancy_image || $request->input('vacancy_image') !== $career->vacancy_image->file_name) {
+                if ($career->vacancy_image) {
+                    $career->vacancy_image->delete();
+                }
+                $career->addMedia(storage_path('tmp/uploads/' . basename($request->input('vacancy_image'))))->toMediaCollection('vacancy_image');
+            }
+        } elseif ($career->vacancy_image) {
+            $career->vacancy_image->delete();
         }
 
         return redirect()->route('admin.careers.index');

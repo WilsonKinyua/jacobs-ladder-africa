@@ -16,11 +16,18 @@ class Career extends Model implements HasMedia
     use InteractsWithMedia;
     use HasFactory;
 
+    public const JOB_CATEGORY_SELECT = [
+        'Full Time' => 'Full Time',
+        'Contract'  => 'Contract',
+        'Part Time' => 'Part Time',
+        'Others'    => 'Others',
+    ];
+
     public $table = 'careers';
 
     protected $appends = [
-        'vacancy_image',
         'vacancy_document',
+        'vacancy_image',
     ];
 
     protected $dates = [
@@ -31,6 +38,11 @@ class Career extends Model implements HasMedia
 
     protected $fillable = [
         'name',
+        'country',
+        'town',
+        'type',
+        'job_category',
+        'salary_range',
         'created_at',
         'updated_at',
         'deleted_at',
@@ -40,6 +52,11 @@ class Career extends Model implements HasMedia
     {
         $this->addMediaConversion('thumb')->fit('crop', 50, 50);
         $this->addMediaConversion('preview')->fit('crop', 120, 120);
+    }
+
+    public function getVacancyDocumentAttribute()
+    {
+        return $this->getMedia('vacancy_document')->last();
     }
 
     public function getVacancyImageAttribute()
@@ -52,11 +69,6 @@ class Career extends Model implements HasMedia
         }
 
         return $file;
-    }
-
-    public function getVacancyDocumentAttribute()
-    {
-        return $this->getMedia('vacancy_document')->last();
     }
 
     protected function serializeDate(DateTimeInterface $date)

@@ -26,7 +26,19 @@
                             {{ trans('cruds.career.fields.name') }}
                         </th>
                         <th>
-                            {{ trans('cruds.career.fields.vacancy_image') }}
+                            {{ trans('cruds.career.fields.country') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.career.fields.town') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.career.fields.type') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.career.fields.job_category') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.career.fields.salary_range') }}
                         </th>
                         <th>
                             {{ trans('cruds.career.fields.vacancy_document') }}
@@ -49,11 +61,19 @@
                                 {{ $career->name ?? '' }}
                             </td>
                             <td>
-                                @if($career->vacancy_image)
-                                    <a href="{{ $career->vacancy_image->getUrl() }}" target="_blank" style="display: inline-block">
-                                        <img src="{{ $career->vacancy_image->getUrl('thumb') }}">
-                                    </a>
-                                @endif
+                                {{ $career->country ?? '' }}
+                            </td>
+                            <td>
+                                {{ $career->town ?? '' }}
+                            </td>
+                            <td>
+                                {{ $career->type ?? '' }}
+                            </td>
+                            <td>
+                                {{ App\Models\Career::JOB_CATEGORY_SELECT[$career->job_category] ?? '' }}
+                            </td>
+                            <td>
+                                {{ $career->salary_range ?? '' }}
                             </td>
                             <td>
                                 @if($career->vacancy_document)

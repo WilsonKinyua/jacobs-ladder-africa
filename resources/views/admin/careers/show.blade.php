@@ -33,14 +33,42 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.career.fields.vacancy_image') }}
+                            {{ trans('cruds.career.fields.country') }}
                         </th>
                         <td>
-                            @if($career->vacancy_image)
-                                <a href="{{ $career->vacancy_image->getUrl() }}" target="_blank" style="display: inline-block">
-                                    <img src="{{ $career->vacancy_image->getUrl('thumb') }}">
-                                </a>
-                            @endif
+                            {{ $career->country }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.career.fields.town') }}
+                        </th>
+                        <td>
+                            {{ $career->town }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.career.fields.type') }}
+                        </th>
+                        <td>
+                            {{ $career->type }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.career.fields.job_category') }}
+                        </th>
+                        <td>
+                            {{ App\Models\Career::JOB_CATEGORY_SELECT[$career->job_category] ?? '' }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.career.fields.salary_range') }}
+                        </th>
+                        <td>
+                            {{ $career->salary_range }}
                         </td>
                     </tr>
                     <tr>
@@ -51,6 +79,18 @@
                             @if($career->vacancy_document)
                                 <a href="{{ $career->vacancy_document->getUrl() }}" target="_blank">
                                     {{ trans('global.view_file') }}
+                                </a>
+                            @endif
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.career.fields.vacancy_image') }}
+                        </th>
+                        <td>
+                            @if($career->vacancy_image)
+                                <a href="{{ $career->vacancy_image->getUrl() }}" target="_blank" style="display: inline-block">
+                                    <img src="{{ $career->vacancy_image->getUrl('thumb') }}">
                                 </a>
                             @endif
                         </td>
