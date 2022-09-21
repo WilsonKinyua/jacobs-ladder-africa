@@ -3,7 +3,7 @@
     - {{ $blog->title ?? '' }}
 @endsection
 @section('description')
-    {!! $blog->description ?? '' !!}
+    {{ $blog->seo_description ?? '' }}
 @endsection
 @section('keywords')
     {{ $blog->keywords ?? '' }}
@@ -31,6 +31,9 @@
                                 <style>
                                     img {
                                         max-width: 95%
+                                    }
+                                    a {
+                                        color: #228c22;
                                     }
                                 </style>
                                 <div class="col-md-12 text-center">

@@ -34,6 +34,7 @@ class Blog extends Model implements HasMedia
         'description',
         'seo_keywords',
         'category_name',
+        'seo_description',
         'created_at',
         'updated_at',
         'deleted_at',

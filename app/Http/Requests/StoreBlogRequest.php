@@ -25,6 +25,9 @@ class StoreBlogRequest extends FormRequest
             'description' => [
                 'required',
             ],
+            'seo_description' => [
+                'required',
+            ],
             'image' => [
                 'required',
             ],

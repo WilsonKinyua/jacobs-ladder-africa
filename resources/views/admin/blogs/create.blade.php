@@ -40,6 +40,16 @@
                 <span class="help-block">{{ trans('cruds.blog.fields.seo_keywords_helper') }}</span>
             </div>
             <div class="form-group">
+              <label class="required" for="seo_description">{{ trans('cruds.blog.fields.seo_description') }}</label>
+              <textarea class="form-control {{ $errors->has('seo_description') ? 'is-invalid' : '' }}" name="seo_description" id="seo_description" required>{{ old('seo_description') }}</textarea>
+              @if($errors->has('seo_description'))
+                  <div class="invalid-feedback">
+                      {{ $errors->first('seo_description') }}
+                  </div>
+              @endif
+              <span class="help-block">{{ trans('cruds.blog.fields.seo_description_helper') }}</span>
+          </div>
+            <div class="form-group">
                 <label class="required" for="image">{{ trans('cruds.blog.fields.image') }}</label>
                 <div class="needsclick dropzone {{ $errors->has('image') ? 'is-invalid' : '' }}" id="image-dropzone">
                 </div>

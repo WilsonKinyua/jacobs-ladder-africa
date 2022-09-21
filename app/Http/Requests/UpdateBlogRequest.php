@@ -25,6 +25,9 @@ class UpdateBlogRequest extends FormRequest
             'description' => [
                 'required',
             ],
+            'seo_description' => [
+                'required',
+            ],
             'image' => [
                 'required',
             ],
